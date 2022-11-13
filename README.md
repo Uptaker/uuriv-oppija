@@ -6,6 +6,6 @@ Made with React + TS + Vite
 
 ```bash
 npm i
-npm run vite
+npm run dev
 ```
 
