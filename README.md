@@ -3,11 +3,15 @@
 Made with React + TS + Vite
 
 ## Development
+Requires **node 16+** installed
 
-For local development:
-
+Install dependencies:
 ```bash
 npm i
+```
+
+Start the application
+```bash
 npm run dev
 ```
 
