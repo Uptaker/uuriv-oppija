@@ -1,4 +1,4 @@
 # Uuriv õppija
 
-Made wioth React + TS + Vite
+Made with React + TS + Vite
 
