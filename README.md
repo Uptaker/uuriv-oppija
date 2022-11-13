@@ -1,2 +1,4 @@
-# uuriv-oppija
-Uuriv õppija
+# Uuriv õppija
+
+Made wioth React + TS + Vite
+
