@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Noir Pro';
+    src: local('Noir Pro Bold'), local('Noir-Pro-Bold'),
+        url('NoirPro-Bold.woff2') format('woff2'),
+        url('NoirPro-Bold.woff') format('woff'),
+        url('NoirPro-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
