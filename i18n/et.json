@@ -1,5 +1,10 @@
 {
   "title": "Lihtsalt näide",
+  "general": {
+    "how": "Kuidas?",
+    "what": "Mis?",
+    "why": "Miks?"
+  },
   "strategy": {
     "retrieval": {
       "title": "Vabameenutamine"
