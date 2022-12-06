@@ -14,7 +14,7 @@ const Home = () => {
         <img src={banner} alt="banner"/>
       </div>
 
-      <div style={{backgroundColor: "#FFEE93", display: "flex", justifyContent: "center", padding: "1rem 1rem", margin: "5rem 0"}}>
+      <div style={{backgroundColor: "#FFEE93", display: "flex", justifyContent: "center", padding: "1rem 1rem", margin: "0 0 5rem 0"}}>
         <h1>{_('home.whyForMe')}</h1>
       </div>
     </>
