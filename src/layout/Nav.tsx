@@ -61,7 +61,7 @@ const Nav: React.FC = () => {
           </li>
           <li className='nav-item'>
             <Link
-              to='/lisaks'
+              to='/about'
               className='nav-links'
               onClick={closeMobileMenu}
             >
