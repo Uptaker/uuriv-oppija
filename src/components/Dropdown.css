@@ -4,9 +4,9 @@
   position: absolute;
   border: 3px solid #FFEE93;
   top: 68px;
-  padding-left: 0px;
-  padding-right: 0px;
-  margin:0px;
+  padding-left: 0;
+  padding-right: 0;
+  margin:0;
   list-style: none;
   text-align: start;
 }
@@ -14,9 +14,9 @@
 .dropdown-menu li {
   font-size: 22px;
   width: 255px;
-  margin: -1px 0px 0px -1px;
+  margin: -1px 0 0 -1px;
   padding: 2px 1px 2px 1px;
-  font-family: "Noir Pro Medium";
+  font-family: "Noir Pro Medium", serif;
   color: #4F4F4F;
   cursor: pointer;
 
