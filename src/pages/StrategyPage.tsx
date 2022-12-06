@@ -20,7 +20,7 @@ function StrategyPage() {
         <StrategyInfoCard color={strategy.color} label={_('general.how')} content={_(strategy.content.how)}/>
       </div>
 
-      <div style={{backgroundColor: strategy.color, display: "flex", justifyContent: "center", padding: "51px 10px"}}>
+      <div style={{backgroundColor: strategy.color, display: "flex", justifyContent: "center", padding: "4rem 1rem", margin: "5rem 0"}}>
         <iframe width="812" height="424" src={strategy.videoUrl ? strategy.videoUrl : "https://www.youtube.com/embed/dQw4w9WgXcQ"} title="YouTube video player"
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
