@@ -3,8 +3,8 @@
     min-width: 500px;
     margin: 0;
     font-family: 'Noir Pro', sans-serif;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 18px;
+    line-height: 30px;
     font-weight: 400;
     background-color: #FCFBF7;
     color: #4F4F4F;
@@ -22,6 +22,18 @@ h1, h2, h3, h4, h5 {
 
 h1 {
     font-size: 50px;
+}
+
+.text-md {
+    font-size: 28px;
+}
+
+p {
+    line-height: 40px;
+}
+
+.bold {
+    font-family: 'Noir Pro Medium', sans-serif;
 }
 
 @font-face {
