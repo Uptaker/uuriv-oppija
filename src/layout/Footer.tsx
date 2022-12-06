@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className="footer"> 
       <div className='info-container'>        
-        <Link to='/'className='logo'>
+        <Link to='/' className='logo'>
           Uuriv õppija
         </Link>
         <div>Siia märgime vajadusel kontaktandmed</div>
