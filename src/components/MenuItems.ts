@@ -2,21 +2,21 @@ export const MenuItems = [
   {
     title: 'Vabameenutamine',
     path: '/vabameenutamine',
-    cName: 'dropdown-link'
+    className: 'dropdown-link'
   },
   {
     title: 'Mõttemallide muutmine',
     path: '/mottemallid',
-    cName: 'dropdown-link'
+    className: 'dropdown-link'
   },
   {
     title: 'Vahelduv õpe',
     path: '/vahelduvope',
-    cName: 'dropdown-link'
+    className: 'dropdown-link'
   },
   {
     title: 'Hajutatud õpe',
     path: '/hajutatudope',
-    cName: 'dropdown-link'
+    className: 'dropdown-link'
   }
 ]

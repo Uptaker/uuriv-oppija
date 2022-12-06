@@ -18,7 +18,7 @@ function Dropdown() {
           return (
             <li key={index}>
               <Link
-                className={item.cName}
+                className={item.className}
                 to={item.path}
                 onClick={() => setClick(false)}
               >
