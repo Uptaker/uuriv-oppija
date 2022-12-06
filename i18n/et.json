@@ -1,9 +1,14 @@
 {
-  "title": "Lihtsalt näide",
+  "title": "Uuriv õppija",
   "general": {
     "how": "Kuidas?",
     "what": "Mis?",
-    "why": "Miks?"
+    "why": "Miks?",
+    "readMore": "Loe rohkem"
+  },
+  "home": {
+    "description": "Siia tuleb teha mingi pikem sisutekst",
+    "whyForMe": "Miks mulle õpistrateegiad?"
   },
   "strategy": {
     "studies": "Katsed",

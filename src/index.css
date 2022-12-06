@@ -25,7 +25,15 @@ h1 {
 }
 
 .text-md {
+    font-size: 22px;
+}
+
+.text-lg {
     font-size: 28px;
+}
+
+.text-xl {
+    font-size: 58px;
 }
 
 p {
@@ -34,6 +42,19 @@ p {
 
 .bold {
     font-family: 'Noir Pro Medium', sans-serif;
+}
+
+.btn {
+    background-color: #FFEE93;
+    padding: 1rem 2rem;
+    font-family: 'Noir Pro', sans-serif;
+    border: none;
+    width: max-content;
+    color: #4F4F4F;
+}
+
+.btn:hover {
+    background-color: #fae684;
 }
 
 @font-face {
