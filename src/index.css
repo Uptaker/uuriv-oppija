@@ -2,10 +2,12 @@
     width: 100%;
     min-width: 500px;
     margin: 0;
-    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    font-family: 'Noir Pro', sans-serif;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
+    background-color: #FCFBF7;
+    color: #4F4F4F;
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -14,9 +16,8 @@
     -webkit-text-size-adjust: 100%;
 }
 
-body {
-    margin: 0;
-    background-color: #FCFBF7;
+h1, h2, h3, h4, h5 {
+    font-family: 'Noir Pro Medium', sans-serif;
 }
 
 @font-face {
@@ -26,7 +27,6 @@ body {
     url('./fonts/NoirPro/NoirPro-Regular.woff') format('woff'),
     url('./fonts/NoirPro/NoirPro-Regular.ttf') format('truetype');
     font-weight: 400;
-
     font-style: normal;
 }
 
