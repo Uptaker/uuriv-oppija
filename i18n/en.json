@@ -1,6 +1,9 @@
 {
-  "title": "Just a sample",
-  "contacts": {
-    "email": "E-mail"
+  "title": "Curious Learner",
+  "general": {
+    "how": "How?",
+    "what": "What?",
+    "why": "Why?",
+    "readMore": "Read more"
   }
 }
