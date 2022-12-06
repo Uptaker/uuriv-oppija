@@ -28,7 +28,8 @@ function StrategyPage() {
           allowFullScreen/>
       </div>
 
-      <div style={{maxWidth: "1299px", margin: "0 auto", display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center"}}>
+      <div style={{display: "flex", margin: "5rem 0", padding: "1rem 5rem", justifyContent: "center", flexDirection: "column", alignItems: "center",
+        border: `solid ${strategy.color}`, borderWidth: '1px 0'}}>
         <img src={icon} alt="idea" width="90"/>
         <p className="text-md bold" style={{margin: "0.5rem 0"}}>{_('strategy.studies')}</p>
         <p className="text-md" style={{margin: "0.5rem 0", textAlign: "center"}}>{_(strategy.studies.description)}</p>
