@@ -6,6 +6,7 @@ export type Option = {
 export interface Strategy {
   title: string,
   id: string,
+  color: string,
   content: StrategyContent,
   apps: StrategyUsefulApp[]
   icon?: string,

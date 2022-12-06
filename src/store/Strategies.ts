@@ -3,6 +3,7 @@ import {Strategy} from '../types'
 export const strategies: Strategy[] = [
   {
     title: 'strategy.retrieval.title',
+    color: '#FFEE93',
     id: 'retrieval',
     content: {
       what: 'strategy.retrieval.what',
