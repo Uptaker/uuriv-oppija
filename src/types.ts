@@ -1,8 +1,3 @@
-export type Option = {
-  label: string;
-  value: string | number;
-}
-
 export interface Strategy {
   title: string,
   id: string,
