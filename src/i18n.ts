@@ -1,5 +1,6 @@
 import langs from '../i18n/langs.json'
 import {init, rememberLang} from '@codeborne/i18n-json'
+
 export * from '@codeborne/i18n-json'
 
 const defaultLang = 'et'
