@@ -10,6 +10,10 @@ export const strategies: Strategy[] = [
       why: 'strategy.retrieval.why',
       how: 'strategy.retrieval.how'
     },
+    studies: {
+      source: "Karpicke, J. D., & Blunt, J. R. (2011). Retrieval practice produces more learning than elaborate studying with concept mapping. Science, 331(6018), 772–775.",
+      description: 'strategy.retrieval.studies.description'
+    },
     apps: [
       {
         name: 'TimeCamp',

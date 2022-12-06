@@ -6,8 +6,16 @@
     "why": "Miks?"
   },
   "strategy": {
+    "studies": "Katsed",
+    "source": "Allikas",
     "retrieval": {
-      "title": "Vabameenutamine"
+      "title": "Vabameenutamine",
+      "what": "Vabameenutamine on tegevus, mille käigus püütakse abimaterjale kasutamata infot meelde tuletada.",
+      "why": "Iga kord, kui informatsiooni vaja on (seda meenutatakse), loob aju tugevamad seosed ning õpitu salvestub pikemaks ajaks ja tulevikus on seda informatsiooni kergem kätte saada.",
+      "how": "Proovi materjali pärast selle õppimist meenutada (nt kirjuta üles nii palju kui mäletad, vasta kordamisküsimustele, soorita eneseteste, selgita materjali teistele jne). Seejärel vaata materjali uuesti ja korda meenutamist.",
+      "studies": {
+        "description": "Teaduslikud katsed on näidanud, et vabameenutamise abil õppimine aitab materjali tõhusamalt ja jäädavamalt omandada."
+      }
     }
   }
 }

@@ -4,6 +4,7 @@ import {strategies} from '../store/Strategies'
 import './StrategyPage.css'
 import {_} from '@codeborne/i18n-json'
 import StrategyInfoCard from '../components/StrategyInfoCard'
+import icon from '../assets/idea.svg'
 
 function StrategyPage() {
 
@@ -22,9 +23,16 @@ function StrategyPage() {
 
       <div style={{backgroundColor: strategy.color, display: "flex", justifyContent: "center", padding: "4rem 1rem", margin: "5rem 0"}}>
         <iframe width="812" height="424" src={strategy.videoUrl ? strategy.videoUrl : "https://www.youtube.com/embed/dQw4w9WgXcQ"} title="YouTube video player"
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen/>
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen/>
+      </div>
+
+      <div style={{maxWidth: "1299px", margin: "0 auto", display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center"}}>
+        <img src={icon} alt="idea" width="90"/>
+        <p className="text-md bold" style={{margin: "0.5rem 0"}}>{_('strategy.studies')}</p>
+        <p className="text-md" style={{margin: "0.5rem 0", textAlign: "center"}}>{_(strategy.studies.description)}</p>
+        <p style={{margin: "0.5rem 5rem", textAlign: "center"}}><span className="bold">{_('strategy.source')}:</span> {strategy.studies.source}</p>
       </div>
     </>
   )
