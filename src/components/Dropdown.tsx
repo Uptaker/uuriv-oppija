@@ -11,10 +11,7 @@ function Dropdown() {
 
   return (
     <>
-      <ul
-        onClick={handleClick}
-        className={click ? 'dropdown-menu clicked' : 'dropdown-menu'}
-      >
+      <ul onClick={handleClick} className={click ? 'dropdown-menu clicked' : 'dropdown-menu'}>
         {strategies.map(strategy => {
           return (
             <li key={strategy.id}>
