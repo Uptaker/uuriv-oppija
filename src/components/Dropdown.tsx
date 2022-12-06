@@ -1,7 +1,8 @@
 import React, {useState} from 'react'
-import {MenuItems} from './MenuItems'
 import './Dropdown.css'
 import {Link} from 'react-router-dom'
+import {strategies} from '../store/Strategies'
+import {_} from '@codeborne/i18n-json'
 
 function Dropdown() {
   const [click, setClick] = useState(false);
@@ -14,15 +15,12 @@ function Dropdown() {
         onClick={handleClick}
         className={click ? 'dropdown-menu clicked' : 'dropdown-menu'}
       >
-        {MenuItems.map((item, index) => {
+        {strategies.map(strategy => {
           return (
-            <li key={index}>
+            <li key={strategy.id}>
               <Link
-                className={item.className}
-                to={item.path}
-                onClick={() => setClick(false)}
-              >
-                {item.title}
+                className='dropdown-link' to={'/strategy/' + strategy.id} onClick={() => setClick(false)}>
+                {_(strategy.title)}
               </Link>
             </li>
           );
