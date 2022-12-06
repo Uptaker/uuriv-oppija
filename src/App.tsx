@@ -1,9 +1,6 @@
-import { useState } from 'react'
 import './App.css'
 import {_} from '@codeborne/i18n-json'
 import LangSelect from './components/LangSelect'
-import Nav from './components/Nav/Nav'
-import Footer from './components/Footer/Footer'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Elu from './pages/Elu';
@@ -12,6 +9,8 @@ import Mottemallid from './pages/Mottemallid';
 import Vabameenutamine from './pages/Vabameenutamine';
 import Hajutatudope from './pages/Hajutatudope';
 import Vahelduvope from './pages/Vahelduvope';
+import Nav from './layout/Nav'
+import Footer from './layout/Footer'
 
 
 function App() {
@@ -27,7 +26,7 @@ function App() {
         <Route path='/hajutatudope' element={<Hajutatudope/>} />
         <Route path='/vahelduvope' element={<Vahelduvope/>} />
       </Routes>
-      <div className="App" s>
+      <div className="App">
         <LangSelect/>
         <p>{(_('title'))}</p>
       </div>

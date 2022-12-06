@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import './Nav.css';
 import { Link } from 'react-router-dom';
-
-import Dropdown from '../Dropdown/Dropdown';
+import Dropdown from '../components/Dropdown'
 
 const Nav: React.FC<{}> = () => {
   const [click, setClick] = useState(false); 
