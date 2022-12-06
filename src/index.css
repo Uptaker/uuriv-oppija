@@ -20,6 +20,10 @@ h1, h2, h3, h4, h5 {
     font-family: 'Noir Pro Medium', sans-serif;
 }
 
+h1 {
+    font-size: 50px;
+}
+
 @font-face {
     font-family: 'Noir Pro';
     src: local('Noir Pro Regular'), local('Noir-Pro-Regular'),
