@@ -1,6 +1,4 @@
 import './App.css'
-import {_} from '@codeborne/i18n-json'
-import LangSelect from './components/LangSelect'
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import Home from './pages/Home'
 import Elu from './pages/Elu'
@@ -20,11 +18,6 @@ function App() {
         <Route path='/about' element={<Lisaks/>}/>
         <Route path='strategy/:id' element={<StrategyPage/>}/>
       </Routes>
-      <div className="App">
-        <LangSelect/>
-        <p>{(_('title'))}</p>
-      </div>
-
       <Footer/>
 
     </Router>
