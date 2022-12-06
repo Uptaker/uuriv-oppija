@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 import logo from '../assets/ELU-Stamp.svg'
 import LangSelect from '../components/LangSelect'
 
-const Footer = () => {
+function Footer() {
   return (
     <div className="footer">
       <div className='info-container'>

@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Elu = () => {
+function EluPage() {
   return (
     <div>Elu</div>
   )
 }
 
-export default Elu
+export default EluPage

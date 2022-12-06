@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Lisaks = () => {
+function LearnMorePage() {
   return (
     <div>Lisaks</div>
   )
 }
 
-export default Lisaks
+export default LearnMorePage

@@ -1,8 +1,8 @@
 import './App.css'
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
-import Home from './pages/Home'
-import Elu from './pages/Elu'
-import Lisaks from './pages/Lisaks'
+import HomePage from './pages/HomePage'
+import EluPage from './pages/EluPage'
+import LearnMorePage from './pages/LearnMorePage'
 import Nav from './layout/Nav'
 import Footer from './layout/Footer'
 import StrategyPage from './pages/StrategyPage'
@@ -13,13 +13,12 @@ function App() {
     <Router>
       <Nav/>
       <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/elu' element={<Elu/>}/>
-        <Route path='/about' element={<Lisaks/>}/>
+        <Route path='/' element={<HomePage/>}/>
+        <Route path='/elu' element={<EluPage/>}/>
+        <Route path='/about' element={<LearnMorePage/>}/>
         <Route path='strategy/:id' element={<StrategyPage/>}/>
       </Routes>
       <Footer/>
-
     </Router>
 
   );

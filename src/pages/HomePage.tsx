@@ -2,7 +2,7 @@ import React from 'react'
 import banner from '../assets/home-banner.svg'
 import {_} from '@codeborne/i18n-json'
 
-const Home = () => {
+function HomePage() {
   return (
     <>
       <div style={{display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem", justifyItems: "center"}}>
@@ -21,4 +21,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default HomePage

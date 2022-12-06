@@ -3,7 +3,7 @@ import './Nav.css'
 import {Link} from 'react-router-dom'
 import Dropdown from '../components/Dropdown'
 
-const Nav: React.FC = () => {
+function Nav() {
   const [click, setClick] = useState(false);
   const [dropdown, setDropdown] = useState(false);
   const handleClick = () => setClick(!click);
