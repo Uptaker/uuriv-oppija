@@ -5,9 +5,10 @@ export type Option = {
 
 export interface Strategy {
   title: string,
-  icon: string,
+  id: string,
   content: StrategyContent,
   apps: StrategyUsefulApp[]
+  icon?: string,
   videoUrl?: string
 }
 

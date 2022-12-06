@@ -1,3 +1,8 @@
 {
-  "title": "Lihtsalt näide"
+  "title": "Lihtsalt näide",
+  "strategy": {
+    "retrieval": {
+      "title": "Vabameenutamine"
+    }
+  }
 }
