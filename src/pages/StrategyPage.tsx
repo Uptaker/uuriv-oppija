@@ -33,7 +33,7 @@ function StrategyPage() {
         <img src={icon} alt="idea" width="90"/>
         <p className="text-md bold" style={{margin: "0.5rem 0"}}>{_('strategy.studies')}</p>
         <p className="text-md" style={{margin: "0.5rem 0", textAlign: "center"}}>{_(strategy.studies.description)}</p>
-        <p style={{margin: "0.5rem 5rem", textAlign: "center"}}><span className="bold">{_('strategy.source')}:</span> {strategy.studies.source}</p>
+        <div style={{margin: "0.5rem 5rem", textAlign: "center"}}><span className="bold">{_('strategy.source')}:</span> {strategy.studies.source}</div>
       </div>
     </>
   )
