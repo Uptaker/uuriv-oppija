@@ -22,7 +22,7 @@ Start the application
 npm run dev
 ```
 
-Build
+Build for production
 ```bash
 npm run build
 ```
