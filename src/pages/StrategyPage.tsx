@@ -42,7 +42,7 @@ function StrategyPage() {
         <Container color={strategy.color} label={_('strategy.usefulApps')}>
           {strategy.apps.map(app => {
             return (
-              <Collapsable label={app.name}>
+              <Collapsable label={app.name} key={app.name}>
                 <p className="text-md"><a href={app.url} target="_blank"><i className="fa-solid fa-arrow-up-right-from-square"></i></a> {_(app.description)}</p>
               </Collapsable>
               )
