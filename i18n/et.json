@@ -24,6 +24,11 @@
     "readingTitle": "Lugemiseks",
     "viewingTitle": "Vaatamiseks"
   },
+  "elu": {
+    "title": "Mis on ELU?",
+    "description": "Siia tuleb teha mingi pikem ELU- projekti kirjeldav sisutekst. Siia tuleb teha mingi pikem ELU- projekti kirjeldav sisutekst. Siia tuleb teha mingi pikem ELU- projekti kirjeldav sisutekst. Siia tuleb teha mingi pikem ELU- projekti kirjeldav sisutekst. Siia tuleb teha mingi pikem ELU- projekti kirjeldav sisutekst. Siia tuleb teha mingi pikem ELU- projekti kirjeldav sisutekst. Siia tuleb teha mingi pikem ELU- projekti kirjeldav sisutekst. Siia tuleb teha mingi pikem ELU- projekti kirjeldav sisutekst.",
+    "teamTitle": "Meeskond"
+  },
   "strategy": {
     "studies": "Katsed",
     "source": "Allikas",
