@@ -20,6 +20,10 @@
     "timeSavings": "Ajakulu vähenemine",
     "timeSavingsText": "Siia tuleb teha mingi pikem sisutekst ajakulu vähenemisest."
   },
+  "learnMore": {
+    "readingTitle": "Lugemiseks",
+    "viewingTitle": "Vaatamiseks"
+  },
   "strategy": {
     "studies": "Katsed",
     "source": "Allikas",
