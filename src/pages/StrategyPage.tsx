@@ -38,7 +38,7 @@ function StrategyPage() {
         <div style={{margin: "0.5rem 5rem", textAlign: "center"}}><span className="bold">{_('strategy.source')}:</span> {strategy.studies.source}</div>
       </div>
 
-      <div style={{display: 'flex', gap: '4rem', maxWidth: "1299px", margin: "0 auto"}}>
+      <div style={{display: 'flex', gap: '4rem', maxWidth: "1299px", margin: "3rem auto"}}>
         <Container color={strategy.color} label={_('strategy.usefulApps')}>
           {strategy.apps.map(app => {
             return (
