@@ -8,7 +8,17 @@
   },
   "home": {
     "description": "Siia tuleb teha mingi pikem sisutekst",
-    "whyForMe": "Miks mulle õpistrateegiad?"
+    "whyForMe": "Miks mulle õpistrateegiad?",
+    "attitude": "Hoiakud",
+    "attitudeText": "Siia tuleb teha mingi pikem sisutekst hoiakute muutumisest.",
+    "improvement": "Tulemuste paranemine",
+    "improvementText": "Siia tuleb teha mingi pikem sisutekst tulemuste paranemisest.",
+    "stress": "Stress",
+    "stressText": "Siia tuleb teha mingi pikem sisutekst stressist.",
+    "confidence": "Enesekindlus",
+    "confidenceText": "Siia tuleb teha mingi pikem sisutekst enesekindluse suurenemisest.",
+    "timeSavings": "Ajakulu vähenemine",
+    "timeSavingsText": "Siia tuleb teha mingi pikem sisutekst ajakulu vähenemisest."
   },
   "strategy": {
     "studies": "Katsed",
