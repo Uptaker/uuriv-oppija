@@ -1,78 +1,64 @@
+import classNames from 'classnames'
 import React, {useState} from 'react'
-import './Nav.css'
 import {Link} from 'react-router-dom'
 import Dropdown from '../components/Dropdown'
 
+import s from './Nav.module.scss'
+
 function Nav() {
-  const [click, setClick] = useState(false);
-  const [dropdown, setDropdown] = useState(false);
-  const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
-  const [hover, setHover] = useState(false);
+  const [dropdown, setDropdown] = useState(false)
 
   const onMouseEnter = () => {
     if (window.innerWidth < 960) {
-      setDropdown(false);
+      setDropdown(false)
     } else {
-      setDropdown(true);
-      setHover(true);
+      setDropdown(true)
     }
   };
 
   const onMouseLeave = () => {
     if (window.innerWidth < 960) {
-      setDropdown(false);
+      setDropdown(false)
     } else {
-      setDropdown(false);
-      setHover(false);
+      setDropdown(false)
     }
   };
 
 
   return (
     <>
-      <nav className="navbar">
-        <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+      <nav className={s.navbar}>
+        <Link to='/' className={classNames(s.navLink, s.navLogo)}>
           Uuriv õppija
 
         </Link>
-        <div className='menu_icon' onClick={handleClick}>
-          <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>
-        </div>
 
-        <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+        <ul className={s.navMenu}>
 
           <li
-            className='nav-item'
+            className={s.dropdownNav}
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
           >
             <div
-
-              className='nav-links'
-              id='strateegiad'
-              onClick={closeMobileMenu}
-
-              style={hover ? {backgroundColor: "#FFEE93"} : {}}
+              className={classNames(s.navLink, 'strategies')}
             >
               Strateegiad <i className='fas fa-caret-down'/>
             </div>
             {dropdown && <Dropdown/>}
           </li>
-          <li className='nav-item'>
+          <li>
             <Link
               to='/learn-more'
-              className='nav-links'
-              onClick={closeMobileMenu}
+              className={s.navLink}
             >
               Lisaks
             </Link>
           </li>
-          <li className='nav-item'>
+          <li>
             <Link
               to='/elu'
-              className='nav-links'
-              onClick={closeMobileMenu}
+              className={s.navLink}
             >
               ELU
             </Link>
@@ -82,6 +68,6 @@ function Nav() {
 
       </nav>
     </>
-  );
+  )
 }
 export default Nav
