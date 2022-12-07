@@ -38,15 +38,21 @@ function StrategyPage() {
         <div style={{margin: "0.5rem 5rem", textAlign: "center"}}><span className="bold">{_('strategy.source')}:</span> {strategy.studies.source}</div>
       </div>
 
-      <Container color={strategy.color} label={_('strategy.usefulApps')}>
-        {strategy.apps.map(app => {
-          return (
-            <Collapsable label={app.name}>
-              <p><a href={app.url} target="_blank"><i className="fa-solid fa-arrow-up-right-from-square"></i></a> {_(app.description)}</p>
-            </Collapsable>
-            )
-        })}
-      </Container>
+      <div style={{display: 'flex', gap: '4rem', maxWidth: "1299px", margin: "0 auto"}}>
+        <Container color={strategy.color} label={_('strategy.usefulApps')}>
+          {strategy.apps.map(app => {
+            return (
+              <Collapsable label={app.name}>
+                <p className="text-md"><a href={app.url} target="_blank"><i className="fa-solid fa-arrow-up-right-from-square"></i></a> {_(app.description)}</p>
+              </Collapsable>
+              )
+          })}
+        </Container>
+
+        <Container color={strategy.color} label={_('strategy.eluTeamStudies')}>
+          TODO
+        </Container>
+      </div>
     </>
   )
 }
