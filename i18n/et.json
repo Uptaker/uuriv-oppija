@@ -23,6 +23,7 @@
   "strategy": {
     "studies": "Katsed",
     "source": "Allikas",
+    "usefulApps": "Kasulikke rakendusi",
     "retrieval": {
       "title": "Vabameenutamine",
       "what": "Vabameenutamine on tegevus, mille käigus püütakse abimaterjale kasutamata infot meelde tuletada.",

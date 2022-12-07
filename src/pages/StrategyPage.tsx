@@ -5,6 +5,8 @@ import './StrategyPage.css'
 import {_} from '@codeborne/i18n-json'
 import StrategyInfoCard from '../components/StrategyInfoCard'
 import icon from '../assets/idea.svg'
+import Container from '../components/Container'
+import Collapsable from '../components/Collapsable'
 
 function StrategyPage() {
 
@@ -35,6 +37,16 @@ function StrategyPage() {
         <p className="text-md" style={{margin: "0.5rem 0", textAlign: "center"}}>{_(strategy.studies.description)}</p>
         <div style={{margin: "0.5rem 5rem", textAlign: "center"}}><span className="bold">{_('strategy.source')}:</span> {strategy.studies.source}</div>
       </div>
+
+      <Container color={strategy.color} label={_('strategy.usefulApps')}>
+        {strategy.apps.map(app => {
+          return (
+            <Collapsable label={app.name}>
+              <p><a href={app.url} target="_blank"><i className="fa-solid fa-arrow-up-right-from-square"></i></a> {_(app.description)}</p>
+            </Collapsable>
+            )
+        })}
+      </Container>
     </>
   )
 }
