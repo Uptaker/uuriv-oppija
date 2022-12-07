@@ -1,0 +1,54 @@
+@use '../stylesheets/colours.scss';
+@use '../stylesheets/typography.scss';
+@use '../stylesheets/layout.scss';
+@use '../stylesheets/borders.scss';
+
+@import '../layout/Nav.module.scss';
+
+.dropdownMenu {
+  position: absolute;
+  padding: layout.space(medium) layout.space(small) layout.space(medium-large);
+
+  border: borders.$default-border;
+
+  list-style: none;
+
+  &:global(.clicked) {
+    display: none;
+  }
+}
+
+.drowdownItem {
+  position: relative;
+  cursor: pointer;
+
+  &:not(:last-of-type) {
+    padding-bottom: layout.space(medium);
+  }
+}
+
+.dropdownLink {
+  // Bold on hover without layout shift fix: https://css-tricks.com/bold-on-hover-without-the-layout-shift/
+  display: inline-flex;
+  flex-direction: column;
+  font-weight: typography.font-weight(normal);
+
+  &:hover {
+    font-weight: typography.font-weight(semi-bold);
+  }
+
+  &::after {
+    content: attr(data-text);
+    content: attr(data-text) / "";
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    user-select: none;
+    pointer-events: none;
+    font-weight: typography.font-weight(semi-bold);
+
+    @media speech {
+      display: none;
+    }
+  }
+}
