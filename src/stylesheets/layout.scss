@@ -1,0 +1,30 @@
+@use 'sass:map';
+
+$base-grid-unit-value: 4px;
+
+$space: (
+  tiny: 1,
+  small: 2,
+  medium: 4,
+  medium-large: 6,
+  large: 8,
+  extra-large: 10,
+  huge: 16,
+  massive: 18,
+);
+
+@function space($value) {
+  @if map.has-key($space, $value) {
+    @return map.get($space, $value) * $base-grid-unit-value;
+  }
+
+  @return $value * $base-grid-unit-value;
+}
+
+@function space-with-border($value, $border) {
+  @if map.has-key($space, $value) {
+    @return map.get($space, $value) * $base-grid-unit-value - $border;
+  }
+
+  @return $value * $base-grid-unit-value - $border;
+}

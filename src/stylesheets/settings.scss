@@ -1,0 +1,31 @@
+@use './colours.scss';
+@import './typography.scss';
+
+html, body, ul, ol {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  @include font(regular, $family: font);
+
+  color: colours.colour(black);
+}
+
+a {
+  color: inherit;
+
+  &, &:hover, &:focus {
+    text-decoration: none;
+  }
+}
+
+ul, ol {
+  ul, ol {
+    padding: 0;
+  }
+}

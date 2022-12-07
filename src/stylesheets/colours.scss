@@ -1,0 +1,15 @@
+@use './tools.scss';
+
+$colour: (
+  white: #FCFBF7,
+  black: #4F4F4F,
+
+  yellow: #FFEE93,
+  peach: #FFC09F,
+  blue: #B7DEE8,
+  green: #ADF7B6,
+);
+
+@function colour($key) {
+  @return tools.map-get($colour, $key);
+}

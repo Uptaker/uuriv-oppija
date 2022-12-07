@@ -1,0 +1,78 @@
+@use './tools.scss';
+@use 'sass:map';
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@400;600;700&family=Playfair+Display:wght@400;600&display=swap');
+
+$main-font: 'Playfair Display';
+$font: $main-font, serif;
+
+$header-font: 'Alexandria';
+$header: $header-font, sans-serif;
+
+$font-sizes: (
+  tiny: 16px,
+  small: 20px,
+  regular: 28px,
+  sub-heading: 32px,
+  title: 48px,
+);
+
+$line-heights: (
+  tiny: 20px,
+  small: 24px,
+  regular: 32px,
+  sub-heading: 36px,
+  title: 72px,
+);
+
+$font-weights: (
+  normal: 400,
+  semi-bold: 600,
+  bold: 700,
+);
+
+$default-font-weight: (
+  sub-heading: font-weight(semi-bold),
+  title: font-weight(bold),
+);
+
+@function font-weight($key) {
+  @return tools.map-get($font-weights, $key);
+}
+
+@mixin font($size, $family: null, $line-height: null, $weight: null) {
+  font-weight: if($weight, font-weight($weight), map.get($default-font-weight, $size));
+  font-size: tools.map-get($font-sizes, $size);
+  line-height: tools.map-get($line-heights, $line-height or $size);
+
+  @if $family {
+    font-family: $family;
+  }
+}
+
+@font-face {
+  font-family: $main-font;
+  src: url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&display=swap');
+}
+
+@font-face {
+  font-family: $main-font;
+  font-weight: font-weight(semi-bold);
+  src: url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+}
+
+@font-face {
+  font-family: $header-font;
+  src: url('https://fonts.googleapis.com/css2?family=Alexandria:wght@400&display=swap');
+}
+
+@font-face {
+  font-family: $header-font;
+  font-weight: font-weight(semi-bold);
+  src: url('https://fonts.googleapis.com/css2?family=Alexandria:wght@600&display=swap');
+}
+
+@font-face {
+  font-family: $header-font;
+  font-weight: font-weight(bold);
+  src: url('https://fonts.googleapis.com/css2?family=Alexandria:wght@700&display=swap');
+}
