@@ -9,24 +9,26 @@ import timeSavings from '../assets/timeSavings.svg'
 import ItemDescription from '../components/ItemDescription'
 import ContentDiv from '../layout/ContentDiv'
 
+import s from './HomePage.module.scss'
+
 function HomePage() {
   return (
     <>
-      <div style={{display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem", justifyItems: "center"}}>
-        <div style={{display: "flex", justifyContent: "center", flexDirection: "column", gap: "2rem", padding: "2rem"}}>
-          <h1 className="text-xl">{_('title')}</h1>
-          <div className="text-lg">{_('home.description')}</div>
-          <button className="btn text-md">{_('general.readMore')}</button>
+      <div className={s.grid}>
+        <div className={s.hero}>
+          <h1>{_('title')}</h1>
+          <div>{_('home.description')}</div>
+          <button className={s.button}>{_('general.readMore')}</button>
         </div>
         <img src={banner} alt="banner"/>
       </div>
 
-      <div style={{backgroundColor: "#FFEE93", display: "flex", justifyContent: "center", padding: "1rem 1rem", margin: "0 0 5rem 0"}}>
+      <div className={s.divider}>
         <h1>{_('home.whyForMe')}</h1>
       </div>
 
       <ContentDiv>
-        <div style={{display: "flex", flexWrap: "wrap", gap: "1rem", justifyContent: "center", alignContent: "center"}}>
+        <div className={s.profile}>
           <ItemDescription title={_('home.attitude')} text={_('home.attitudeText')} icon={attitude}/>
           <ItemDescription title={_('home.improvement')} text={_('home.improvementText')} icon={improvement}/>
           <ItemDescription title={_('home.stress')} text={_('home.stressText')} icon={stress}/>
