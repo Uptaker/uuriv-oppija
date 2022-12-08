@@ -1,4 +1,6 @@
 @use './stylesheets/typography.scss';
+@use './stylesheets/colours.scss';
+@use './stylesheets/layout.scss';
 @import './stylesheets/settings.scss';
 
 *, *::before, *::after {
@@ -30,71 +32,12 @@ h1 {
     @include typography.font(title);
 }
 
-.text-sm {
-    font-size: 18px;
-}
-
-.text-md {
-    font-size: 22px;
-}
-
-.text-lg {
-    font-size: 28px;
-}
-
-.text-xl {
-    font-size: 58px;
-}
-
 .bold {
     font-weight: typography.font-weight(bold);
 }
 
-.btn {
-    background-color: #FFEE93;
-    padding: 1rem 2rem;
-    font-family: 'Noir Pro', sans-serif;
-    border: none;
-    width: max-content;
-    color: #4F4F4F;
-}
-
 select {
-    color: #4F4F4F;
-    padding: 0.2rem;
+    color: colours.colour(black);
+    padding: layout.space(tiny);
     border: none;
-}
-
-.btn:hover {
-    background-color: #fae684;
-}
-
-@font-face {
-    font-family: 'Noir Pro';
-    src: local('Noir Pro Regular'), local('Noir-Pro-Regular'),
-    url('./fonts/NoirPro/NoirPro-Regular.woff2') format('woff2'),
-    url('./fonts/NoirPro/NoirPro-Regular.woff') format('woff'),
-    url('./fonts/NoirPro/NoirPro-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Noir Pro Bold';
-    src: local('Noir Pro Bold'), local('Noir-Pro-Bold'),
-    url('./fonts/NoirPro-Bold/NoirPro-Bold.woff2') format('woff2'),
-    url('./fonts/NoirPro-Bold/NoirPro-Bold.woff') format('woff'),
-    url('./fonts/NoirPro-Bold/NoirPro-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Noir Pro Medium';
-    src: local('Noir Pro Medium'), local('Noir-Pro-Medium'),
-    url('./fonts/NoirPro-Medium/NoirPro-Medium.woff2') format('woff2'),
-    url('./fonts/NoirPro-Medium/NoirPro-Medium.woff') format('woff'),
-    url('./fonts/NoirPro-Medium/NoirPro-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
 }
