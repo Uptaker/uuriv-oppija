@@ -8,6 +8,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-shrink: 0;
 
   margin: layout.space(extra-large) layout.space(massive) layout.space(massive) layout.space(massive);
 }

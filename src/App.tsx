@@ -1,4 +1,4 @@
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import HomePage from './pages/HomePage'
 import EluPage from './pages/EluPage'
 import LearnMorePage from './pages/LearnMorePage'
@@ -10,16 +10,17 @@ import StrategyPage from './pages/StrategyPage'
 function App() {
   return (
     <Router>
-      <Nav/>
-      <Routes>
-        <Route path='/' element={<HomePage/>}/>
-        <Route path='/elu' element={<EluPage/>}/>
-        <Route path='/learn-more' element={<LearnMorePage/>}/>
-        <Route path='strategy/:id' element={<StrategyPage/>}/>
-      </Routes>
-      <Footer/>
+      <Nav />
+      <div className="main">
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+          <Route path='/elu' element={<EluPage />} />
+          <Route path='/learn-more' element={<LearnMorePage />} />
+          <Route path='strategy/:id' element={<StrategyPage />} />
+        </Routes>
+      </div>
+      <Footer />
     </Router>
-
   );
 }
 
