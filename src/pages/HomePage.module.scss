@@ -1,0 +1,47 @@
+@use '../stylesheets/colours.scss';
+@use '../stylesheets/typography.scss';
+@use '../stylesheets/layout.scss';
+@use '../stylesheets/borders.scss';
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: layout.space(medium);
+  justify-items: center;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: layout.space(large);
+  justify-content: center;
+
+  padding: layout.space(large);
+  padding-left: layout.space(massive);
+}
+
+.button {
+  @include typography.font(small, typography.$main-font, small, normal);
+  width: max-content;
+  border: none;
+  background: colours.colour(yellow);
+  padding: layout.space(medium) layout.space(large);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.divider {
+  display: flex;
+  justify-content: center;
+  padding: layout.space(medium);
+  margin-bottom: layout.space(massive);
+  background: colours.colour(yellow);
+}
+
+.profile {
+  display: flex;
+  flex-wrap: wrap;
+  gap: layout.space(medium);
+  justify-content: center;
+  align-content: center;
+}

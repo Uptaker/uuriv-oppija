@@ -21,4 +21,8 @@
   &:global(.blue) {
     background: colours.colour(blue);
   }
+
+  &:global(.green) {
+    background: colours.colour(green);
+  }
 }
