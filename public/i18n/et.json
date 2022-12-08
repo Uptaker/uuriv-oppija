@@ -72,9 +72,7 @@
       "what": "Vabameenutamine on tegevus, mille käigus püütakse abimaterjale kasutamata infot meelde tuletada.",
       "why": "Iga kord, kui informatsiooni vaja on (seda meenutatakse), loob aju tugevamad seosed ning õpitu salvestub pikemaks ajaks ja tulevikus on seda informatsiooni kergem kätte saada.",
       "how": "Proovi materjali pärast selle õppimist meenutada (nt kirjuta üles nii palju kui mäletad, vasta kordamisküsimustele, soorita eneseteste, selgita materjali teistele jne). Seejärel vaata materjali uuesti ja korda meenutamist.",
-      "studies": {
-        "description": "Teaduslikud katsed on näidanud, et vabameenutamise abil õppimine aitab materjali tõhusamalt ja jäädavamalt omandada."
-      }
+      "studyDescription": "Teaduslikud katsed, mis võrdlesid ühekordset õppimist, mitmekordset õppimist, mõistekaartide koostamist ja vabameenutamist, leidsid, et vabameenutamise puhul oli õppijatel 1 nädala möödudes kõige rohkem meeles. Kuigi õpilased ise arvasid, et mõistekaardi koostamine annab paremaid tulemusi, siis 120st uuringus osalenud õpilasest 84% sooritas nädala möödudes testi paremini, kui nad olid õppimiseks vabameenutamist kasutanud."
     }
   }
 }
