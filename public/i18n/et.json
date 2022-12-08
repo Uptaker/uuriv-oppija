@@ -79,7 +79,21 @@
       "what": "Vaheldatud õppimine koosneb lühikese aja vältel korduvatest intensiivsetest õpisessioonidest, kus õppimise pauside ajal sooritatakse füüsilisi tegevusi.",
       "why": "Pauside tegemine aitab ajul informatsiooni lühimälust kustutada ning kui õpitut seejärel korrata, siis salvestub see pikaajalisse mällu.",
       "how": "Meetodi puhul kasutatakse  lühikesi, kuni 20-minutilisi intensiivseid õppimissööste, mis vahelduvad tegevustega, kus puudub stiimul. Vahelduv tegevus peab olema  piisavalt pikk, et aju saaks informatsiooni pikaajaliselt talletada. Antud õppe meetodi puhul kasutatakse tunni formaati, kus õppimise sööstud vahelduvad füüsilise tegevusega.",
-      "studyDescription": "Uuringu tulemused kinnitavad, et  vaheldatud õppe puhul  salvestatakse õpitu paremini pikaajalisee mällu ning  seda  tava õppemeetodiga võrreldes lühema aja jooksul."
+      "studyDescription": "Uuringu tulemused kinnitavad, et vaheldatud õppe puhul salvestatakse õpitu paremini pikaajalisee mällu ning seda tava õppemeetodiga võrreldes lühema aja jooksul."
+    },
+    "mindset": {
+      "title": "Mõttemallide muutmine",
+      "what": "Mõttemallid on uskumused meie endi ja meid ümbritseva kohta, mis loovad meile käitumisraamistiku. Nende muutmist võib seega vaadata kui oma (alateadlike) uskumuste teadlikku ümberkujundamist selliselt, et nad meile kasulikumad oleksid.",
+      "why": "Mõttemallide muutmine aitab stressirohkeid (akadeemilisi) olukordi enda kasuks tööle panna ja väärtuslikena nägema hakata.",
+      "how": "Mõtle olukord enda jaoks ringi nii, et see on positiivne. Näiteks, vii ennast kurssi stressi positiivsete omadustega ja tuleta neid endale enne stressirohket situatsiooni meelde. Samuti on kasulik väljendid ümber mõelda - näiteks eksamieelne “ärevus” “elevuseks”. Avalikku esinemist aga saab käsitleda teiste aitamisena, jagades nendega põnevat informatsiooni, selle asemel et pidada seda enda avamiseks kriitikale.",
+      "studyDescription": "Uuringutes testiti “stress on piirav” ja “stress on võimestav” mõtteviisiga inimesi erinevates stressiolukordades ning leiti, et “stress on võimestav” suhtumine on kasulik. Ehkki stressirohke olukord ei muutu selle suhtumise tõttu emotsionaalselt vähem keeruliseks või koormavaks, võimaldab positiivsem stressikäsitlus keskenduda muudele, kasutoovatele asjaoludele."
+    },
+    "distributed": {
+      "title": "Hajutatud õppimine",
+      "what": "Õppimise teadlik hajutamine: mitmel päeval sama materjali lühema aja jooksul õppimine. Uute teadmiste salvestamine intervallidega.",
+      "why": "Õppides lühemate perioodide jooksul ja õpitut korrates, jääb õpitu paremini meelde. Õppimisest vabal perioodil aju puhkab.",
+      "how": "Õppimine on jaotatud erinevatele päevadele/nädalatele. Intervallid meenutamisel pingutuse efekti tekke jaoks piisava pikkusega. Kordamisküsimused, valikvastustega harjutused, mis võimaldavad meenutada õpitut on tõhusamad kui materjali uuesti lugemine ning samas soodustab see teadmiste kinnistamist pikaajalisse mällu. ",
+      "studyDescription": "Testide tulemused on näidanud, et kui õppimine mitme päeva peale hajutada, siis jääb õpitu pikemaajalisemalt meelde."
     }
   }
 }

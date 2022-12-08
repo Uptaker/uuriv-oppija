@@ -30,5 +30,35 @@ export const strategies: Strategy[] = [
       description: 'strategies.spaced.studyDescription'
     },
     apps: ['timecamp', 'socrative', 'readlang']
+  },
+  {
+    title: 'strategies.mindset.title',
+    color: 'peach',
+    id: 'mindset',
+    content: {
+      what: 'strategies.mindset.what',
+      why: 'strategies.mindset.why',
+      how: 'strategies.mindset.how'
+    },
+    studies: {
+      source: "Crum, A. J., Akinola, M., Martin, A., & Fath, S. (2017). The role of stress mindset in shaping cognitive, emotional, and physiological responses to challenging and threatening stress. Anxiety, stress, and coping, 30(4), 379–395. ",
+      description: 'strategies.mindset.studyDescription'
+    },
+    apps: ['timecamp', 'socrative', 'readlang']
+  },
+  {
+    title: 'strategies.distributed.title',
+    color: 'blue',
+    id: 'distributed',
+    content: {
+      what: 'strategies.distributed.what',
+      why: 'strategies.distributed.why',
+      how: 'strategies.distributed.how'
+    },
+    studies: {
+      source: "Bloom, K. C., & Shuell, T. J. (1981). Effects of Massed and Distributed Practice on the Learning and Retention of Second-Language Vocabulary. The Journal of Educational Research, 74(4), 245–248.",
+      description: 'strategies.distributed.studyDescription'
+    },
+    apps: ['timecamp', 'socrative', 'readlang']
   }
 ]
