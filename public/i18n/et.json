@@ -30,7 +30,39 @@
   },
   "learnMore": {
     "readingTitle": "Lugemiseks",
-    "viewingTitle": "Vaatamiseks"
+    "viewingTitle": "Vaatamiseks",
+    "articles": {
+      "0": {
+        "title": "Õpi selgeks õppimist... Kasutades väljatöötamist",
+        "url": "https://www.learningscientists.org/blog/2016/7/7-1",
+        "lang": "Inglise keeles"
+      },
+      "1": {
+        "title": "eDidaktikum - Õppimine ja psühholoogia",
+        "url": "https://edidaktikum.ee/et/content/%C3%B5ppimine-ja-ps%C3%BChholoogia/blog/2016/7/7-1",
+        "lang": "Eesti keeles"
+      },
+      "2": {
+        "title": "Tallinna Ülikool - Õppimise ABC",
+        "url": "https://www.tlu.ee/hti/oppimise-abc",
+        "lang": "Eesti keeles"
+      },
+      "3": {
+        "title": "Ruti Einpalu: tõhusad ja ebatõhusad õpistrateegiad",
+        "url": "https://edasi.org/75824/ruti-einpalu-tohusad-ja-ebatohusad-opistrateegiad/",
+        "lang": "Eesti keeles"
+      },
+      "4": {
+        "title": "Grete Arro - Õppimine ärgu olgu salateadus! (slaidid)",
+        "url": "https://www.tugiteenused.tartu.ee/wp-content/uploads/2018/10/Grete-Arro1.pdf",
+        "lang": "Eesti keeles"
+      },
+      "5": {
+        "title": "Kogemusõpe teooria",
+        "url": "https://www.bu.edu/ctl/guides/experiential-learning/",
+        "lang": "Inglise keeles"
+      }
+    }
   },
   "elu": {
     "title": "Mis on ELU?",
