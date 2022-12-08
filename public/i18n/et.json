@@ -4,12 +4,15 @@
     "how": "Kuidas?",
     "what": "Mis?",
     "why": "Miks?",
-    "readMore": "Loe rohkem"
+    "readMore": "Loe rohkem",
+    "logo": "Erialasid lõimiv Uuendus"
   },
   "nav": {
     "strategies": "Strateegiad",
     "more": "Lisaks",
-    "ELU": "ELU"
+    "ELU": "ELU",
+    "copyright": "Copyright",
+    "contacts": "Siia märgime vajadusel kontaktandmed"
   },
   "home": {
     "description": "Siia tuleb teha mingi pikem sisutekst",

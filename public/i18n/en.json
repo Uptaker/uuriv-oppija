@@ -4,11 +4,14 @@
     "how": "How?",
     "what": "What?",
     "why": "Why?",
-    "readMore": "Read more"
+    "readMore": "Read more",
+    "logo": "Learning in Interdisciplinary Focused Environment"
   },
   "nav": {
     "strategies": "Strategies",
     "more": "Read More",
-    "ELU": "LIFE"
+    "ELU": "LIFE",
+    "copyright": "Copyright",
+    "contacts": "Contact details, if needed, will be here"
   }
 }
