@@ -5,5 +5,10 @@
     "what": "What?",
     "why": "Why?",
     "readMore": "Read more"
+  },
+  "nav": {
+    "strategies": "Strategies",
+    "more": "Read More",
+    "ELU": "LIFE"
   }
 }

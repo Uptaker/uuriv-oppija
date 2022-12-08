@@ -6,6 +6,11 @@
     "why": "Miks?",
     "readMore": "Loe rohkem"
   },
+  "nav": {
+    "strategies": "Strateegiad",
+    "more": "Lisaks",
+    "ELU": "ELU"
+  },
   "home": {
     "description": "Siia tuleb teha mingi pikem sisutekst",
     "whyForMe": "Miks mulle õpistrateegiad?",
