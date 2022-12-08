@@ -1,10 +1,10 @@
 import React from 'react'
 import {useParams} from 'react-router-dom'
 import {strategies} from '../store/Strategies'
-import './StrategyPage.css'
 import {_} from '@codeborne/i18n-json'
 import StrategyInfoCard from '../components/StrategyInfoCard'
 import icon from '../assets/idea.svg'
+import VideoDiv from '../layout/VideoDiv'
 import Container from '../components/Container'
 import Collapsible from '../components/Collapsible'
 
@@ -23,12 +23,12 @@ function StrategyPage() {
         <StrategyInfoCard color={strategy.color} label={_('general.how')} content={_(strategy.content.how)}/>
       </div>
 
-      <div style={{backgroundColor: strategy.color, display: "flex", justifyContent: "center", padding: "4rem 1rem", margin: "5rem 0"}}>
+      <VideoDiv className={strategy.color}>
         <iframe width="812" height="424" src={strategy.videoUrl ? strategy.videoUrl : "https://www.youtube.com/embed/dQw4w9WgXcQ"} title="YouTube video player"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen/>
-      </div>
+      </VideoDiv>
 
       <div style={{display: "flex", margin: "5rem 0", padding: "1rem 5rem", justifyContent: "center", flexDirection: "column", alignItems: "center",
         border: `solid ${strategy.color}`, borderWidth: '1px 0'}}>
