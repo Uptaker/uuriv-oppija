@@ -9,7 +9,7 @@ import Container from '../components/Container'
 import Collapsible from '../components/Collapsible'
 import ContentDiv from '../layout/ContentDiv'
 import Divider from '../layout/Divider'
-
+import classNames from 'classnames'
 import s from './StrategyPage.module.scss'
 
 function StrategyPage() {
