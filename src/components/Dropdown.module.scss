@@ -3,8 +3,6 @@
 @use '../stylesheets/layout.scss';
 @use '../stylesheets/borders.scss';
 
-@import '../layout/Nav.module.scss';
-
 .dropdownMenu {
   position: absolute;
   padding: layout.space(medium) layout.space(small) layout.space(medium-large);
