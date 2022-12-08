@@ -28,7 +28,7 @@ function StrategyPage() {
       </ContentDiv>
 
       <VideoDiv className={strategy.color}>
-        <iframe width="812" height="424" src={strategy.videoUrl ? strategy.videoUrl : "https://www.youtube.com/embed/3zp33WkqUw8"} title="YouTube video player"
+        <iframe width="812" height="424" src={strategy.videoUrl ? strategy.videoUrl : "https://www.youtube.com/embed/dQw4w9WgXcQ"} title="YouTube video player"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen/>
