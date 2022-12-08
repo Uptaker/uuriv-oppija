@@ -20,8 +20,8 @@ function Footer() {
         </p>
         <p>{_('nav.contacts')}</p>
         <p>{_('nav.copyright')} {(new Date().getFullYear())} © {_('title')}</p>
+        <LangSelect/>
       </div>
-      <LangSelect/>
       <div className="logo-container">
         <img src={lang === 'en' ? logoEN : logo} alt={_('general.logo')}/>
       </div>
