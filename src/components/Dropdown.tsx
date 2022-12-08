@@ -22,7 +22,7 @@ function Dropdown() {
       >
         {strategies.map(strategy => {
           return (
-            <li key={strategy.id} className={s.drowdownItem}>
+            <li key={strategy.id} className={classNames(s.drowdownItem, s[strategy.color])}>
               <Link
                 className={s.dropdownLink}
                 data-text={_(strategy.title)}

@@ -5,11 +5,11 @@
 
 .dropdownMenu {
   position: absolute;
-  padding: layout.space(medium) layout.space(small) layout.space(medium-large);
-
   border: borders.$default-border;
 
   list-style: none;
+
+  background-color: colours.colour(white);
 
   &:global(.clicked) {
     display: none;
@@ -20,8 +20,22 @@
   position: relative;
   cursor: pointer;
 
-  &:not(:last-of-type) {
-    padding-bottom: layout.space(medium);
+  &:hover {
+    &.yellow {
+      background-color: colours.colour(yellow)
+    }
+
+    &.peach {
+      background-color: colours.colour(peach)
+    }
+
+    &.blue {
+      background-color: colours.colour(blue)
+    }
+
+    &.green {
+      background-color: colours.colour(green)
+    }
   }
 }
 
@@ -30,6 +44,7 @@
   display: inline-flex;
   flex-direction: column;
   font-weight: typography.font-weight(normal);
+  padding: layout.space(medium);
 
   &:hover {
     font-weight: typography.font-weight(semi-bold);
