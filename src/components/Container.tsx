@@ -4,7 +4,7 @@ import s from './Container.module.scss'
 
 export interface ContainerProps  {
   children: React.ReactNode
-  color: 'yellow' | 'peach' | 'blue',
+  color: 'yellow' | 'peach' | 'blue' | 'green',
   label?: string
 }
 

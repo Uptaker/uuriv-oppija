@@ -73,6 +73,13 @@
       "why": "Iga kord, kui informatsiooni vaja on (seda meenutatakse), loob aju tugevamad seosed ning õpitu salvestub pikemaks ajaks ja tulevikus on seda informatsiooni kergem kätte saada.",
       "how": "Proovi materjali pärast selle õppimist meenutada (nt kirjuta üles nii palju kui mäletad, vasta kordamisküsimustele, soorita eneseteste, selgita materjali teistele jne). Seejärel vaata materjali uuesti ja korda meenutamist.",
       "studyDescription": "Teaduslikud katsed, mis võrdlesid ühekordset õppimist, mitmekordset õppimist, mõistekaartide koostamist ja vabameenutamist, leidsid, et vabameenutamise puhul oli õppijatel 1 nädala möödudes kõige rohkem meeles. Kuigi õpilased ise arvasid, et mõistekaardi koostamine annab paremaid tulemusi, siis 120st uuringus osalenud õpilasest 84% sooritas nädala möödudes testi paremini, kui nad olid õppimiseks vabameenutamist kasutanud."
+    },
+    "spaced": {
+      "title": "Vaheldatud õppimine",
+      "what": "Vaheldatud õppimine koosneb lühikese aja vältel korduvatest intensiivsetest õpisessioonidest, kus õppimise pauside ajal sooritatakse füüsilisi tegevusi.",
+      "why": "Pauside tegemine aitab ajul informatsiooni lühimälust kustutada ning kui õpitut seejärel korrata, siis salvestub see pikaajalisse mällu.",
+      "how": "Meetodi puhul kasutatakse  lühikesi, kuni 20-minutilisi intensiivseid õppimissööste, mis vahelduvad tegevustega, kus puudub stiimul. Vahelduv tegevus peab olema  piisavalt pikk, et aju saaks informatsiooni pikaajaliselt talletada. Antud õppe meetodi puhul kasutatakse tunni formaati, kus õppimise sööstud vahelduvad füüsilise tegevusega.",
+      "studyDescription": "Uuringu tulemused kinnitavad, et  vaheldatud õppe puhul  salvestatakse õpitu paremini pikaajalisee mällu ning  seda  tava õppemeetodiga võrreldes lühema aja jooksul."
     }
   }
 }

@@ -15,5 +15,20 @@ export const strategies: Strategy[] = [
       description: 'strategies.retrieval.studyDescription'
     },
     apps: ['timecamp', 'socrative', 'readlang']
+  },
+  {
+    title: 'strategies.spaced.title',
+    color: 'green',
+    id: 'spaced',
+    content: {
+      what: 'strategies.spaced.what',
+      why: 'strategies.spaced.why',
+      how: 'strategies.spaced.how'
+    },
+    studies: {
+      source: "Kelley, P., & Whatson, T. (2013). Making long-term memories in minutes: a spaced learning pattern from memory research in education. Frontiers in human neuroscience, 7, 589.",
+      description: 'strategies.spaced.studyDescription'
+    },
+    apps: ['timecamp', 'socrative', 'readlang']
   }
 ]

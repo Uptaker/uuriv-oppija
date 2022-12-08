@@ -18,6 +18,10 @@
   &.blue {
     border: borders.$blue-border;
   }
+
+  &.green {
+    border: borders.$green-border;
+  }
 }
 
 .label {
@@ -40,6 +44,10 @@
   
   &.blue {
     background: colours.colour(blue);
+  }
+
+  &.green {
+    background: colours.colour(green);
   }
 }
 

@@ -1,11 +1,11 @@
-import classNames from 'classnames';
+import classNames from 'classnames'
 import React from 'react'
 import s from './StrategyInfoCard.module.scss'
 
 interface StrategyInfoCardProps {
   label: string,
   content: string,
-  color: 'yellow' | 'peach' | 'blue',
+  color: 'yellow' | 'peach' | 'blue' | 'green',
 }
 
 function StrategyInfoCard({label, content, color}: StrategyInfoCardProps) {

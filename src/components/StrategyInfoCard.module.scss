@@ -22,6 +22,10 @@
   &.blue {
     border: borders.$blue-border;
   }
+
+  &.green {
+    border: borders.$green-border;
+  }
 }
 
 .title {
@@ -38,6 +42,10 @@
   
   &.blue {
     background: colours.colour(blue);
+  }
+
+  &.green {
+    background: colours.colour(green);
   }
 }
 

@@ -1,7 +1,7 @@
 export interface Strategy {
   title: string,
   id: string,
-  color: 'yellow' | 'peach' | 'blue',
+  color: 'yellow' | 'peach' | 'blue' | 'green',
   content: StrategyContent,
   apps: string[]
   studies: StrategyStudyContent,
