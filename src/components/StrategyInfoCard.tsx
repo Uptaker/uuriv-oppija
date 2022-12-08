@@ -1,14 +1,19 @@
+import classNames from 'classnames';
 import React from 'react'
+import s from './StrategyInfoCard.module.scss'
 
 interface StrategyInfoCardProps {
-  label: string, content: string, color: string
+  label: string,
+  content: string,
+  color: 'yellow' | 'peach' | 'blue',
 }
+
 function StrategyInfoCard({label, content, color}: StrategyInfoCardProps) {
 
   return (
-      <div className="strategy-info" style={{borderColor: color}}>
-        <h2 className="text-lg" style={{backgroundColor: color, margin: "0", padding: "30px"}}>{label}</h2>
-        <p style={{padding: "24px", fontSize: "28px"}}>{content}</p>
+      <div className={classNames(s.container, s[color])}>
+        <h2 className={classNames(s.title, s[color])}>{label}</h2>
+        <p className={s.content}>{content}</p>
       </div>
   )
 }

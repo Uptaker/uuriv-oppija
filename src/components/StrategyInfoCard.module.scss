@@ -1,0 +1,41 @@
+@use '../stylesheets/colours.scss';
+@use '../stylesheets/typography.scss';
+@use '../stylesheets/layout.scss';
+@use '../stylesheets/borders.scss';
+
+.container {
+  margin: 2rem 0;
+
+  &.yellow {
+    border: borders.$default-border;
+  }
+  
+  &.peach {
+    border: borders.$peach-border;
+  }
+  
+  &.blue {
+    border: borders.$blue-border;
+  }
+}
+
+.title {
+  @include typography.font(sub-heading, typography.$header-font, sub-heading, semi-bold);
+  padding: layout.space(medium-large);
+
+  &.yellow {
+    background: colours.colour(yellow);
+  }
+  
+  &.peach {
+    background: colours.colour(peach);
+  }
+  
+  &.blue {
+    background: colours.colour(blue);
+  }
+}
+
+.content {
+  padding: layout.space(medium-large);;
+}
