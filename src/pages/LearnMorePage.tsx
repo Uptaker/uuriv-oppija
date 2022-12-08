@@ -1,8 +1,11 @@
+import classNames from 'classnames'
 import React from 'react'
 import {_} from '@codeborne/i18n-json'
 import ContentDiv from '../layout/ContentDiv'
 import Container from '../components/Container'
 import Collapsible from '../components/Collapsible'
+
+import s from './LearnMorePage.module.scss'
 
 export interface Page {
   title: string,
@@ -18,8 +21,8 @@ function LearnMorePage() {
         <ul>
           {Object.values(_('learnMore.articles') as unknown as Page[]).map(strategy => (
             <li key={strategy.title} style={{margin: "1.5rem 0"}}>
-              <a href={strategy.url} target="_blank">{strategy.title} <i className="fa-solid fa-arrow-up-right-from-square text-sm"></i></a>
-              <div className="text-sm">{strategy.lang}</div>
+              <a href={strategy.url} target="_blank">{strategy.title} <i className={classNames("fa-solid fa-arrow-up-right-from-square", s.tiny)}></i></a>
+              <div className={s.tiny}>{strategy.lang}</div>
             </li>
           ))}
         </ul>

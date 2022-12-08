@@ -1,0 +1,8 @@
+@use '../stylesheets/colours.scss';
+@use '../stylesheets/typography.scss';
+@use '../stylesheets/layout.scss';
+
+.tiny {
+  @include typography.font(tiny);
+  line-height: layout.space(medium);
+}
