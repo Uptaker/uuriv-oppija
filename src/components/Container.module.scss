@@ -22,6 +22,10 @@
   &.green {
     border: borders.$green-border;
   }
+
+  &:not(:last-of-type) {
+    margin-bottom: layout.space(massive);
+  }
 }
 
 .label {
