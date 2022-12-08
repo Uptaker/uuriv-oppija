@@ -17,5 +17,5 @@ export const participants: Participant[] = [
   {name: 'Markus Tammeoja', role: 'Informaatika'},
   {name: 'Ingel Iris Tofert', role: 'Matemaatika'},
   {name: 'Anne-Ly Vips', role: 'Klassiõpetaja'},
-  {name: 'Grete Väljaots', role: 'Aasia uuringud'},
+  {name: 'Grete Väljaots', role: 'Aasia uuringud'}
 ]
