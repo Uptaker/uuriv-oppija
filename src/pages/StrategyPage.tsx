@@ -33,9 +33,9 @@ function StrategyPage() {
       <div style={{display: "flex", margin: "5rem 0", padding: "1rem 5rem", justifyContent: "center", flexDirection: "column", alignItems: "center",
         border: `solid ${strategy.color}`, borderWidth: '1px 0'}}>
         <img src={icon} alt="idea" width="90"/>
-        <p className="text-md bold" style={{margin: "0.5rem 0"}}>{_('strategy.studies')}</p>
-        <p className="text-md" style={{margin: "0.5rem 0", textAlign: "center"}}>{_(strategy.studies.description)}</p>
-        <div style={{margin: "0.5rem 5rem", textAlign: "center"}}><span className="bold">{_('strategy.source')}:</span> {strategy.studies.source}</div>
+        <p className="text-lg bold" style={{margin: "1rem 0"}}>{_('strategy.studies')}</p>
+        <p className="text-lg" style={{margin: "1rem 0", textAlign: "center"}}>{_(strategy.studies.description)}</p>
+        <p className="text-md" style={{margin: "1rem 5rem", textAlign: "center"}}><span className="bold">{_('strategy.source')}:</span> {strategy.studies.source}</p>
       </div>
 
       <div style={{display: 'flex', gap: '4rem', maxWidth: "1299px", margin: "3rem auto"}}>
