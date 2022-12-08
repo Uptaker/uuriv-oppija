@@ -1,3 +1,4 @@
+@use '../stylesheets/typography.scss';
 @use '../stylesheets/layout.scss';
 
 .container {
@@ -6,4 +7,13 @@
   max-width: layout.$max-width;
 
   margin: layout.space(massive) auto;
+}
+
+.center {
+  align-items: center;
+}
+
+.row {
+  flex-direction: row;
+  gap: layout.space(massive);
 }

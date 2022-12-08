@@ -46,13 +46,8 @@ h1 {
     font-size: 58px;
 }
 
-.heading-bold {
-    font-family: 'Noir Pro Medium', sans-serif;
-    font-weight: bold;
-}
-
 .bold {
-    font-weight: bold;
+    font-weight: typography.font-weight(bold);
 }
 
 .btn {

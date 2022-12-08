@@ -1,0 +1,24 @@
+@use '../stylesheets/colours.scss';
+@use '../stylesheets/layout.scss';
+
+.divider {
+  width: 100%;
+  height: 1px;
+  margin: layout.space(large) 0;
+
+  &.yellow {
+    background: colours.colour(yellow);
+  }
+  
+  &.peach {
+    background: colours.colour(peach);
+  }
+  
+  &.blue {
+    background: colours.colour(blue);
+  }
+
+  &.green {
+    background: colours.colour(green);
+  }
+}

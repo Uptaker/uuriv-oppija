@@ -7,6 +7,10 @@ import icon from '../assets/idea.svg'
 import VideoDiv from '../layout/VideoDiv'
 import Container from '../components/Container'
 import Collapsible from '../components/Collapsible'
+import ContentDiv from '../layout/ContentDiv'
+import Divider from '../layout/Divider'
+
+import s from './StrategyPage.module.scss'
 
 function StrategyPage() {
 
@@ -16,12 +20,12 @@ function StrategyPage() {
   // TODO remove rickroll fallback when videos are on youtube ;)
   return !strategy ? (<>TODO generic not found page</>) : (
     <>
-      <div style={{maxWidth: "1299px", margin: "0 auto"}}>
-        <h1 style={{margin: "4rem 0"}}>{_(strategy.title)}</h1>
+      <ContentDiv>
+        <h1>{_(strategy.title)}</h1>
         <StrategyInfoCard color={strategy.color} label={_('general.what')} content={_(strategy.content.what)}/>
         <StrategyInfoCard color={strategy.color} label={_('general.why')} content={_(strategy.content.why)}/>
         <StrategyInfoCard color={strategy.color} label={_('general.how')} content={_(strategy.content.how)}/>
-      </div>
+      </ContentDiv>
 
       <VideoDiv className={strategy.color}>
         <iframe width="812" height="424" src={strategy.videoUrl ? strategy.videoUrl : "https://www.youtube.com/embed/3zp33WkqUw8"} title="YouTube video player"
@@ -30,24 +34,27 @@ function StrategyPage() {
           allowFullScreen/>
       </VideoDiv>
 
-      <div style={{display: "flex", margin: "5rem 0", padding: "1rem 5rem", justifyContent: "center", flexDirection: "column", alignItems: "center",
-        border: `solid ${strategy.color}`, borderWidth: '1px 0'}}>
-        <img src={icon} alt="idea" width="90"/>
-        <p className="text-lg heading-bold" style={{margin: "1rem 0"}}>{_('strategy.studies')}</p>
-        <p className="text-lg" style={{margin: "1rem 0", textAlign: "center"}}>{_(strategy.studies.description)}</p>
-        <p className="text-md" style={{margin: "1rem 5rem", textAlign: "center"}}><span className="bold">{_('strategy.source')}:</span> {strategy.studies.source}</p>
-      </div>
+      <Divider colour={strategy.color} />
 
-      <div style={{display: 'flex', gap: '4rem', maxWidth: "1299px", margin: "3rem auto"}}>
+      <ContentDiv center>
+        <img src={icon} alt="idea" className={s.icon} />
+        <p className={s.title}>{_('strategy.studies')}</p>
+        <p className={s.center}>{_(strategy.studies.description)}</p>
+        <p className={classNames(s.center, s.source)} style={{margin: "1rem 5rem", textAlign: "center"}}><span className="bold">{_('strategy.source')}:</span> {strategy.studies.source}</p>
+      </ContentDiv>
+
+      <Divider colour={strategy.color} />
+
+      <ContentDiv row>
         <Container color={strategy.color} label={_('strategy.usefulApps')}>
           {strategy.apps.map(app => {
             app = 'apps.' + app + '.'
             return (
               <Collapsible label={_(app + 'name')} key={app}>
                 <p>{_(app + 'description')}</p>
-                <a href={_(app + 'url')} target="_blank">
+                <a href={_(app + 'url')} target="_blank" className={s.tiny}>
                   {_('strategy.website') + '  '}
-                  <i className="fa-solid fa-arrow-up-right-from-square text-sm"></i>
+                  <i className={classNames("fa-solid fa-arrow-up-right-from-square", s.tiny)}></i>
                 </a>
               </Collapsible>
               )
@@ -57,7 +64,7 @@ function StrategyPage() {
         <Container color={strategy.color} label={_('strategy.eluTeamStudies')}>
           TODO
         </Container>
-      </div>
+      </ContentDiv>
     </>
   )
 }
