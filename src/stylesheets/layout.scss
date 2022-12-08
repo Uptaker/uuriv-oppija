@@ -1,6 +1,7 @@
 @use 'sass:map';
 
 $base-grid-unit-value: 4px;
+$max-width: 1300px;
 
 $space: (
   tiny: 1,
