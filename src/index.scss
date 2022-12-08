@@ -1,8 +1,8 @@
 @use './stylesheets/typography.scss';
 @import './stylesheets/settings.scss';
 
-:root {
-    box-sizing: border-box;
+*, *::before, *::after {
+    box-sizing: inherit;
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
