@@ -1,0 +1,24 @@
+@use '../stylesheets/layout.scss';
+@use '../stylesheets/colours.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: layout.space(massive) 0;
+  padding: layout.space(massive);
+
+  &:global(.yellow) {
+    background: colours.colour(yellow);
+  }
+  
+  &:global(.peach) {
+    background: colours.colour(peach);
+  }
+  
+  &:global(.blue) {
+    background: colours.colour(blue);
+  }
+}
