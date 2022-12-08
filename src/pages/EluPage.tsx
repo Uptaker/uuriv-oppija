@@ -2,7 +2,7 @@ import React from 'react'
 import './StrategyPage.css'
 import {_} from '@codeborne/i18n-json'
 import Container from '../components/Container'
-import Collapsable from '../components/Collapsable'
+import Collapsible from '../components/Collapsible'
 import elu from '../assets/ELU-Stamp.svg'
 
 function EluPage() {
@@ -18,12 +18,12 @@ function EluPage() {
       </div>
 
       <Container color="#FFC09F" label={_('elu.teamTitle')}>
-        <Collapsable label={"TODO"}>
+        <Collapsible label={"TODO"}>
           <div>TODO</div>
-        </Collapsable>
-        <Collapsable label={"TODO"}>
+        </Collapsible>
+        <Collapsible label={"TODO"}>
           <div>TODO</div>
-        </Collapsable>
+        </Collapsible>
       </Container>
     </div>
   )

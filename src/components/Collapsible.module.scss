@@ -1,0 +1,28 @@
+@use '../stylesheets/colours.scss';
+@use '../stylesheets/typography.scss';
+@use '../stylesheets/layout.scss';
+
+
+.container {
+  @include typography.font(small);
+}
+
+.item {
+  display: flex;
+  width: max-content;
+  align-items: center;
+  gap: layout.space(small-medium);
+}
+
+.icon {
+  @include typography.font(regular);
+}
+
+.label {
+  @include typography.font(regular);
+  font-weight: typography.font-weight(bold);
+}
+
+.collapsedDiv {
+  margin-top: layout.space(small);
+}

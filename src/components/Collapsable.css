@@ -1,7 +1,0 @@
-.collapsable-container {
-    transition: display 1s;
-}
-
-.collapsable-item:hover  {
-    background-color: red;
-}

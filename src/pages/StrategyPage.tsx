@@ -6,7 +6,7 @@ import {_} from '@codeborne/i18n-json'
 import StrategyInfoCard from '../components/StrategyInfoCard'
 import icon from '../assets/idea.svg'
 import Container from '../components/Container'
-import Collapsable from '../components/Collapsable'
+import Collapsible from '../components/Collapsible'
 
 function StrategyPage() {
 
@@ -42,9 +42,9 @@ function StrategyPage() {
         <Container color={strategy.color} label={_('strategy.usefulApps')}>
           {strategy.apps.map(app => {
             return (
-              <Collapsable label={app.name} key={app.name}>
+              <Collapsible label={app.name} key={app.name}>
                 <p className="text-md"><a href={app.url} target="_blank"><i className="fa-solid fa-arrow-up-right-from-square"></i></a> {_(app.description)}</p>
-              </Collapsable>
+              </Collapsible>
               )
           })}
         </Container>
