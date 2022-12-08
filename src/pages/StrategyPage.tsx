@@ -1,4 +1,3 @@
-import classNames from 'classnames'
 import React from 'react'
 import {useParams} from 'react-router-dom'
 import {strategies} from '../store/Strategies'
@@ -10,7 +9,7 @@ import Container from '../components/Container'
 import Collapsible from '../components/Collapsible'
 import ContentDiv from '../layout/ContentDiv'
 import Divider from '../layout/Divider'
-
+import classNames from 'classnames'
 import s from './StrategyPage.module.scss'
 
 function StrategyPage() {
@@ -49,11 +48,11 @@ function StrategyPage() {
       <ContentDiv row>
         <Container color={strategy.color} label={_('strategy.usefulApps')}>
           {strategy.apps.map(app => {
-            app = 'apps.' + app + '.'
+            app = `apps.${app}.`
             return (
-              <Collapsible label={_(app + 'name')} key={app}>
-                <p>{_(app + 'description')}</p>
-                <a href={_(app + 'url')} target="_blank" className={s.tiny}>
+              <Collapsible label={_(`${app}name`)} key={app}>
+                <p>{_(`${app}description`)}</p>
+                <a href={_(`${app}url`)} target="_blank" className={s.tiny}>
                   {_('strategy.website') + '  '}
                   <i className={classNames("fa-solid fa-arrow-up-right-from-square", s.tiny)}></i>
                 </a>
