@@ -64,6 +64,9 @@
     "source": "Allikas",
     "usefulApps": "Kasulikke rakendusi",
     "eluTeamStudies": "ELU meeskonna uuringud",
+    "website": "Veebileht"
+  },
+  "strategies": {
     "retrieval": {
       "title": "Vabameenutamine",
       "what": "Vabameenutamine on tegevus, mille käigus püütakse abimaterjale kasutamata infot meelde tuletada.",

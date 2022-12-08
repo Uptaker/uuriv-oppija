@@ -44,7 +44,11 @@ function StrategyPage() {
             app = 'apps.' + app + '.'
             return (
               <Collapsible label={_(app + 'name')} key={app}>
-                <p className="text-md"><a href={_(app + 'url')} target="_blank"><i className="fa-solid fa-arrow-up-right-from-square"></i></a> {_(app + 'description')}</p>
+                <p>{_(app + 'description')}</p>
+                <a href={_(app + 'url')} target="_blank">
+                  {_('strategy.website') + '  '}
+                  <i className="fa-solid fa-arrow-up-right-from-square text-sm"></i>
+                </a>
               </Collapsible>
               )
           })}

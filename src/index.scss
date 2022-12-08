@@ -30,6 +30,10 @@ h1 {
     @include typography.font(title);
 }
 
+.text-sm {
+    font-size: 18px;
+}
+
 .text-md {
     font-size: 22px;
 }
