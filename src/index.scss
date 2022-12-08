@@ -1,3 +1,4 @@
+@use './stylesheets/typography.scss';
 @import './stylesheets/settings.scss';
 
 :root {
@@ -22,12 +23,11 @@
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Noir Pro Medium', sans-serif;
+    font-family: typography.$header-font;
 }
 
 h1 {
-    font-size: 50px;
-    line-height: 50px;
+    @include typography.font(title);
 }
 
 .text-md {
