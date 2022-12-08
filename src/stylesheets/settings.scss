@@ -1,4 +1,5 @@
 @use './colours.scss';
+@use './layout.scss';
 @import './typography.scss';
 
 html, body, ul, ol {
@@ -31,5 +32,5 @@ ul, ol {
 }
 
 p {
-  margin: 0;
+  margin: 0 0 layout.space(small-medium);;
 }

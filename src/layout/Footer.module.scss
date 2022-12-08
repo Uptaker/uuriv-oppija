@@ -13,8 +13,8 @@
 
   background: colours.colour(blue);
 
-  & p:not(:last-child) {
-    margin-bottom: layout.space(small-medium);
+  & p:last-child {
+    margin-bottom: 0;
   }
 }
 
