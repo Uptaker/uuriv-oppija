@@ -2,11 +2,11 @@ import React from 'react'
 import {_} from '@codeborne/i18n-json'
 import ContentDiv from '../layout/ContentDiv'
 import Container from '../components/Container'
-import Collapsible from '../components/Collapsible'
 import elu from '../assets/ELU-Stamp.svg'
 import eluEN from '../assets/ELU-Stamp-EN.svg'
 
 import s from './EluPage.module.scss'
+import {participants} from '../store/Participants'
 
 function EluPage() {
   const lang = document.cookie.split('; ')?.find(s => s?.startsWith('LANG='))?.split('=')?.[1]
@@ -22,12 +22,13 @@ function EluPage() {
       </div>
 
       <Container color="peach" label={_('elu.teamTitle')}>
-        <Collapsible label={"TODO"}>
-          <div>TODO</div>
-        </Collapsible>
-        <Collapsible label={"TODO"}>
-          <div>TODO</div>
-        </Collapsible>
+        <ul>
+        {participants.map(person => (
+          <li key={person.name} style={{margin: "1.5rem 0"}}>
+            <b>{person.name}</b> - {person.role}
+          </li>
+        ))}
+        </ul>
       </Container>
     </ContentDiv>
   )
