@@ -18,7 +18,7 @@ function LearnMorePage() {
         <ul>
           {Object.values(_('learnMore.articles') as unknown as Page[]).map(strategy => (
             <li key={strategy.title} style={{margin: "1.5rem 0"}}>
-              <a href={strategy.url} target="_blank">{strategy.title}</a>
+              <a href={strategy.url} target="_blank">{strategy.title} <i className="fa-solid fa-arrow-up-right-from-square text-sm"></i></a>
               <div className="text-sm">{strategy.lang}</div>
             </li>
           ))}
