@@ -12,7 +12,7 @@ function HomePage() {
   return (
     <>
       <div style={{display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem", justifyItems: "center"}}>
-        <div style={{display: "flex", justifyContent: "center", flexDirection: "column", gap: "1rem"}}>
+        <div style={{display: "flex", justifyContent: "center", flexDirection: "column", gap: "2rem", padding: "2rem"}}>
           <h1 className="text-xl">{_('title')}</h1>
           <div className="text-lg">{_('home.description')}</div>
           <button className="btn text-md">{_('general.readMore')}</button>

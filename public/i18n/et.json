@@ -15,18 +15,18 @@
     "contacts": "Siia märgime vajadusel kontaktandmed"
   },
   "home": {
-    "description": "Siia tuleb teha mingi pikem sisutekst",
+    "description": "Uuriv õppija otsib viise millega oma õpinguid tõhusamaks muuta, õpitut pikaajalises mälus talletada ja tulemusi parandada.",
     "whyForMe": "Miks mulle õpistrateegiad?",
     "attitude": "Hoiakud",
-    "attitudeText": "Siia tuleb teha mingi pikem sisutekst hoiakute muutumisest.",
+    "attitudeText": "Õpistrateegiate kasutamine aitab suunata õpilaste vaateid akadeemilistele väljakutsetele, muuta need negatiivsest positiivseks.",
     "improvement": "Tulemuste paranemine",
-    "improvementText": "Siia tuleb teha mingi pikem sisutekst tulemuste paranemisest.",
+    "improvementText": "Õpistrateegia võib kaasa aidata õpimotivatsioonile, mis toetab produktiivsust ning tulemuslikkust õppeprotsessis.",
     "stress": "Stress",
-    "stressText": "Siia tuleb teha mingi pikem sisutekst stressist.",
+    "stressText": "Õpistrateegiad aitavad muuta oma uskumusi stressi kohta ja minna stressi vältimise mõtteviisilt üle stressi ärakasutamise mõtteviisile.",
     "confidence": "Enesekindlus",
-    "confidenceText": "Siia tuleb teha mingi pikem sisutekst enesekindluse suurenemisest.",
+    "confidenceText": "Õpingute planeerimine ja kordamine pikema aja jooksul võib lausa kahekordistada mäletamistulemusi, pannes õpilast endasse rohkem uskuma.",
     "timeSavings": "Ajakulu vähenemine",
-    "timeSavingsText": "Siia tuleb teha mingi pikem sisutekst ajakulu vähenemisest."
+    "timeSavingsText": "Õpistrateegia kasutamisel õpid õppima, vähendades sellega üleliigseid tegevusi ja ajakulu oma edaspidistes õpingutes."
   },
   "learnMore": {
     "readingTitle": "Lugemiseks",
