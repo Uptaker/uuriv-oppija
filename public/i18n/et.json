@@ -37,6 +37,28 @@
     "description": "Siia tuleb teha mingi pikem ELU- projekti kirjeldav sisutekst. Siia tuleb teha mingi pikem ELU- projekti kirjeldav sisutekst. Siia tuleb teha mingi pikem ELU- projekti kirjeldav sisutekst. Siia tuleb teha mingi pikem ELU- projekti kirjeldav sisutekst. Siia tuleb teha mingi pikem ELU- projekti kirjeldav sisutekst. Siia tuleb teha mingi pikem ELU- projekti kirjeldav sisutekst. Siia tuleb teha mingi pikem ELU- projekti kirjeldav sisutekst. Siia tuleb teha mingi pikem ELU- projekti kirjeldav sisutekst.",
     "teamTitle": "Meeskond"
   },
+  "apps": {
+    "timecamp": {
+      "name": "TimeCamp",
+      "description": "Lehekülg, mis aitab enda õppimiseks kulunud aega jälgida. Salvestab sisestatud aja ja teeb automaatselt andmetest kokkuvõtte",
+      "url": "https://www.timecamp.com"
+    },
+    "cbtthoughtdiart": {
+      "name": "CBT Thought Diary",
+      "description": "Mobiilirakendus, mis võimaldab mõtteanalüüsi teostada ja mõttemalle muuta.",
+      "url": "https://cbtthoughtdiary.com/"
+    },
+    "socrative": {
+      "name": "Socrative",
+      "description": "Leht on küll mõeldud õpetajatele tunnis valikvastustega testide läbi viimiseks, kuid miski ei keela seda ka õpilaste enesekontrolliks kasutada.  Tee õpetajapoolses kasutajaliideses omale kasutaja, loo ja salvesta valikvastustega küsimustikud ja käivita neid. testi sooritamiseks liitu õpilase poolelt testiruumiga ja soorita test. Socrative võimaldab ka loodud teste näiteks oma klassi või kursusekaaslastega  jagada import lingi abil. Nii ei pea iga õppija ise küsimustikku looma vaid üht küsimustiku saab näiteks terve klassiga jagada.",
+      "url": "https://www.socrative.com/"
+    },
+    "readlang": {
+      "name": "Readlang",
+      "description": "Võõrkeele õppimiseks. Sisestades võõra teksti, saad märkida enda jaoks ära võõrad sõnad. Sõnad tõlgitakse automaatselt ära, koostades õpitavate sõnade listi. Sõnu õppides on keskkonnas koheselt olemas sõnakaardid, mille abil saad õppida ning oma õpitulemusi kontrollida. Pärast kordamist kuvatakse  õpitust statistiline tabel. Keskkond on osaliselt tasuta.",
+      "url": "https://readlang.com/"
+    }
+  },
   "strategy": {
     "studies": "Katsed",
     "source": "Allikas",

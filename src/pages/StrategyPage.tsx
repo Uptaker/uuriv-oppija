@@ -41,9 +41,10 @@ function StrategyPage() {
       <div style={{display: 'flex', gap: '4rem', maxWidth: "1299px", margin: "3rem auto"}}>
         <Container color={strategy.color} label={_('strategy.usefulApps')}>
           {strategy.apps.map(app => {
+            app = 'apps.' + app + '.'
             return (
-              <Collapsible label={app.name} key={app.name}>
-                <p className="text-md"><a href={app.url} target="_blank"><i className="fa-solid fa-arrow-up-right-from-square"></i></a> {_(app.description)}</p>
+              <Collapsible label={_(app + 'name')} key={app}>
+                <p className="text-md"><a href={_(app + 'url')} target="_blank"><i className="fa-solid fa-arrow-up-right-from-square"></i></a> {_(app + 'description')}</p>
               </Collapsible>
               )
           })}

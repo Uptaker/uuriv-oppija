@@ -14,12 +14,6 @@ export const strategies: Strategy[] = [
       source: "Karpicke, J. D., & Blunt, J. R. (2011). Retrieval practice produces more learning than elaborate studying with concept mapping. Science, 331(6018), 772–775.",
       description: 'strategy.retrieval.studies.description'
     },
-    apps: [
-      {
-        name: 'TimeCamp',
-        description: 'Lehekülg, mis aitab enda õppimiseks kulunud aega jälgida. Salvestab sisestatud aja ja teeb automaatselt andmetest kokkuvõtte',
-        url: 'https://www.timecamp.com/'
-      }
-    ]
+    apps: ['timecamp', 'socrative', 'readlang']
   }
 ]
