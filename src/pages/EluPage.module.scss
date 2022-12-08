@@ -1,6 +1,7 @@
 @use '../stylesheets/layout.scss';
+@use '../stylesheets/typography.scss';
 
-.container {
+.grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: layout.space(79);
@@ -9,11 +10,27 @@
   margin-bottom: layout.space(30);
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  gap: layout.space(medium);
+  margin-bottom: layout.space(30);
+}
+
 .title {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: layout.space(medium);
+}
+
+.source {
+  @include typography.font(small);
+
+  > i {
+    @include typography.font(tiny);
+  }
 }
 
 .img {
