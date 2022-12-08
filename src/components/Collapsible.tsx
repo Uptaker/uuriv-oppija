@@ -1,5 +1,5 @@
 import classNames from 'classnames'
-import React, { useState } from 'react'
+import React, {useState} from 'react'
 import s from './Collapsible.module.scss'
 
 export interface CollapsibleProps {
@@ -15,7 +15,7 @@ function Collapsible({ children, label, show = false }: CollapsibleProps) {
   return (
     <div className={s.container}>
       <div onClick={() => setCollapsed(!collapsed)} className={s.item}>
-        <i className={classNames("fa-solid fa-plus", s.icon)}></i>
+        <i className={classNames(`fa-solid fa-${collapsed ? 'minus' : 'plus'}`, s.icon)}></i>
         <span className={s.label}>{label}</span>
       </div>
       {collapsed && <div className={s.collapsedDiv}>{children}</div>}
