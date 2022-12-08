@@ -47,7 +47,7 @@ h1 {
 }
 
 .bold {
-    font-family: 'Noir Pro Medium', sans-serif;
+    font-weight: typography.font-weight(bold);
 }
 
 .btn {
