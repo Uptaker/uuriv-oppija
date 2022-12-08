@@ -7,6 +7,7 @@ import stress from '../assets/stress.svg'
 import confidence from '../assets/confidence.svg'
 import timeSavings from '../assets/timeSavings.svg'
 import ItemDescription from '../components/ItemDescription'
+import ContentDiv from '../layout/ContentDiv'
 
 function HomePage() {
   return (
@@ -24,13 +25,15 @@ function HomePage() {
         <h1>{_('home.whyForMe')}</h1>
       </div>
 
-      <div style={{display: "flex", flexWrap: "wrap", gap: "1rem", justifyContent: "center", alignContent: "center"}}>
-        <ItemDescription title={_('home.attitude')} text={_('home.attitudeText')} icon={attitude}/>
-        <ItemDescription title={_('home.improvement')} text={_('home.improvementText')} icon={improvement}/>
-        <ItemDescription title={_('home.stress')} text={_('home.stressText')} icon={stress}/>
-        <ItemDescription title={_('home.confidence')} text={_('home.confidenceText')} icon={confidence}/>
-        <ItemDescription title={_('home.timeSavings')} text={_('home.timeSavingsText')} icon={timeSavings}/>
-      </div>
+      <ContentDiv>
+        <div style={{display: "flex", flexWrap: "wrap", gap: "1rem", justifyContent: "center", alignContent: "center"}}>
+          <ItemDescription title={_('home.attitude')} text={_('home.attitudeText')} icon={attitude}/>
+          <ItemDescription title={_('home.improvement')} text={_('home.improvementText')} icon={improvement}/>
+          <ItemDescription title={_('home.stress')} text={_('home.stressText')} icon={stress}/>
+          <ItemDescription title={_('home.confidence')} text={_('home.confidenceText')} icon={confidence}/>
+          <ItemDescription title={_('home.timeSavings')} text={_('home.timeSavingsText')} icon={timeSavings}/>
+        </div>
+      </ContentDiv>
     </>
   )
 }

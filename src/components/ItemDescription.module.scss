@@ -1,0 +1,32 @@
+@use '../stylesheets/colours.scss';
+@use '../stylesheets/typography.scss';
+@use '../stylesheets/layout.scss';
+@use '../stylesheets/borders.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  max-width: layout.space(100);
+
+  margin: layout.space(large) 0;
+  padding: layout.space(medium) layout.space(large);
+}
+
+.icon {
+  width: layout.space(22);
+  height: layout.space(22);
+}
+
+.title {
+  @include typography.font(regular, typography.$header-font, regular, semi-bold);
+  margin: layout.space(medium-large) 0;
+  text-align: center;
+}
+
+.text {
+  @include typography.font(small);
+  margin-bottom: layout.space(medium);
+  text-align: center;
+}
