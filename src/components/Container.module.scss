@@ -1,0 +1,51 @@
+@use '../stylesheets/colours.scss';
+@use '../stylesheets/typography.scss';
+@use '../stylesheets/layout.scss';
+@use '../stylesheets/borders.scss';
+
+.container {
+  width: 100%;
+  margin-top: layout.space(extra-large);
+
+  &.yellow {
+    border: borders.$default-border;
+  }
+  
+  &.peach {
+    border: borders.$peach-border;
+  }
+  
+  &.blue {
+    border: borders.$blue-border;
+  }
+}
+
+.label {
+  position: relative;
+  width: max-content;
+  top: layout.space(-10);
+  left: calc(-1 * borders.$default-border-width);
+  padding: layout.space(medium-large);
+
+  text-transform: uppercase;
+  font-weight: typography.font-weight(bold);
+
+  &.yellow {
+    background: colours.colour(yellow);
+  }
+  
+  &.peach {
+    background: colours.colour(peach);
+  }
+  
+  &.blue {
+    background: colours.colour(blue);
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 0 layout.space(large) layout.space(extra-large);
+  gap: layout.space(extra-large);
+}
