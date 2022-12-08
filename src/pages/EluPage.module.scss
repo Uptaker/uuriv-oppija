@@ -1,0 +1,21 @@
+@use '../stylesheets/layout.scss';
+
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: layout.space(79);
+  justify-items: center;
+  align-items: center;
+  margin-bottom: layout.space(30);
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: layout.space(medium);
+}
+
+.img {
+  width: layout.space(87.5);
+}
