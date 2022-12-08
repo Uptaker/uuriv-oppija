@@ -1,0 +1,23 @@
+@use '../stylesheets/colours.scss';
+@use '../stylesheets/typography.scss';
+@use '../stylesheets/layout.scss';
+
+.footer {
+  @include typography.font(tiny);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: layout.space(medium-large) layout.space(massive) layout.space(extra-large);
+
+  background: colours.colour(blue);
+
+  & p:not(:last-child) {
+    margin-bottom: layout.space(small-medium);
+  }
+}
+
+.title {
+  @include typography.font(small, typography.$header-font, small, semi-bold);
+}

@@ -1,18 +1,22 @@
 import React from 'react'
-import './Footer.css'
 import {Link} from 'react-router-dom'
 import logo from '../assets/ELU-Stamp.svg'
 import LangSelect from '../components/LangSelect'
+import {_} from '@codeborne/i18n-json'
+
+import s from './Footer.module.scss'
 
 function Footer() {
   return (
-    <div className="footer">
+    <div className={s.footer}>
       <div className='info-container'>
-        <Link to='/' className='logo'>
-          Uuriv õppija
-        </Link>
-        <div>Siia märgime vajadusel kontaktandmed</div>
-        <div>Copyright 2022 © Uuriv õppija</div>
+        <p>
+          <Link to='/' className={s.title}>
+            Uuriv õppija
+          </Link>
+        </p>
+        <p>Siia märgime vajadusel kontaktandmed</p>
+        <p>Copyright {(new Date().getFullYear())} © Uuriv õppija</p>
       </div>
       <LangSelect/>
       <div className="logo-container">
