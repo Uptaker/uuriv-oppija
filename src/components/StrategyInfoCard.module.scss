@@ -3,8 +3,13 @@
 @use '../stylesheets/layout.scss';
 @use '../stylesheets/borders.scss';
 
+
+.wrapper {
+  margin-top: layout.space(large);
+}
+
 .container {
-  margin: 2rem 0;
+  margin-bottom: layout.space(large);
 
   &.yellow {
     border: borders.$default-border;

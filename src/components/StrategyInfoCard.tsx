@@ -11,10 +11,14 @@ interface StrategyInfoCardProps {
 function StrategyInfoCard({label, content, color}: StrategyInfoCardProps) {
 
   return (
+    <div className={s.wrapper}>
+      <div className={classNames(s.title, s[color])}>
+        {label}
+      </div>
       <div className={classNames(s.container, s[color])}>
-        <h2 className={classNames(s.title, s[color])}>{label}</h2>
         <p className={s.content}>{content}</p>
       </div>
+    </div>
   )
 }
 
