@@ -36,6 +36,10 @@ function LearnMorePage() {
             <div>TODO</div>
           </Collapsible>
         </Container>
+
+        <Collapsible type="accordion" color="peach" label={_('general.source')}>
+          TODO
+        </Collapsible>
     </ContentDiv>
   )
 }
