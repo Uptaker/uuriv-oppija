@@ -25,5 +25,13 @@
 }
 
 .collapsedDiv {
+  max-height: 100%;
+  transition: visibility 0.4s ease-in-out, opacity 0.4s ease-in-out, max-height 0.4s ease-in-out;
   margin-top: layout.space(small);
+}
+
+.collapsed {
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
 }

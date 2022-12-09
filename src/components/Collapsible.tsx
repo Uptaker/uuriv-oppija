@@ -18,7 +18,10 @@ function Collapsible({ children, label, show = false }: CollapsibleProps) {
         <i className={classNames(`fa-solid fa-${collapsed ? 'minus' : 'plus'}`, s.icon)}></i>
         <span className={s.label}>{label}</span>
       </div>
-      {collapsed && <div className={s.collapsedDiv}>{children}</div>}
+      <div className={classNames({
+        [s.collapsedDiv]: true,
+        [s.collapsed]: !collapsed
+      })}>{children}</div>
     </div>
   )
 }
