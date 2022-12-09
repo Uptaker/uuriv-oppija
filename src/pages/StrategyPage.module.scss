@@ -22,11 +22,14 @@
 
 .accordionTitle {
   @include typography.font(regular, typography.$main-font, regular, semi-bold);
-  margin: layout.space(extra-large) layout.space(small) layout.space(medium-large);
+  margin: layout.space(extra-large) 0 layout.space(medium-large);
 }
 
 .accordionParagraph {
   @include typography.font(small);
-  margin: layout.space(small);
   margin-bottom: layout.space(large);
+}
+
+.accordionSource {
+  @include typography.font(tiny);
 }

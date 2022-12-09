@@ -35,7 +35,8 @@ function Collapsible({ children, color, label, show = false, type }: Collapsible
       </div>
       <div className={classNames({
         [s.collapsedDiv]: true,
-        [s.collapsed]: !collapsed
+        [s.collapsed]: !collapsed,
+        [s.wrapper]: type === 'accordion',
       })}>{children}</div>
     </div>
   )
