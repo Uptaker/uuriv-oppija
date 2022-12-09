@@ -1,10 +1,15 @@
 @use '../stylesheets/colours.scss';
 @use '../stylesheets/typography.scss';
 @use '../stylesheets/layout.scss';
+@use '../stylesheets/borders.scss';
 
 
 .container {
   @include typography.font(small);
+
+  &.accordion {
+    margin: layout.space(medium) 0;
+  }
 }
 
 .item {
@@ -13,6 +18,30 @@
   align-items: center;
   gap: layout.space(small-medium);
   cursor: pointer;
+
+  &.accordion {
+    width: 100%;
+    justify-content: space-between;
+
+    margin-bottom: layout.space(large);
+    padding: layout.space(small);
+
+    &.yellow {
+      border-bottom: borders.$default-border;
+    }
+    
+    &.peach {
+      border-bottom: borders.$peach-border;
+    }
+    
+    &.blue {
+      border-bottom: borders.$blue-border;
+    }
+  
+    &.green {
+      border-bottom: borders.$green-border;
+    }
+  }
 }
 
 .icon {
@@ -22,6 +51,10 @@
 .label {
   @include typography.font(regular);
   font-weight: typography.font-weight(bold);
+
+  &.accordion {
+    font-weight: typography.font-weight(semi-bold);
+  }
 }
 
 .collapsedDiv {
