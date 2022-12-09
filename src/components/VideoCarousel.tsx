@@ -12,13 +12,11 @@ function VideoCarousel() {
 
   function next() {
     queue.unshift(queue.pop() as string)
-    console.log('next', queue[0])
     setQueue([...queue])
   }
 
   function back() {
     queue.push(queue.shift() as string)
-    console.log('back', queue[0])
     setQueue([...queue])
   }
 
