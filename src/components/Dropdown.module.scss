@@ -19,6 +19,7 @@
 .drowdownItem {
   position: relative;
   cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
 
   &:hover {
     &.yellow {
@@ -45,9 +46,14 @@
   flex-direction: column;
   font-weight: typography.font-weight(normal);
   padding: layout.space(medium);
+  transition: text-shadow 0.4s ease-in-out;
 
   &:hover {
-    font-weight: typography.font-weight(semi-bold);
+    text-shadow:
+      -0.1px -0.1px 0 colours.colour(black),
+      0.1px -0.1px 0 colours.colour(black),
+      -0.1px 0.1px 0 colours.colour(black),
+      0.1px 0.1px 0 colours.colour(black);
   }
 
   &::after {
