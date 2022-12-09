@@ -1,11 +1,12 @@
 import classNames from 'classnames'
 import React from 'react'
 import s from './StrategyInfoCard.module.scss'
+import {Color} from '../types'
 
 interface StrategyInfoCardProps {
   label: string,
   content: string,
-  color: 'yellow' | 'peach' | 'blue' | 'green',
+  color: Color,
 }
 
 function StrategyInfoCard({label, content, color}: StrategyInfoCardProps) {

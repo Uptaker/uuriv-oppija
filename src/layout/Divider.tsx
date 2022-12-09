@@ -1,9 +1,10 @@
 import classNames from 'classnames'
-import React, { useState } from 'react'
+import React from 'react'
 import s from './Divider.module.scss'
+import {Color} from '../types'
 
 type Props = {
-  colour: 'yellow' | 'peach' | 'blue' | 'green'
+  colour: Color
 }
 
 const Divider = ({ colour }: Props) => (

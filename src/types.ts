@@ -1,7 +1,7 @@
 export interface Strategy {
   title: string,
   id: string,
-  color: 'yellow' | 'peach' | 'blue' | 'green',
+  color: Color,
   content: StrategyContent,
   apps: string[]
   studies: StrategyStudyContent,
@@ -20,3 +20,5 @@ export interface StrategyStudyContent {
   description: string,
   list?: string[] // TODO what's under 'ELU meeskonna uuringud'?
 }
+
+export type Color = 'yellow' | 'peach' | 'blue' | 'green'

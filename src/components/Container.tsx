@@ -1,10 +1,11 @@
 import classNames from 'classnames'
 import React from 'react'
 import s from './Container.module.scss'
+import {Color} from '../types'
 
 export interface ContainerProps  {
   children: React.ReactNode
-  color: 'yellow' | 'peach' | 'blue' | 'green',
+  color: Color,
   label?: string
 }
 
