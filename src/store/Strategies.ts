@@ -47,7 +47,7 @@ export const strategies: Strategy[] = [
       source: "Crum, A. J., Akinola, M., Martin, A., & Fath, S. (2017). The role of stress mindset in shaping cognitive, emotional, and physiological responses to challenging and threatening stress. Anxiety, stress, and coping, 30(4), 379–395. ",
       description: 'strategies.mindset.studyDescription'
     },
-    apps: ['timecamp', 'socrative', 'readlang']
+    apps: ['cbtthoughtdiart' ,'timecamp', 'socrative', 'readlang']
   },
   {
     title: 'strategies.distributed.title',
