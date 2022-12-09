@@ -24,6 +24,14 @@ function StrategyPage() {
         <StrategyInfoCard color={strategy.color} label={_('general.what')} content={_(strategy.content.what)}/>
         <StrategyInfoCard color={strategy.color} label={_('general.why')} content={_(strategy.content.why)}/>
         <StrategyInfoCard color={strategy.color} label={_('general.how')} content={_(strategy.content.how)}/>
+        <Collapsible type="accordion" color={strategy.color} label={_('strategy.teacher')} key={strategy.title}>
+          {strategy.teacher.map(paragraph => (
+            <>
+              {paragraph.title && <h2 className={s.accordionTitle}>{_(paragraph.title)}</h2>}
+              <p className={s.accordionParagraph}>{_(paragraph.paragraph)}</p>
+            </>
+          ))}
+        </Collapsible>
       </ContentDiv>
 
       <ContentDiv wide center color={strategy.color}>
@@ -49,7 +57,7 @@ function StrategyPage() {
           {strategy.apps.map(app => {
             app = `apps.${app}.`
             return (
-              <Collapsible label={_(`${app}name`)} key={app}>
+              <Collapsible type="collapsible" label={_(`${app}name`)} key={app}>
                 <p>{_(`${app}description`)}</p>
                 <a href={_(`${app}url`)} target="_blank" className={s.tiny}>
                   {_('strategy.website') + '  '}

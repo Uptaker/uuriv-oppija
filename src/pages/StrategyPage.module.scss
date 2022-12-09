@@ -19,3 +19,14 @@
   @include typography.font(tiny);
   line-height: layout.space(medium);
 }
+
+.accordionTitle {
+  @include typography.font(regular, typography.$main-font, regular, semi-bold);
+  margin: layout.space(extra-large) layout.space(small) layout.space(medium-large);
+}
+
+.accordionParagraph {
+  @include typography.font(small);
+  margin: layout.space(small);
+  margin-bottom: layout.space(large);
+}
