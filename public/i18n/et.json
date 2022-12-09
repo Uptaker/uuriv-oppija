@@ -58,7 +58,7 @@
         "lang": "Eesti keeles"
       },
       "5": {
-        "title": "Kogemusõpe teooria",
+        "title": "Kogemusõppe teooria",
         "url": "https://www.bu.edu/ctl/guides/experiential-learning/",
         "lang": "Inglise keeles"
       }
@@ -100,7 +100,8 @@
     "source": "Allikas",
     "usefulApps": "Kasulikke rakendusi",
     "eluTeamStudies": "ELU meeskonna uuringud",
-    "website": "Veebileht"
+    "website": "Veebileht",
+    "teacher": "Õpetajale"
   },
   "strategies": {
     "retrieval": {
@@ -122,7 +123,22 @@
       "what": "Mõttemallid on uskumused meie endi ja meid ümbritseva kohta, mis loovad meile käitumisraamistiku. Nende muutmist võib seega vaadata kui oma (alateadlike) uskumuste teadlikku ümberkujundamist selliselt, et nad meile kasulikumad oleksid.",
       "why": "Mõttemallide muutmine aitab stressirohkeid (akadeemilisi) olukordi enda kasuks tööle panna ja väärtuslikena nägema hakata.",
       "how": "Mõtle olukord enda jaoks ringi nii, et see on positiivne. Näiteks, vii ennast kurssi stressi positiivsete omadustega ja tuleta neid endale enne stressirohket situatsiooni meelde. Samuti on kasulik väljendid ümber mõelda - näiteks eksamieelne “ärevus” “elevuseks”. Avalikku esinemist aga saab käsitleda teiste aitamisena, jagades nendega põnevat informatsiooni, selle asemel et pidada seda enda avamiseks kriitikale.",
-      "studyDescription": "Uuringutes testiti “stress on piirav” ja “stress on võimestav” mõtteviisiga inimesi erinevates stressiolukordades ning leiti, et “stress on võimestav” suhtumine on kasulik. Ehkki stressirohke olukord ei muutu selle suhtumise tõttu emotsionaalselt vähem keeruliseks või koormavaks, võimaldab positiivsem stressikäsitlus keskenduda muudele, kasutoovatele asjaoludele."
+      "studyDescription": "Uuringutes testiti “stress on piirav” ja “stress on võimestav” mõtteviisiga inimesi erinevates stressiolukordades ning leiti, et “stress on võimestav” suhtumine on kasulik. Ehkki stressirohke olukord ei muutu selle suhtumise tõttu emotsionaalselt vähem keeruliseks või koormavaks, võimaldab positiivsem stressikäsitlus keskenduda muudele, kasutoovatele asjaoludele.",
+      "teacher": {
+        "1p": "Selleks, et aidata õpilastel paremini õppima õppida ja stressiga toime tulla, suunake neid nägema ja mõistma akadeemiliste väljakutsete positiivseid külgi. Mõttemallide muutmine tähendab, et muudetakse viisi, kuidas midagi väljendatakse või vaadeldakse, ehk siis vaatepunkti (ja mõtteviisi) sihipärast muutmist. Mõttemallide muutmine võib olla kasulik, et suunata õpilaste vaateid akadeemilistele väljakutsetele, muuta need negatiivsest positiivseks. See aitab õpilastel end ise reguleerida, stressirohkete olukordadega toime tulla ja õppimist omaks võtta.",
+        "2t": "Muudame oma suhtumist",
+        "2p": "Oma mõtteviisi muutmine võib aidata meil stressikogemusi ära kasutada. See ei tähenda, et peaksime minema otsima oma ellu rohkem stressi, ega ka seda, et peaksime tarbetut stressi vältima. See tähendab hoopis seda, et kui me seisame stressirohkete olukordadega, eriti stressirohkete akadeemiliste olukordadega silmitsi, peaksime leidma võimalusi, kuidas neid ära kasutada.",
+        "3t": "Kuidas seda teha?",
+        "3p": "Mõttemallide muutmine (mida nimetatakse ka kognitiivseks ümberhindamiseks) on stressiga toimetuleku meetod, mis aitab meil muuta oma uskumusi stressi kohta ja minna stressi vältimise mõtteviisilt üle stressi ärakasutamise mõtteviisile. Need muudatused võivad toimuda isegi lühikeste sekkumiste kaudu. Näiteks näitas üks uurimus, et kolme 3-minutilise videoklipi vaatamine stressi positiivsest mõjust 1 nädala jooksul parandas töötajate töövõimet, psühholoogilisi sümptomeid ja üldist tervist, võrreldes nendega, kes vaatasid videoid stressi nõrgestavatest mõjudest või ei vaadanud ühtegi videot (Crum, Salovey, & Achor, 2013).",
+        "4t": "Näiteid õpetajatelt",
+        "4p": "Meie Illumine õpetajad viisid läbi sarnase sekkumise oma õpilastega. Kui õpilastele näidati 1-minutilist videot, kus rõhutati stressi negatiivset mõju sooritusvõimele, kinnitasid ka õpilased (nii algkooli kui gümnaasiumi astmes), et nende sooritusvõime (näiteks kontrolltöö või avaliku esinemise ärevuse tõttu) oli madalam kui tegelikud oskused. Samas, kui õpilastele näidati 1- minutilist videot stressiseisundi positiivsest mõjust sooritusvõimele, muutus ka õpilaste suhtumine, eriti nooremate tüdrukute seas – nad arvasid, et mõõdukas stress aitas neil üesannet paremini sooritada. Näiteks väitega ’stress mõjub halvasti ja ma peaks seda vältima’ oli enne video vaatamist nõus 10 õpilast (viieteistkümnest), siis pärast negatiivse stressi video vaatamist nõustus väitega 11 õpilast ja pärast positiivse video vaatamist vaid kolm õpilast. Väitega, et ’stress aitab mul õppida’ ei nõustunud enne videote vaatamist ja ka pärast negatiivse video vaatamist ükski õpilane, kuid pärast posiiivse videoga tutvumist nõustus väitega neli õpilast. Kokkuvõttes nähtus sekkumisest, et kaheksale stressiga seotud väitele antud hinnangud muutusid kõik positiivsema mõttelaadi poole. Seega, isegi selline lühike harjutus (videote vaatamine ja vestlus), aitab õpilastel akadeemilise stressiga paremini toime tulla.",
+        "5p": "Teine Illumine õpetaja kontrollis sellise meelmuutuse mõju ka õpitulemustele (osales 14 viienda klassi õpilast) ning tema sekkumises leidis kinnitust, et stressi tunnetamise ja õpitulemuste vahel oli seos olemas, kuigi nõrk. Ainult poiste korral, kes vaatasid ’halva stressi’ videot, tuli välja, et mida suurem stress, seda halvem tulemus. Näiteks, kui tunni alguses oli kahel õpilasel suhtumine stressi positiivne, siis kõik ülejäänud arvasid, et stress on halb. ’Halva stressi’ video vaatajate arvamus enamasti ei muutunud tunni jooksul. Ühel alguses positiivselt arvanud õpilasel muutus see negatiivseks. ’Hea stressi’ video vaatajatest ei olnud ükski tunni alguses positiivne stressi osas, kuid 63% tüdrukutest paranes suhtumine stressi. Poistest ühel paranes ja ühel halvenes.",
+        "6t": "Veel soovitusi",
+        "6p": "Enne avalikku esinemist (klassi ees vastamist) mõtle, et Sinu esinemine on heategu: Sa jagad teistega olulist infot, millest neile kasu on. Enne esinemist küsi endat: Kes mind kuulab? Mis on nende ootused? Ja esinedes proovi neid ootuseid täita. Esinemise päeval kinnita endale veelkord, et Sinu esinemine aitab kuulajatel midagi olulist teada saada.",
+        "7p": "Jäta meelde, et mitmed emotsioonid on oma olemuselt (keemilised reakstioonid ajus) väga sarnased. Näiteks, selle asemel, et enne kontrolltööd muretseda, mõtle sellest kui põnevast väljakutsest, kus saad oma oskusi ja teadmisi demonstreerida. Samuti nagu mures-põnevil paari, saab muuta oma suhtumist sellistes emotsionaalsetes paarides nagu ärritunud-rõõmus, kurb-rahulolev, väsinud- unine. Jäta meelde, et mõõdukas akadeemiline stress näitab, et keha on igati väljakutseks valmis ning aitab paremale sooritusele kaasa. Mõtle oma keha pingutusest positiivselt ja see toob Sulle edu!",
+        "8t": "Kokkuvõte",
+        "8p": "Kui õpilased usuvad enda arengu võimalusse, mõistavad nad, et pingutamine teeb nad tugevamakas. Seetõttu on nad nõus tegema lisapingutusi ja kulutama aega, et jõuda paremate tulemusteni. Mitmed uurngud on näidanud, et mõttemallide muutmine aitab õpilastel saavutada paremaid tulemusi (nii keskmise hinde tõus kui positiivne lõpphinne rohkemates põhiainetes). (Paunesku et al., 2015)"
+      }
     },
     "distributed": {
       "title": "Hajutatud õppimine",
