@@ -1,5 +1,5 @@
 import React from 'react'
-import {useParams} from 'react-router-dom'
+import {Link, useParams} from 'react-router-dom'
 import {strategies} from '../store/Strategies'
 import {_} from '@codeborne/i18n-json'
 import StrategyInfoCard from '../components/StrategyInfoCard'
@@ -31,6 +31,7 @@ function StrategyPage() {
               <p className={s.accordionParagraph}>{_(paragraph.paragraph)}</p>
             </>
           ))}
+          <Link to='/learn-more' className={s.accordionSource}>{_('general.source')}</Link>
         </Collapsible>
       </ContentDiv>
 
