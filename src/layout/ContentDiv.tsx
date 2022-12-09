@@ -8,7 +8,7 @@ type Props = {
   center?: boolean,
   carousel?: boolean,
   row?: boolean,
-  wide?: boolean
+  wide?: boolean,
   color?: Color,
 }
 
