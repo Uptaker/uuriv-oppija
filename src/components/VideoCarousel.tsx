@@ -23,11 +23,11 @@ function VideoCarousel() {
 
   return (
     <div className={classNames(s.container)}>
-      <i className={classNames("fa-solid fa-chevron-left", s.pointer)} onClick={() => back()}></i>
+      <i className={classNames('fa-solid fa-chevron-left', s.pointer)} onClick={() => back()}></i>
       <ResponsiveIframeVideo key={queue[videos.length - 1]} url={queue[videos.length - 1]}/>
       <ResponsiveIframeVideo key={queue[0]} url={queue[0]}/>
       <ResponsiveIframeVideo key={queue[1]} url={queue[1]}/>
-      <i className={classNames("fa-solid fa-chevron-right", s.pointer)} onClick={() => next()}></i>
+      <i className={classNames('fa-solid fa-chevron-right', s.pointer)} onClick={() => next()}></i>
     </div>
   )
 }
