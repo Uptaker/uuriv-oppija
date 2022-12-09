@@ -11,6 +11,7 @@ import ContentDiv from '../layout/ContentDiv'
 
 import s from './HomePage.module.scss'
 import VideoCarousel from '../components/VideoCarousel'
+import { Link } from 'react-router-dom'
 
 function HomePage() {
   return (
@@ -19,7 +20,7 @@ function HomePage() {
         <div className={s.hero}>
           <h1>{_('title')}</h1>
           <div>{_('home.description')}</div>
-          <button className={s.button}>{_('general.readMore')}</button>
+          <Link to='/elu' className={s.button}>{_('general.readMore')}</Link>
         </div>
         <img src={banner} alt="banner"/>
       </div>
