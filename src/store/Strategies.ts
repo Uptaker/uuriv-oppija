@@ -12,7 +12,7 @@ export const strategies: Strategy[] = [
     },
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     studies: {
-      source: "Karpicke, J. D., & Blunt, J. R. (2011). Retrieval practice produces more learning than elaborate studying with concept mapping. Science, 331(6018), 772–775.",
+      source: "Karpicke,\u00a0J.\u00a0D.,\u00a0&\u00a0Blunt,\u00a0J.\u00a0R.\u00a0(2011). Retrieval practice produces more learning than elaborate studying with concept mapping. Science, 331(6018),\u00a0772\u2011775.",
       description: 'strategies.retrieval.studyDescription'
     },
     teacher: [],
@@ -29,7 +29,7 @@ export const strategies: Strategy[] = [
     },
     videoUrl: "https://www.youtube.com/embed/o-YBDTqX_ZU",
     studies: {
-      source: "Kelley, P., & Whatson, T. (2013). Making long-term memories in minutes: a spaced learning pattern from memory research in education. Frontiers in human neuroscience, 7, 589.",
+      source: "Kelley,\u00a0P.,\u00a0&\u00a0Whatson,\u00a0T.\u00a0(2013). Making long-term memories in minutes: a spaced learning pattern from memory research in education. Frontiers\u00a0in\u00a0human\u00a0neuroscience, 7,\u00a0589.",
       description: 'strategies.spaced.studyDescription'
     },
     teacher: [],
@@ -46,7 +46,7 @@ export const strategies: Strategy[] = [
     },
     videoUrl: "https://www.youtube.com/embed/GtL1huin9EE",
     studies: {
-      source: "Crum, A. J., Akinola, M., Martin, A., & Fath, S. (2017). The role of stress mindset in shaping cognitive, emotional, and physiological responses to challenging and threatening stress. Anxiety, stress, and coping, 30(4), 379–395. ",
+      source: "Crum,\u00a0A.\u00a0J.,\u00a0Akinola,\u00a0M.,\u00a0Martin,\u00a0A.,\u00a0& Fath,\u00a0S.\u00a0(2017). The role of stress mindset in shaping cognitive, emotional, and physiological responses to challenging and threatening stress. Anxiety,\u00a0stress,\u00a0and\u00a0coping, 30(4),\u00a0379\u2011395. ",
       description: 'strategies.mindset.studyDescription'
     },
     teacher: [
@@ -94,7 +94,7 @@ export const strategies: Strategy[] = [
     },
     videoUrl: "https://www.youtube.com/embed/oavMtUWDBTM",
     studies: {
-      source: "Bloom, K. C., & Shuell, T. J. (1981). Effects of Massed and Distributed Practice on the Learning and Retention of Second-Language Vocabulary. The Journal of Educational Research, 74(4), 245–248.",
+      source: "Bloom,\u00a0K.\u00a0C.,\u00a0&\u00a0Shuell,\u00a0T.\u00a0J.\u00a0(1981). Effects of Massed and Distributed Practice on the Learning and Retention of Second-Language Vocabulary. The\u00a0Journal\u00a0of\u00a0Educational\u00a0Research, 74(4),\u00a0245\u2011248.",
       description: 'strategies.distributed.studyDescription'
     },
     teacher: [],
