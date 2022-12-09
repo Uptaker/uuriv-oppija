@@ -6,7 +6,13 @@ export interface Strategy {
   apps: string[]
   studies: StrategyStudyContent,
   icon?: string,
-  videoUrl?: string
+  videoUrl?: string,
+  teacher: Paragraph[],
+}
+
+export interface Paragraph {
+  title?: string,
+  paragraph: string,
 }
 
 export interface StrategyContent {
