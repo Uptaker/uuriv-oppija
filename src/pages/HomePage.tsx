@@ -38,7 +38,7 @@ function HomePage() {
         </div>
       </ContentDiv>
 
-      <ContentDiv wide={true} color="yellow">
+      <ContentDiv wide carousel color="yellow">
         <VideoCarousel/>
       </ContentDiv>
     </>

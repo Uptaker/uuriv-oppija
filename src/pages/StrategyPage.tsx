@@ -4,7 +4,6 @@ import {strategies} from '../store/Strategies'
 import {_} from '@codeborne/i18n-json'
 import StrategyInfoCard from '../components/StrategyInfoCard'
 import icon from '../assets/idea.svg'
-import VideoDiv from '../layout/VideoDiv'
 import Container from '../components/Container'
 import Collapsible from '../components/Collapsible'
 import ContentDiv from '../layout/ContentDiv'
@@ -27,12 +26,12 @@ function StrategyPage() {
         <StrategyInfoCard color={strategy.color} label={_('general.how')} content={_(strategy.content.how)}/>
       </ContentDiv>
 
-      <VideoDiv className={strategy.color}>
+      <ContentDiv wide center color={strategy.color}>
         <iframe width="812" height="424" src={strategy.videoUrl ? strategy.videoUrl : "https://www.youtube.com/embed/dQw4w9WgXcQ"} title="YouTube video player"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen/>
-      </VideoDiv>
+      </ContentDiv>
 
       <Divider colour={strategy.color} />
 
