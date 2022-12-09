@@ -35,7 +35,7 @@
   opacity: 0;
   animation-delay: 3s;
   visibility: hidden;
-  animation: slide 0.4s forwards;
+  animation: slide 0.4s alternate;
 }
 
 @keyframes slide {
