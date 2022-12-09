@@ -10,6 +10,7 @@ import ItemDescription from '../components/ItemDescription'
 import ContentDiv from '../layout/ContentDiv'
 
 import s from './HomePage.module.scss'
+import VideoCarousel from '../components/VideoCarousel'
 
 function HomePage() {
   return (
@@ -35,6 +36,10 @@ function HomePage() {
           <ItemDescription title={_('home.confidence')} text={_('home.confidenceText')} icon={confidence}/>
           <ItemDescription title={_('home.timeSavings')} text={_('home.timeSavingsText')} icon={timeSavings}/>
         </div>
+      </ContentDiv>
+
+      <ContentDiv wide={true} color="yellow">
+        <VideoCarousel/>
       </ContentDiv>
     </>
   )

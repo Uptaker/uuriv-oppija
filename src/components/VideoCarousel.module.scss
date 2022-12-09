@@ -1,0 +1,20 @@
+@use '../stylesheets/typography.scss';
+@use '../stylesheets/layout.scss';
+@use '../stylesheets/colours.scss';
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 8fr 8fr 8fr 1fr;
+  gap: layout.space(large);
+  justify-items: center;
+  align-items: center;
+}
+
+.pointer {
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
