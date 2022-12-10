@@ -6,17 +6,19 @@ import {Color} from '../types'
 type Props = {
   children: React.ReactNode
   center?: boolean,
+  carousel?: boolean,
   row?: boolean,
-  wide?: boolean
+  wide?: boolean,
   color?: Color,
 }
 
-const ContentDiv = ({ center, children, row, wide, color }: Props) => (
+const ContentDiv = ({ carousel, center, children, row, wide, color }: Props) => (
   <div className={classNames({
     [s.container]: true,
     [s.center]: center,
     [s.row]: row,
     [s.wide]: wide,
+    [s.carousel]: carousel,
     [s[color!]]: color,
   })}
   >

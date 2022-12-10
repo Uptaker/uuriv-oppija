@@ -23,10 +23,14 @@
   margin: 0 layout.space(small);
   padding: layout.space(small);
   cursor: pointer;
+  transition: 0.3s ease-in-out;
 
   &:hover {
     background: colours.colour(yellow);
+    
   }
+
+ 
 }
 
 .navLogo {
@@ -36,9 +40,14 @@
 .dropdownNav {
   position: relative;
   margin: 0 layout.space(small);
+  transition: all 0.3s ease-in-out 
+  
+;  
 
   &:hover {
     background: colours.colour(yellow);
+   
+  
   }
 
   & > :global(.strategies) {

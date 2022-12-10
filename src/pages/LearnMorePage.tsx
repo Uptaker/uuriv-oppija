@@ -29,13 +29,17 @@ function LearnMorePage() {
       </Container>
 
         <Container color="peach" label={_('learnMore.viewingTitle')}>
-          <Collapsible label={"TODO"}>
+          <Collapsible type="collapsible" label={"TODO"}>
             <div>TODO</div>
           </Collapsible>
-          <Collapsible label={"TODO"}>
+          <Collapsible type="collapsible" label={"TODO"}>
             <div>TODO</div>
           </Collapsible>
         </Container>
+
+        <Collapsible type="accordion" color="peach" label={_('general.source')}>
+          TODO
+        </Collapsible>
     </ContentDiv>
   )
 }

@@ -37,6 +37,7 @@ function Nav() {
           className={s.dropdownNav}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
+          
         >
           <div className={classNames(s.navLink, 'strategies')}>
             {_('nav.strategies')} <i className='fas fa-caret-down'/>

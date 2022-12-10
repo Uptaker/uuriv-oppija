@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  @include font(regular, $family: font);
+  @include font(regular, $family: $font);
 
   background: colours.colour(white);
   color: colours.colour(black);

@@ -1,10 +1,15 @@
 @use '../stylesheets/colours.scss';
 @use '../stylesheets/typography.scss';
 @use '../stylesheets/layout.scss';
+@use '../stylesheets/borders.scss';
 
 
 .container {
   @include typography.font(small);
+
+  &.accordion {
+    margin: layout.space(medium) 0;
+  }
 }
 
 .item {
@@ -13,32 +18,87 @@
   align-items: center;
   gap: layout.space(small-medium);
   cursor: pointer;
+
+  &.accordion {
+    width: 100%;
+    justify-content: space-between;
+
+    margin-bottom: layout.space(large);
+    padding: layout.space(small);
+
+    &.yellow {
+      border-bottom: borders.$default-border;
+    }
+    
+    &.peach {
+      border-bottom: borders.$peach-border;
+    }
+    
+    &.blue {
+      border-bottom: borders.$blue-border;
+    }
+  
+    &.green {
+      border-bottom: borders.$green-border;
+    }
+  }
 }
 
 .icon {
   @include typography.font(regular);
 }
 
+.arrowicon {
+  @include typography.font(regular);
+  
+}
+
+.plusRotation{
+  transition: transform 0.4s ;
+  transform: rotate(135deg) scale(1.1);
+  
+  
+}
+
+.plusUnrotation{
+  transition: transform 0.4s;
+  transform: rotate(0deg) scale(1);
+}
+
+
+.rotation{
+  transition: transform 0.4s;
+  transform: rotate(180deg);
+  
+}
+
+.unrotation{
+  transition: transform 0.4s;
+  transform: rotate(0deg);
+}
+
 .label {
   @include typography.font(regular);
   font-weight: typography.font-weight(bold);
+
+  &.accordion {
+    font-weight: typography.font-weight(semi-bold);
+  }
+}
+
+.wrapper {
+  margin-left: layout.space(small);
 }
 
 .collapsedDiv {
-  max-height: 100%;
-  transition: visibility 0.4s ease-in-out, opacity 0.4s ease-in-out, max-height 0.4s ease-in-out;
+  max-height: 9999px;
+  transition: visibility 0.6s, opacity 0.6s ease-in 0.2s, max-height 0.6s cubic-bezier(1, 0, 1, 0);
   margin-top: layout.space(small);
 }
 
 .collapsed {
-  max-height: 0;
+  max-height: 0px;
   opacity: 0;
-  animation-delay: 3s;
-  visibility: hidden;
-  animation: slide 0.4s alternate;
-}
-
-@keyframes slide {
-  0% { transform: translateY(0%); opacity: 1; }
-  100% { transform: translateY(-15%); opacity: 0; }
+  visibility: collapse;
+  transition: visibility 0.6s, opacity 0.4s, max-height 0.6s cubic-bezier(0, 1, 0, 1);
 }

@@ -1,10 +1,9 @@
 import React from 'react'
-import {useParams} from 'react-router-dom'
+import {Link, useParams} from 'react-router-dom'
 import {strategies} from '../store/Strategies'
 import {_} from '@codeborne/i18n-json'
 import StrategyInfoCard from '../components/StrategyInfoCard'
 import icon from '../assets/idea.svg'
-import VideoDiv from '../layout/VideoDiv'
 import Container from '../components/Container'
 import Collapsible from '../components/Collapsible'
 import ContentDiv from '../layout/ContentDiv'
@@ -25,14 +24,23 @@ function StrategyPage() {
         <StrategyInfoCard color={strategy.color} label={_('general.what')} content={_(strategy.content.what)}/>
         <StrategyInfoCard color={strategy.color} label={_('general.why')} content={_(strategy.content.why)}/>
         <StrategyInfoCard color={strategy.color} label={_('general.how')} content={_(strategy.content.how)}/>
+        <Collapsible type="accordion" color={strategy.color} label={_('strategy.teacher')} key={strategy.title}>
+          {strategy.teacher.map(paragraph => (
+            <>
+              {paragraph.title && <h2 className={s.accordionTitle}>{_(paragraph.title)}</h2>}
+              <p className={s.accordionParagraph}>{_(paragraph.paragraph)}</p>
+            </>
+          ))}
+          <Link to='/learn-more' className={s.accordionSource}>{_('general.source')}</Link>
+        </Collapsible>
       </ContentDiv>
 
-      <VideoDiv className={strategy.color}>
+      <ContentDiv wide center color={strategy.color}>
         <iframe width="812" height="424" src={strategy.videoUrl ? strategy.videoUrl : "https://www.youtube.com/embed/dQw4w9WgXcQ"} title="YouTube video player"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen/>
-      </VideoDiv>
+      </ContentDiv>
 
       <Divider colour={strategy.color} />
 
@@ -50,7 +58,7 @@ function StrategyPage() {
           {strategy.apps.map(app => {
             app = `apps.${app}.`
             return (
-              <Collapsible label={_(`${app}name`)} key={app}>
+              <Collapsible type="collapsible" label={_(`${app}name`)} key={app}>
                 <p>{_(`${app}description`)}</p>
                 <a href={_(`${app}url`)} target="_blank" className={s.tiny}>
                   {_('strategy.website') + '  '}
