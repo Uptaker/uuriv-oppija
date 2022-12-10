@@ -92,7 +92,7 @@
 
 .collapsedDiv {
   max-height: 9999px;
-  transition: visibility 0.6s, opacity 1s, max-height 0.6s cubic-bezier(1, 0, 1, 0);
+  transition: visibility 0.6s, opacity 0.6s ease-in 0.2s, max-height 0.6s cubic-bezier(1, 0, 1, 0);
   margin-top: layout.space(small);
 }
 
@@ -100,5 +100,5 @@
   max-height: 0px;
   opacity: 0;
   visibility: collapse;
-  transition: visibility 0.6s, opacity 0.6s, max-height 0.6s cubic-bezier(0, 1, 0, 1);
+  transition: visibility 0.6s, opacity 0.4s, max-height 0.6s cubic-bezier(0, 1, 0, 1);
 }
