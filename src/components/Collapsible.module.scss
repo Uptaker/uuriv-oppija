@@ -91,22 +91,14 @@
 }
 
 .collapsedDiv {
-  max-height: 100%;
-  transition: visibility 0.4s ease-in-out, opacity 0.4s ease-in-out, max-height 0.4s ease-in-out;
+  max-height: 9999px;
+  transition: visibility 0.6s, opacity 1s, max-height 0.6s cubic-bezier(1, 0, 1, 0);
   margin-top: layout.space(small);
 }
 
 .collapsed {
-  max-height: 0;
+  max-height: 0px;
   opacity: 0;
-  animation-delay: 3s;
-  visibility: hidden;
-  transition: visibility 0.4s ease-in-out, opacity 0.4s ease-in-out, max-height 0.4s ease-in-out;
-  animation: slide 0.4s alternate;
+  visibility: collapse;
+  transition: visibility 0.6s, opacity 0.6s, max-height 0.6s cubic-bezier(0, 1, 0, 1);
 }
-
-@keyframes slide {
-  0% { transform: translateY(0%); opacity: 1; }
-  100% { transform: translateY(-15%); opacity: 0; }
-}
-
