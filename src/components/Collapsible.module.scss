@@ -54,14 +54,15 @@
 }
 
 .plusRotation{
-  transition: transform 0.4s;
-  transform: rotate(135deg);
+  transition: transform 0.4s ;
+  transform: rotate(135deg) scale(1.1);
+  
   
 }
 
 .plusUnrotation{
   transition: transform 0.4s;
-  transform: rotate(0deg);
+  transform: rotate(0deg) scale(1);
 }
 
 
