@@ -14,6 +14,7 @@ export interface CollapsibleProps {
 function Collapsible({ children, color, label, show = false, type }: CollapsibleProps) {
   const [collapsed, setCollapsed] = useState(show)
 
+
   return (
     <div className={classNames({
       [s.container]: true,
@@ -24,14 +25,14 @@ function Collapsible({ children, color, label, show = false, type }: Collapsible
         [s.accordion]: type === 'accordion',
         [s[color!]]: color,
       })}>
-        {type === 'collapsible' && <i className={classNames(`fa-solid fa-${collapsed ? 'minus' : 'plus'}`, s.icon)}></i>}
+        {type === 'collapsible' && <i className={classNames(`fa-solid fa-plus`, s.icon,{[s.plusRotation]:collapsed},{[s.plusUnrotation]: !collapsed}  )}></i>}
         <span className={classNames({
           [s.label]: true,
           [s.accordion]: type === 'accordion',
         })}>
           {label}
         </span>
-        {type === 'accordion' && <i className={classNames(`fa-solid fa-${collapsed ? 'arrow-up-long' : 'arrow-down-long'}`, s.icon)}></i>}
+        {type === 'accordion' && <i className={classNames(`fa-solid fa-angle-down`, s.icon, {[s.rotation]:collapsed}, {[s.unrotation]: !collapsed} )}></i>} 
       </div>
       <div className={classNames({
         [s.collapsedDiv]: true,
@@ -43,3 +44,6 @@ function Collapsible({ children, color, label, show = false, type }: Collapsible
 }
 
 export default Collapsible
+
+//{type === 'accordion' && <i className={classNames(`fa-solid fa-${collapsed ? 'arrow-up-long' : 'arrow-down-long'}`, s.icon)}></i>}
+//{type === 'collapsible' && <i className={classNames(`fa-solid fa-${collapsed ? 'minus' : 'plus'}`, s.icon)}></i>}

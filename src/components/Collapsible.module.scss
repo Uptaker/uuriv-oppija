@@ -48,6 +48,34 @@
   @include typography.font(regular);
 }
 
+.arrowicon {
+  @include typography.font(regular);
+  
+}
+
+.plusRotation{
+  transition: transform 0.4s;
+  transform: rotate(135deg);
+  
+}
+
+.plusUnrotation{
+  transition: transform 0.4s;
+  transform: rotate(0deg);
+}
+
+
+.rotation{
+  transition: transform 0.4s;
+  transform: rotate(180deg);
+  
+}
+
+.unrotation{
+  transition: transform 0.4s;
+  transform: rotate(0deg);
+}
+
 .label {
   @include typography.font(regular);
   font-weight: typography.font-weight(bold);
@@ -72,6 +100,7 @@
   opacity: 0;
   animation-delay: 3s;
   visibility: hidden;
+  transition: visibility 0.4s ease-in-out, opacity 0.4s ease-in-out, max-height 0.4s ease-in-out;
   animation: slide 0.4s alternate;
 }
 
@@ -79,3 +108,4 @@
   0% { transform: translateY(0%); opacity: 1; }
   100% { transform: translateY(-15%); opacity: 0; }
 }
+

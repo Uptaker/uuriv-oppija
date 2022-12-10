@@ -10,11 +10,21 @@
   list-style: none;
 
   background-color: colours.colour(white);
-
+  animation: in 0.3s ;
+  
+  
+  
   &:global(.clicked) {
     display: none;
   }
 }
+
+@keyframes in {
+  0% {opacity: 0 ; }
+  100% {opacity: 1; }
+}
+
+
 
 .drowdownItem {
   position: relative;
