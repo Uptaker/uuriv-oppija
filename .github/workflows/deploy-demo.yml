@@ -1,0 +1,29 @@
+name: Deploy to Demo
+run-name: Deployment to demo by ${{ github.actor }}
+on: [push]
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Starting job started by ${{ github.event_name }} event."
+      - run: echo "Running ${{ runner.os }}."
+      - name: Connect to demo server
+        run: |
+          mkdir -p ~/.ssh/
+          echo "${{secrets.SSH_CONFIG}}" > ~/.ssh/config
+          echo "${{secrets.SSH_KEY}}" > ~/.ssh/demo.key
+          chmod 600 ~/.ssh/temp.key
+          ssh web
+      - name: Checkout
+        run: |
+          cd ~/services/uuriv-oppija/
+          git pull
+          sudo chmod +x ./update-to-nginx.sh
+      - name: Build & deploy
+        run: |
+          sudo ./update-to-nginx
+          sleep 10
+      - name: Clean up
+        run: |
+          exit
+          sudo rm -rf ~/.ssh/
