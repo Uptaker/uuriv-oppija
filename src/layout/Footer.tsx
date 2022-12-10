@@ -19,7 +19,6 @@ function Footer() {
           </Link>
         </p>
         <p>{_('nav.contacts')}</p>
-        <p>Just testing blah blah hurr durr nobody pls notice me hehe</p>
         <p>{_('nav.copyright')} {(new Date().getFullYear())} © {_('title')}</p>
         <LangSelect/>
       </div>
