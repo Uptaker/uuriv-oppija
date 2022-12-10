@@ -6,8 +6,6 @@ jobs:
     environment: SSH_KEY
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Starting job started by ${{ github.event_name }} event."
-      - run: echo "Running ${{ runner.os }}."
       - name: Setup SSH
         run: |
           mkdir -p ~/.ssh/
@@ -23,5 +21,4 @@ jobs:
           sleep 10
       - name: Clean up
         run: |
-          exit
           sudo rm -rf ~/.ssh/
