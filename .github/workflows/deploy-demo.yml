@@ -11,7 +11,7 @@ jobs:
         run: |
           mkdir -p ~/.ssh/
           echo "${{secrets.SSH_CONFIG}}" > ~/.ssh/config
-          cat ~/.ssh/config
+          cat "${{secrets.SSH_CONFIG}}"
           echo "${{secrets.SSH_KEY}}" > ~/.ssh/demo.key
           chmod 600 ~/.ssh/demo.key
       - name: Checkout
