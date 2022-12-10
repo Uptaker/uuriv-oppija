@@ -13,7 +13,7 @@ jobs:
           echo "${{secrets.SSH_CONFIG}}" > ~/.ssh/config
           echo "${{secrets.SSH_KEY}}" > ~/.ssh/demo.key
           chmod 600 ~/.ssh/demo.key
-          ssh web
+          ssh demo
       - name: Checkout
         run: |
           cd ~/services/uuriv-oppija/
@@ -21,7 +21,7 @@ jobs:
           sudo chmod +x ./update-to-nginx.sh
       - name: Build & deploy
         run: |
-          sudo ./update-to-nginx
+          sudo ./update-to-nginx.sh
           sleep 10
       - name: Clean up
         run: |
