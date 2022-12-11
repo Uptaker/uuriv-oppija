@@ -4,10 +4,27 @@
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 8fr 8fr 8fr 1fr;
+  grid-template-columns: 1fr 30fr 1fr;
   gap: layout.space(large);
   justify-items: center;
   align-items: center;
+
+  @media only screen and (max-width: 850px) {
+    padding: 0 layout.space(tiny) 0 layout.space(tiny);
+  }
+
+}
+
+.videos {
+  width: 100%;
+  gap: layout.space(large);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  @media only screen and (max-width: 950px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
 }
 
 .pointer {
