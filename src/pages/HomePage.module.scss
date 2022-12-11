@@ -7,6 +7,12 @@
   grid-template-columns: 1fr 1fr;
   gap: layout.space(medium);
   justify-items: center;
+
+
+  @media only screen and (max-width: 850px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 }
 
 .hero {
@@ -17,6 +23,10 @@
 
   padding: layout.space(large);
   padding-left: layout.space(massive);
+
+  @media only screen and (max-width: 850px) {
+    padding: layout.space(large);
+  }
 }
 
 .button {
@@ -35,6 +45,11 @@
   padding: layout.space(medium);
   margin-bottom: layout.space(massive);
   background: colours.colour(yellow);
+}
+
+.banner {
+  width: 100%;
+  align-self: end;
 }
 
 .profile {
