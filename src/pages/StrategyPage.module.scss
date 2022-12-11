@@ -11,6 +11,10 @@
   @include typography.font(regular, typography.$header-font, regular, semi-bold);
 }
 
+.video {
+  max-width: 812px;
+}
+
 .center {
   text-align: center;
 }
