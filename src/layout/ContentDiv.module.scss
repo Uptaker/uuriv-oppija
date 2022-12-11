@@ -43,4 +43,12 @@
 .row {
   flex-direction: row;
   gap: layout.space(massive);
+
+  @media only screen and (max-width: 1000px) {
+    gap: layout.space(small);
+  }
+
+  @media only screen and (max-width: 1000px) {
+    flex-direction: column;
+  }
 }
