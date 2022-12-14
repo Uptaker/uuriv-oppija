@@ -9,48 +9,31 @@ import s from './Nav.module.scss'
 function Nav() {
   const [dropdown, setDropdown] = useState(false)
 
-  const onMouseEnter = () => {
-    if (window.innerWidth < 960) {
-      setDropdown(false)
-    } else {
-      setDropdown(true)
-    }
-  };
-
-  const onMouseLeave = () => {
-    if (window.innerWidth < 960) {
-      setDropdown(false)
-    } else {
-      setDropdown(false)
-    }
-  };
-
-
   return (
     <nav className={s.navbar}>
-      <Link to='/' className={classNames(s.navLink, s.navLogo)}>
-      {_('title')}
+      <Link to="/" className={classNames(s.navLink, s.navLogo)}>
+        {_('title')}
       </Link>
 
       <ul className={s.navMenu}>
         <li
           className={s.dropdownNav}
-          onMouseEnter={onMouseEnter}
-          onMouseLeave={onMouseLeave}
-          
+          onMouseEnter={() => setDropdown(true)}
+          onMouseLeave={() => setDropdown(false)}
+          onClick={() => setDropdown(!dropdown)}
         >
           <div className={classNames(s.navLink, 'strategies')}>
-            {_('nav.strategies')} <i className='fas fa-caret-down'/>
+            {_('nav.strategies')} <i className="fas fa-caret-down"/>
           </div>
           {dropdown && <Dropdown/>}
         </li>
         <li>
-          <Link to='/learn-more' className={s.navLink}>
+          <Link to="/learn-more" className={s.navLink}>
             {_('nav.more')}
           </Link>
         </li>
         <li>
-          <Link to='/elu' className={s.navLink}>
+          <Link to="/elu" className={s.navLink}>
             {_('nav.ELU')}
           </Link>
         </li>
@@ -58,4 +41,5 @@ function Nav() {
     </nav>
   )
 }
+
 export default Nav
