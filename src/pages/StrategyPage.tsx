@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {Link, useParams} from 'react-router-dom'
 import {strategies} from '../store/Strategies'
 import {_} from '@codeborne/i18n-json'
@@ -10,11 +10,18 @@ import ContentDiv from '../layout/ContentDiv'
 import Divider from '../layout/Divider'
 import classNames from 'classnames'
 import s from './StrategyPage.module.scss'
+import Modal from '../components/Modal'
 
 function StrategyPage() {
 
   const { id } = useParams()
   const strategy = strategies.find(s => s.id === id)
+
+  const [modalContent , setModalContent] = useState<string|null>(null)
+
+  function showPoster(poster: string) {
+    setModalContent(poster)
+  }
 
   // TODO remove rickroll fallback when videos are on youtube ;)
   return !strategy ? (<>TODO generic not found page</>) : (
@@ -71,10 +78,14 @@ function StrategyPage() {
 
         <Container color={strategy.color} label={_('strategy.eluTeamStudies')}>
           {strategy.studies.list?.map(poster => {
-          return <img className={classNames(s.poster)} src={poster}/>
+          return <img className={classNames(s.poster)} src={poster} onClick={() => showPoster(poster)}/>
           })}
         </Container>
       </ContentDiv>
+
+      <Modal open={!!modalContent} closeHandler={setModalContent}>
+        <img src={modalContent!} className={classNames(s.fullWidth)}/>
+      </Modal>
     </>
   )
 }

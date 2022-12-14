@@ -19,10 +19,18 @@
   text-align: center;
 }
 
+.fullWidth {
+  width: 100%;
+}
+
 .poster {
   width: 100%;
   transition: transform 0.5s;
   cursor: pointer;
+
+  &.modal {
+    cursor: none;
+  }
 
   &:hover {
     transform: scale(1.05);
