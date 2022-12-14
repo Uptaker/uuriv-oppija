@@ -1,4 +1,11 @@
 import {Strategy} from '../types'
+import retrieval1 from '../assets/posters/retrieval1.png'
+import retrieval2 from '../assets/posters/retrieval2.png'
+import spaced1 from '../assets/posters/spaced1.png'
+import spaced2 from '../assets/posters/spaced2.png'
+import mindset1 from '../assets/posters/mindset.png'
+import distributed1 from '../assets/posters/distributed1.png'
+import distributed2 from '../assets/posters/distributed2.png'
 
 export const strategies: Strategy[] = [
   {
@@ -13,10 +20,11 @@ export const strategies: Strategy[] = [
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     studies: {
       source: "Karpicke,\u00a0J.\u00a0D.,\u00a0&\u00a0Blunt,\u00a0J.\u00a0R.\u00a0(2011). Retrieval practice produces more learning than elaborate studying with concept mapping. Science, 331(6018),\u00a0772\u2011775.",
-      description: 'strategies.retrieval.studyDescription'
+      description: 'strategies.retrieval.studyDescription',
+      list: [retrieval1, retrieval2]
     },
     teacher: [],
-    apps: ['timecamp', 'socrative', 'readlang']
+    apps: ['timecamp', 'socrative', 'readlang'],
   },
   {
     title: 'strategies.spaced.title',
@@ -30,10 +38,11 @@ export const strategies: Strategy[] = [
     videoUrl: "https://www.youtube.com/embed/o-YBDTqX_ZU",
     studies: {
       source: "Kelley,\u00a0P.,\u00a0&\u00a0Whatson,\u00a0T.\u00a0(2013). Making long-term memories in minutes: a spaced learning pattern from memory research in education. Frontiers\u00a0in\u00a0human\u00a0neuroscience, 7,\u00a0589.",
-      description: 'strategies.spaced.studyDescription'
+      description: 'strategies.spaced.studyDescription',
+      list: [spaced1, spaced2]
     },
     teacher: [],
-    apps: ['timecamp', 'socrative', 'readlang']
+    apps: ['timecamp', 'socrative', 'readlang'],
   },
   {
     title: 'strategies.mindset.title',
@@ -47,7 +56,8 @@ export const strategies: Strategy[] = [
     videoUrl: "https://www.youtube.com/embed/GtL1huin9EE",
     studies: {
       source: "Crum,\u00a0A.\u00a0J.,\u00a0Akinola,\u00a0M.,\u00a0Martin,\u00a0A.,\u00a0& Fath,\u00a0S.\u00a0(2017). The role of stress mindset in shaping cognitive, emotional, and physiological responses to challenging and threatening stress. Anxiety,\u00a0stress,\u00a0and\u00a0coping, 30(4),\u00a0379\u2011395. ",
-      description: 'strategies.mindset.studyDescription'
+      description: 'strategies.mindset.studyDescription',
+      list: [mindset1]
     },
     teacher: [
       {
@@ -95,7 +105,8 @@ export const strategies: Strategy[] = [
     videoUrl: "https://www.youtube.com/embed/oavMtUWDBTM",
     studies: {
       source: "Bloom,\u00a0K.\u00a0C.,\u00a0&\u00a0Shuell,\u00a0T.\u00a0J.\u00a0(1981). Effects of Massed and Distributed Practice on the Learning and Retention of Second-Language Vocabulary. The\u00a0Journal\u00a0of\u00a0Educational\u00a0Research, 74(4),\u00a0245\u2011248.",
-      description: 'strategies.distributed.studyDescription'
+      description: 'strategies.distributed.studyDescription',
+      list: [distributed1, distributed2]
     },
     teacher: [],
     apps: ['timecamp', 'socrative', 'readlang']

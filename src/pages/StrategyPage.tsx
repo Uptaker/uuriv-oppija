@@ -70,7 +70,9 @@ function StrategyPage() {
         </Container>
 
         <Container color={strategy.color} label={_('strategy.eluTeamStudies')}>
-          TODO
+          {strategy.studies.list?.map(poster => {
+          return <img className={classNames(s.poster)} src={poster}/>
+          })}
         </Container>
       </ContentDiv>
     </>
