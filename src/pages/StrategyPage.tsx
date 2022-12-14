@@ -11,6 +11,7 @@ import Divider from '../layout/Divider'
 import classNames from 'classnames'
 import s from './StrategyPage.module.scss'
 import Modal from '../components/Modal'
+import Posters from '../components/Posters'
 
 function StrategyPage() {
 
@@ -76,11 +77,7 @@ function StrategyPage() {
           })}
         </Container>
 
-        <Container color={strategy.color} label={_('strategy.eluTeamStudies')}>
-          {strategy.studies.list?.map(poster => {
-          return <img className={classNames(s.poster)} src={poster} onClick={() => showPoster(poster)}/>
-          })}
-        </Container>
+        <Posters strategy={strategy}/>
       </ContentDiv>
 
       <Modal open={!!modalContent} closeHandler={setModalContent}>
