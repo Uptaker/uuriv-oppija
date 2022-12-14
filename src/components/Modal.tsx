@@ -13,7 +13,6 @@ function Modal({open, children, closeHandler}: ModalProps) {
   function close(e: any) {
     e.preventDefault()
     if (e.target === e.currentTarget) closeHandler(false)
-
   }
 
   if (!open) return null
