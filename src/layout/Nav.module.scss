@@ -9,14 +9,70 @@
   justify-content: space-between;
   align-items: center;
   flex-shrink: 0;
-
   margin: layout.space(extra-large) layout.space(massive) layout.space(massive) layout.space(massive);
+
+  @media only screen and (max-width: 850px) {
+    margin: layout.space(extra-large) layout.space(medium)
+  }
 }
 
 .navMenu {
   display: flex;
   align-items: center;
   list-style: none;
+
+  @media only screen and (max-width: 850px) {
+    display: none;
+  }
+}
+
+.navOpen {
+  @media only screen and (max-width: 850px) {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    border-left: 1px solid colours.colour(black);
+    background-color: colours.colour(white);
+    z-index: 1001;
+    box-sizing: border-box;
+    display: flex !important;
+    flex-direction: column;
+    padding: layout.space(massive) * 2 layout.space(small) layout.space(small);
+    gap: layout.space(massive);
+  }
+}
+
+.burgerMenu {
+    position: relative;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    z-index: 1002;
+    display: block;
+    transition: background 1s;
+
+  @media only screen and (max-width: 850px) {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+.burgerClosed {
+  background:
+    linear-gradient(45deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 43%,colours.colour(black) 45%,colours.colour(black) 55%,rgba(0,0,0,0) 57%,rgba(0,0,0,0) 100%),
+    linear-gradient(135deg, colours.colour(white) 0%,colours.colour(white) 43%,colours.colour(black) 45%,colours.colour(black) 55%,colours.colour(white) 57%,colours.colour(white) 100%);
+}
+
+.burgerOpen {
+  background: linear-gradient(
+    to bottom,
+    colours.colour(black), colours.colour(black) 20%,
+    colours.colour(white) 20%, colours.colour(white) 40%,
+    colours.colour(black) 40%, colours.colour(black) 60%,
+    colours.colour(white) 60%, colours.colour(white) 80%,
+    colours.colour(black) 80%, colours.colour(black) 100%);
 }
 
 .navLink {
@@ -27,27 +83,20 @@
 
   &:hover {
     background: colours.colour(yellow);
-    
   }
-
- 
 }
 
 .navLogo {
   margin: 0;
 }
 
-.dropdownNav {
+.dropdown {
   position: relative;
   margin: 0 layout.space(small);
-  transition: all 0.3s ease-in-out 
-  
-;  
+  transition: all 0.3s ease-in-out;
 
   &:hover {
     background: colours.colour(yellow);
-   
-  
   }
 
   & > :global(.strategies) {
