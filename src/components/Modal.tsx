@@ -10,11 +10,17 @@ export interface ModalProps {
 
 function Modal({open, children, closeHandler}: ModalProps) {
 
+  function close(e: any) {
+    e.preventDefault()
+    if (e.target === e.currentTarget) closeHandler(false)
+
+  }
+
   if (!open) return null
   else return (
-    <div className={classNames(s.overlay)}>
-      <div className={classNames(s.controls)}>
-        <i onClick={() => closeHandler(false)} className={classNames(s.close, 'fa-regular fa-circle-xmark')}/>
+    <div className={classNames(s.overlay)} onClick={(e) => close(e)}>
+      <div className={classNames(s.controls)} onClick={() => closeHandler(false)}>
+        <i className={classNames(s.close, 'fa-regular fa-circle-xmark')}/>
       </div>
       <div className={classNames(s.modal)}>
         {children}
