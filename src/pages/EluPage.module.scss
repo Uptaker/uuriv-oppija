@@ -8,6 +8,13 @@
   justify-items: center;
   align-items: center;
   margin-bottom: layout.space(30);
+
+  @media only screen and (max-width: 850px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: layout.space(massive);
+    margin: 0 layout.space(large) layout.space(30) layout.space(large);
+  }
 }
 
 .container {
@@ -16,6 +23,10 @@
   justify-items: center;
   gap: layout.space(medium);
   margin-bottom: layout.space(30);
+
+  @media only screen and (max-width: 850px) {
+    margin: layout.space(large);
+  }
 }
 
 .title {
