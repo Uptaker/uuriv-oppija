@@ -1,0 +1,77 @@
+@use '../stylesheets/colours.scss';
+@use '../stylesheets/typography.scss';
+@use '../stylesheets/layout.scss';
+@use '../stylesheets/borders.scss';
+
+
+
+.langDropdownMenu {
+    position: absolute;
+    border: borders.$default-border;
+  
+    list-style: none;
+    
+    background-color: colours.colour(white);
+    animation: in 0.3s ;
+    
+    
+    
+    &:global(.clicked) {
+      display: none;
+    }
+  }
+  
+
+
+
+
+@keyframes in {
+  0% {opacity: 0 ; }
+  100% {opacity: 1; }
+}
+
+
+
+
+
+.langDrowdownItem {
+    position: relative;
+    cursor: pointer;
+    
+    transition: background-color 0.3s ease-in-out, text-shadow 0.4s ease-in-out;
+    
+  
+    &:hover {
+        background-color: colours.colour(yellow);
+        text-shadow:
+        -0.1px -0.1px 0 colours.colour(black),
+        0.1px -0.1px 0 colours.colour(black),
+        -0.1px 0.1px 0 colours.colour(black),
+        0.1px 0.1px 0 colours.colour(black);
+    }
+  }
+
+
+
+
+
+.langDropdownLink {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: typography.font-weight(normal);
+    padding: layout.space(medium);
+    width:61px;
+    height: 61px;
+   /*  transition: text-shadow 0.4s ease-in-out;
+  
+    //https://stackoverflow.com/questions/16629725/font-weight-css-transition-in-chrome
+    &:hover {
+      text-shadow:
+        -0.1px -0.1px 0 colours.colour(black),
+        0.1px -0.1px 0 colours.colour(black),
+        -0.1px 0.1px 0 colours.colour(black),
+        0.1px 0.1px 0 colours.colour(black);
+    } */
+  }
