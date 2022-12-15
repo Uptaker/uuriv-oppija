@@ -24,7 +24,7 @@ export interface StrategyContent {
 export interface StrategyStudyContent {
   source: string,
   description: string,
-  list?: string[] // TODO what's under 'ELU meeskonna uuringud'?
+  list: string[]
 }
 
 export type Color = 'yellow' | 'peach' | 'blue' | 'green'
