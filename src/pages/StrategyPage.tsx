@@ -31,8 +31,8 @@ function StrategyPage() {
         <Collapsible type="accordion" color={strategy.color} label={_('strategy.teacher')} key={strategy.title}>
           {strategy.teacher.map(paragraph => (
             <>
-              {paragraph.title && <h2 className={s.accordionTitle}>{_(paragraph.title)}</h2>}
-              <p className={s.accordionParagraph}>{_(paragraph.paragraph)}</p>
+              { paragraph.title && <h2 className={s.accordionTitle}>{_(paragraph.title)}</h2>}
+              <p dangerouslySetInnerHTML={{__html: _(paragraph.paragraph)}} className={s.accordionParagraph}/>
             </>
           ))}
           <Link to='/learn-more' className={s.accordionSource}>{_('general.source')}</Link>
