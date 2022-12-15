@@ -5,7 +5,7 @@ import s from './LangDropdown.module.scss'
 
 
 function LangDropdown() {
-
+    
 
     const [click, setClick] = useState(false);
   
@@ -14,9 +14,12 @@ function LangDropdown() {
     function handleLangSelect(lang: string) {
         rememberLang(lang)
         location.reload()
-      }
+    }
     
-   
+    console.log(lang)
+    for(let i=0; i<2; i++){
+        console.log(langs[i])
+    }
     
     return (
         <>
@@ -28,10 +31,11 @@ function LangDropdown() {
               'clicked': click,
             })}
           >
-            {langs.map(lang => {
+            {langs.map(e => {
               return (
-                <li key={lang} value={lang} className={classNames(s.langDrowdownItem, s.langDropdownLink)} onClick={() => handleLangSelect(lang)} >
-                    {lang.toUpperCase()}
+                <li key={e} value={e} className={classNames(s.langDrowdownItem, s.langDropdownLink, {[s.langItemHighlighted]: e==lang} )}   onClick={() => handleLangSelect(e)} >
+               
+                    {e.toUpperCase()}
                   
                 </li>
               );
