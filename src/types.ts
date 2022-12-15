@@ -5,14 +5,14 @@ export interface Strategy {
   content: StrategyContent,
   apps: string[]
   studies: StrategyStudyContent,
+  teacher: Paragraph[],
   icon?: string,
   videoUrl?: string,
-  teacher: Paragraph[],
 }
 
 export interface Paragraph {
-  title?: string,
   paragraph: string,
+  title?: string
 }
 
 export interface StrategyContent {
