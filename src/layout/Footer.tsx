@@ -2,7 +2,6 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import logo from '../assets/ELU-Stamp.svg'
 import logoEN from '../assets/ELU-Stamp-EN.svg'
-import LangSelect from '../components/LangSelect'
 import {_} from '@codeborne/i18n-json'
 
 import s from './Footer.module.scss'
@@ -18,7 +17,7 @@ function Footer() {
             {_('title')}
           </Link>
         </p>
-        <p>{_('nav.contacts')}</p>
+        <p><a href="mailto:merike.saar@tlu.ee"><i className="fa-regular fa-envelope"/>  merike.saar@tlu.ee</a></p>
         <p>{_('nav.copyright')} {(new Date().getFullYear())} © {_('title')}</p>
       </div>
       <div className="logo-container">
