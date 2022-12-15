@@ -16,9 +16,11 @@ function Posters({strategy}: { strategy: Strategy }) {
   return (
     <>
       <Container color={strategy.color} label={_('strategy.eluTeamStudies')}>
-        {strategy.studies.list?.map(poster => {
-          return <img className={classNames(s.poster)} src={poster} onClick={() => showPoster(poster)}/>
-        })}
+        <div className={classNames(s.grid)}>
+          {strategy.studies.list?.map(poster => {
+            return <img className={classNames(s.poster)} src={poster} onClick={() => showPoster(poster)}/>
+          })}
+        </div>
       </Container>
 
       <Modal open={!!modalContent} closeHandler={setModalContent}>
