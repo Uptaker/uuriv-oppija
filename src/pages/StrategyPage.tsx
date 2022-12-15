@@ -20,11 +20,7 @@ function StrategyPage() {
 
   const [modalContent , setModalContent] = useState<string|null>(null)
 
-  function showPoster(poster: string) {
-    setModalContent(poster)
-  }
-
-  // TODO remove rickroll fallback when videos are on youtube ;)
+// TODO remove rickroll fallback when videos are on youtube ;)
   return !strategy ? (<>TODO generic not found page</>) : (
     <>
       <ContentDiv>
