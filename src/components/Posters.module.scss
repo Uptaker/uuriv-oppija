@@ -17,9 +17,3 @@
     transform: scale(1.05);
   }
 }
-
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: layout.space(medium)
-}
