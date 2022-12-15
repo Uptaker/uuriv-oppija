@@ -49,6 +49,7 @@
 
 .accordionParagraph {
   @include typography.font(small);
+  line-height: 1.5em;
   margin-bottom: layout.space(large);
 }
 
