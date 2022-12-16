@@ -63,7 +63,76 @@ export const strategies: Strategy[] = [
       description: 'strategies.spaced.studyDescription',
       list: [spaced1, spaced2]
     },
-    teacher: [],
+    teacher: [
+      {
+        paragraph: 'strategies.spaced.teacher.1p'
+      },
+      {
+        title: 'strategies.spaced.teacher.2t',
+        paragraph: 'strategies.spaced.teacher.2p'
+      },
+      {
+        title: 'strategies.spaced.teacher.3t',
+        paragraph: 'strategies.spaced.teacher.3p'
+      },
+      {
+        paragraph: 'strategies.spaced.teacher.4p'
+      },
+      {
+        paragraph: 'strategies.spaced.teacher.5p'
+      },
+      {
+        paragraph: 'strategies.spaced.teacher.6p'
+      },
+      {
+        paragraph: 'strategies.spaced.teacher.7p'
+      },
+      {
+        paragraph: 'strategies.spaced.teacher.8p'
+      },
+      {
+        paragraph: 'strategies.spaced.teacher.9p'
+      },
+      {
+        title: 'strategies.spaced.teacher.10t',
+        paragraph: 'strategies.spaced.teacher.10p'
+      },
+      {
+        paragraph: 'strategies.spaced.teacher.11p'
+      },
+      {
+        paragraph: 'strategies.spaced.teacher.12p'
+      },
+      {
+        paragraph: 'strategies.spaced.teacher.13p'
+      },
+      {
+        paragraph: 'strategies.spaced.teacher.14p'
+      },
+      {
+        paragraph: 'strategies.spaced.teacher.15p'
+      },
+      {
+        title: 'strategies.spaced.teacher.16t',
+        paragraph: 'strategies.spaced.teacher.16p'
+      },
+      {
+        title: 'strategies.spaced.teacher.17t',
+        paragraph: 'strategies.spaced.teacher.17p'
+      },
+      {
+        paragraph: 'strategies.spaced.teacher.18p'
+      },
+      {
+        paragraph: 'strategies.spaced.teacher.19p'
+      },
+      {
+        paragraph: 'strategies.spaced.teacher.20p'
+      },
+      {
+        paragraph: 'strategies.spaced.teacher.21p'
+      },
+    ],
     apps: ['timecamp', 'socrative', 'readlang'],
   },
   {
@@ -132,32 +201,32 @@ export const strategies: Strategy[] = [
     },
     teacher: [
       {
-        paragraph: 'strategies.distributed.teacher.1p',
+        paragraph: 'strategies.distributed.teacher.1p'
       },
       {
         title: 'strategies.distributed.teacher.2t',
-        paragraph: 'strategies.distributed.teacher.2p',
+        paragraph: 'strategies.distributed.teacher.2p'
       },
       {
-        paragraph: 'strategies.distributed.teacher.3p',
+        paragraph: 'strategies.distributed.teacher.3p'
       },
       {
-        paragraph: 'strategies.distributed.teacher.4p',
+        paragraph: 'strategies.distributed.teacher.4p'
       },
       {
-        paragraph: 'strategies.distributed.teacher.5p',
+        paragraph: 'strategies.distributed.teacher.5p'
       },
       {
-        paragraph: 'strategies.distributed.teacher.6p',
+        paragraph: 'strategies.distributed.teacher.6p'
       },
       {
-        paragraph: 'strategies.distributed.teacher.7p',
+        paragraph: 'strategies.distributed.teacher.7p'
       },
       {
-        paragraph: 'strategies.distributed.teacher.8p',
+        paragraph: 'strategies.distributed.teacher.8p'
       },
       {
-        paragraph: 'strategies.distributed.teacher.9p',
+        paragraph: 'strategies.distributed.teacher.9p'
       },
     ],
     apps: ['timecamp', 'socrative', 'readlang']
