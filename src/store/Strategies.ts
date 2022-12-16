@@ -130,7 +130,36 @@ export const strategies: Strategy[] = [
       description: 'strategies.distributed.studyDescription',
       list: [distributed1, distributed2]
     },
-    teacher: [],
+    teacher: [
+      {
+        paragraph: 'strategies.distributed.teacher.1p',
+      },
+      {
+        title: 'strategies.distributed.teacher.2t',
+        paragraph: 'strategies.distributed.teacher.2p',
+      },
+      {
+        paragraph: 'strategies.distributed.teacher.3p',
+      },
+      {
+        paragraph: 'strategies.distributed.teacher.4p',
+      },
+      {
+        paragraph: 'strategies.distributed.teacher.5p',
+      },
+      {
+        paragraph: 'strategies.distributed.teacher.6p',
+      },
+      {
+        paragraph: 'strategies.distributed.teacher.7p',
+      },
+      {
+        paragraph: 'strategies.distributed.teacher.8p',
+      },
+      {
+        paragraph: 'strategies.distributed.teacher.9p',
+      },
+    ],
     apps: ['timecamp', 'socrative', 'readlang']
   }
 ]

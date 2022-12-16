@@ -158,7 +158,19 @@
       "what": "Õppimise teadlik hajutamine: mitmel päeval sama materjali lühema aja jooksul õppimine. Uute teadmiste salvestamine intervallidega.",
       "why": "Õppides lühemate perioodide jooksul ja õpitut korrates, jääb õpitu paremini meelde. Õppimisest vabal perioodil aju puhkab.",
       "how": "Õppimine on jaotatud erinevatele päevadele/nädalatele. Intervallid meenutamisel pingutuse efekti tekke jaoks piisava pikkusega. Kordamisküsimused, valikvastustega harjutused, mis võimaldavad meenutada õpitut on tõhusamad kui materjali uuesti lugemine ning samas soodustab see teadmiste kinnistamist pikaajalisse mällu. ",
-      "studyDescription": "Testide tulemused on näidanud, et kui õppimine mitme päeva peale hajutada, siis jääb õpitu pikemaajalisemalt meelde."
+      "studyDescription": "Testide tulemused on näidanud, et kui õppimine mitme päeva peale hajutada, siis jääb õpitu pikemaajalisemalt meelde.",
+      "teacher": {
+        "1p": "Unustamise vähendamiseks hajutage õpilaste harjutustegevused  mitme tunni vahele, selle asemel, et ühes tunnis pikalt asjaga  tegeleda. Hajutatud õppimine vähendab unustamist. Selle eeliseid  nimetatakse \"hajutusefektiks\" ja see näitab, et õpitu salvestatakse  mällu pikemaks ajaks kui õpisündmused on ajaliselt hajutatud,  mitte esitatud vahetult üksteise järel (Vlach & Sandhofer, 2012).  Hajutamist on uuritud alates 1885. aastast, nii faktide, mõistete,  keele, loodusteaduste, proosa õppimisel ning ka oskuste ja  motoorika arendamisel, nt. keeruliste videomängude ja kirurgiliste  oskuste õppimisel (Beardsley, 2020). <b>Hajutatud õppimine ei nõua  rohkem harjutamisaega. See nõuab harjutamise hajutamist ja toob  pikemas perspektiivis kaasa  parema õppimise</b> (Weinstein et al.,  2018).",
+        "2t": "Kuidas see töötab?",
+        "2p": "Kolmanda klassi õpilased (8- ja 9-aastased) õppisid matemaatikat.  <b>Harjutamiseks tegid nad iga päev 19 päeva jooksul neli 1-minutilist  ülesannet</b>, s.t. ühe minuti jooksul lahendasid nii palju ülesandeid  kui jõudsid (nt. liitmine, lahutamine, jne.). (Schutte, et al., 2015)",
+        "3p": "<b>Grupp 1:</b> Sooritasid kõik neli 1-minutilist ülesannet järjest  (massõppimine);",
+        "4p": "<b>Grupp 2:</b> Sooritasid kaks 1-minutilist ülesannet järjest hommikul ja  kaks 1-minutilist ülesannet järjest pärastlõunal (pooleldi hajutatud),",
+        "5p": "<b>Grupp 3:</b> Sooritasid ühe 1-minutilise ülesande neli korda päeva  jooksul (hajutatud)",
+        "6p": "Kõiki õpilasi testiti enne sekkumise algust eeltestiga ja seejärel kahe  hilisema testiga. Neist esimene test toimus 19. päeval, kohe peale  viimast praktilist tegevust. Teine test toimus 29. päeval, s.t. 10 päeva  peale esimest testi.",
+        "7p": "<b>Grupp 1:</b> Eeltestis 25 õiget lahendust minutis, lõpptestis 35 – kasv 10  lahendust (40%), väga kehvasti jaotunud;",
+        "8p": "<b>Grupp 2:</b> Eeltestis 24 õiget lahendust minutis, lõpptestis 39 – kasv 15  lahendust (62,5%),",
+        "9p": "<b>Grupp 3:</b> Eeltestis 27 õiget lahendust minutis, lõpptestis 45 – kasv 18  lahendust (67%), väga ühtlaselt jaotunud."
+      }
     }
   }
 }
