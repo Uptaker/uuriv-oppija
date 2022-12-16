@@ -23,7 +23,29 @@ export const strategies: Strategy[] = [
       description: 'strategies.retrieval.studyDescription',
       list: [retrieval1, retrieval2]
     },
-    teacher: [],
+    teacher: [
+      {
+        paragraph: 'strategies.retrieval.teacher.1p',
+      },
+      {
+        title: 'strategies.retrieval.teacher.2t',
+        paragraph: 'strategies.retrieval.teacher.2p',
+      },
+      {
+        paragraph: 'strategies.retrieval.teacher.3p',
+      },
+      {
+        title: 'strategies.retrieval.teacher.4t',
+        paragraph: 'strategies.retrieval.teacher.4p',
+      },
+      {
+        paragraph: 'strategies.retrieval.teacher.5p',
+      },
+      {
+        title: 'strategies.retrieval.teacher.6t',
+        paragraph: 'strategies.retrieval.teacher.6p',
+      },
+    ],
     apps: ['timecamp', 'socrative', 'readlang'],
   },
   {
