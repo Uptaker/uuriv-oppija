@@ -14,7 +14,6 @@ import Modal from '../components/Modal'
 import Posters from '../components/Posters'
 
 function StrategyPage() {
-
   const { id } = useParams()
   const strategy = strategies.find(s => s.id === id)
 
@@ -30,10 +29,10 @@ function StrategyPage() {
         <StrategyInfoCard color={strategy.color} label={_('general.how')} content={_(strategy.content.how)}/>
         <Collapsible type="accordion" color={strategy.color} label={_('strategy.teacher')} key={strategy.title}>
           {strategy.teacher.map(paragraph => (
-            <>
+            <React.Fragment key={paragraph.paragraph}>
               { paragraph.title && <h2 className={s.accordionTitle}>{_(paragraph.title)}</h2>}
               <p dangerouslySetInnerHTML={{__html: _(paragraph.paragraph)}} className={s.accordionParagraph}/>
-            </>
+            </React.Fragment>
           ))}
           <Link to='/learn-more' className={s.accordionSource}>{_('general.source')}</Link>
         </Collapsible>

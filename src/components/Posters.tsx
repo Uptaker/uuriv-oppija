@@ -17,7 +17,7 @@ function Posters({strategy}: { strategy: Strategy }) {
     <>
       <Container color={strategy.color} label={_('strategy.eluTeamStudies')}>
           {strategy.studies.list?.map(poster => {
-            return <img className={classNames(s.poster)} src={poster} onClick={() => showPoster(poster)}/>
+            return <img className={classNames(s.poster)} src={poster} onClick={() => showPoster(poster)} key={poster} />
           })}
       </Container>
 
