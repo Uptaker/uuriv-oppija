@@ -10,13 +10,55 @@
   align-items: center;
   flex-shrink: 0;
 
-  margin: layout.space(extra-large) layout.space(massive) layout.space(massive) layout.space(massive);
+  margin: layout.space(extra-large) layout.space(small-medium) layout.space(massive);
+
+  @include layout.large {
+    margin: layout.space(extra-large) layout.space(massive) layout.space(massive);
+  }
 }
 
 .navMenu {
-  display: flex;
+  display: none;
   align-items: center;
   list-style: none;
+
+  @include layout.large {
+    display: flex;
+  }
+}
+
+.navOpen {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: colours.colour(white);
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  padding: layout.space(36) layout.space(small) layout.space(small);
+  gap: layout.space(massive);
+
+  @include layout.tablet {
+    width: 60%;
+    border-left: 1px solid colours.colour(black);
+  }
+
+  @include layout.large {
+    display: none;
+  }
+}
+
+.burgerMenu {
+  position: relative;
+  cursor: pointer;
+  z-index: 1002;
+  display: block;
+
+  @include layout.large {
+    display: none;
+  }
 }
 
 .navLink {
@@ -27,10 +69,7 @@
 
   &:hover {
     background: colours.colour(yellow);
-    
   }
-
- 
 }
 
 .navLogo {
@@ -40,14 +79,10 @@
 .dropdownNav {
   position: relative;
   margin: 0 layout.space(small);
-  transition: all 0.3s ease-in-out 
-  
-;  
+  transition: all 0.3s ease-in-out;  
 
   &:hover {
     background: colours.colour(yellow);
-   
-  
   }
 
   & > :global(.strategies) {
@@ -58,17 +93,9 @@
 .langDropdownNav {
   position: relative;
   margin: 0 layout.space(small);
-  transition: all 0.3s ease-in-out 
-  
-;  
+  transition: all 0.3s ease-in-out;  
 
   &:hover {
     background: colours.colour(yellow);
-   
-  
   }
-
-  //& > :global(.strategies) {
-    //margin: 0;
-  //}
 }

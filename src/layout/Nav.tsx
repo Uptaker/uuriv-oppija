@@ -10,6 +10,7 @@ import s from './Nav.module.scss'
 function Nav() {
   const [dropdown, setDropdown] = useState(false)
   const [langDropdown, setLangDropdown] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
     <nav className={s.navbar}>
@@ -17,7 +18,7 @@ function Nav() {
         {_('title')}
       </Link>
 
-      <ul className={s.navMenu}>
+      <ul className={classNames({[s.navMenu]: true, [s.navOpen]: isMenuOpen})}>
         <li
           className={s.dropdownNav}
           onMouseEnter={() => setDropdown(true)}
@@ -50,9 +51,11 @@ function Nav() {
 
           </div>
           {langDropdown && <LangDropdown/>}
-        </li>
-        
+        </li>        
       </ul>
+      <div className={s.burgerMenu} onClick={() => setIsMenuOpen(!isMenuOpen)}>
+        {isMenuOpen ? <i className="fa fa-close"></i> : <i className="fa fa-bars"></i>}
+      </div>
     </nav>
   )
 }
