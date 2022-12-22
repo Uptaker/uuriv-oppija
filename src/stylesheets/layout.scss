@@ -3,6 +3,10 @@
 $base-grid-unit-value: 4px;
 $max-width: 1300px;
 
+$tablet: 768px;
+$large: 1024px;
+$desktop: 1280px;
+
 $space: (
   tiny: 1,
   small: 2,
@@ -14,6 +18,24 @@ $space: (
   huge: 16,
   massive: 18,
 );
+
+@mixin tablet {
+  @media only screen and (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media only screen and (min-width: $large) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: $desktop) {
+    @content;
+  }
+}
 
 @function space($value) {
   @if map.has-key($space, $value) {
