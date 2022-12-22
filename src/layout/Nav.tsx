@@ -1,18 +1,15 @@
 import classNames from 'classnames'
-import React, {useState} from 'react'
+import {useState} from 'react'
 import {Link} from 'react-router-dom'
 import Dropdown from '../components/Dropdown'
 import LangDropdown from '../components/LangDropdown'
 import {_} from '@codeborne/i18n-json'
-import LangSelect from '../components/LangSelect'
-
 
 import s from './Nav.module.scss'
 
 function Nav() {
   const [dropdown, setDropdown] = useState(false)
   const [langDropdown, setLangDropdown] = useState(false)
-  const lang = document.cookie.split('; ')?.find(s => s?.startsWith('LANG='))?.split('=')?.[1]
 
   return (
     <nav className={s.navbar}>
