@@ -1,5 +1,5 @@
 import classNames from 'classnames'
-import {useState} from 'react'
+import {useEffect, useState} from 'react'
 import {Link} from 'react-router-dom'
 import Dropdown from '../components/Dropdown'
 import LangDropdown from '../components/LangDropdown'
@@ -11,6 +11,21 @@ function Nav() {
   const [dropdown, setDropdown] = useState(false)
   const [langDropdown, setLangDropdown] = useState(false)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isDesktop, setIsDektop] = useState(false)
+
+  // Using media queries within React: https://stackoverflow.com/a/66590903
+  useEffect(() => {
+    const mediaQueryList = window.matchMedia('(min-width: 1024px)')
+    const handleChange = (e: MediaQueryListEvent) => {
+      setIsDektop(e.matches)
+    }
+
+    mediaQueryList.addEventListener('change', handleChange)
+
+    return () => {
+      mediaQueryList.removeEventListener('change', handleChange)
+    }
+  }, [])
 
   return (
     <nav className={s.navbar}>
@@ -18,25 +33,28 @@ function Nav() {
         {_('title')}
       </Link>
 
-      <ul className={classNames({[s.navMenu]: true, [s.navOpen]: isMenuOpen})}>
+      <ul className={classNames({[s.navMenu]: true, [s.navOpen]: isMenuOpen && !isDesktop})}>
         <li
           className={s.dropdownNav}
           onMouseEnter={() => setDropdown(true)}
           onMouseLeave={() => setDropdown(false)}
-          onClick={() => setDropdown(!dropdown)}
+          onClick={() => {
+            setDropdown(!dropdown)
+            setIsMenuOpen(!isMenuOpen)
+          }}
         >
           <div className={classNames(s.navLink, 'strategies')}>
-            {_('nav.strategies')} <i className="fas fa-caret-down"/>
+            {_('nav.strategies')} {isDesktop && <i className="fas fa-caret-down"/>}
           </div>
-          {dropdown && <Dropdown/>}
+          {(dropdown || isMenuOpen  && !isDesktop) && <Dropdown/>}
         </li>
         <li>
-          <Link to="/learn-more" className={s.navLink}>
+          <Link to="/learn-more" className={s.navLink} onClick={() => setIsMenuOpen(!isMenuOpen)}>
             {_('nav.more')}
           </Link>
         </li>
         <li>
-          <Link to="/elu" className={s.navLink}>
+          <Link to="/elu" className={s.navLink} onClick={() => setIsMenuOpen(!isMenuOpen)}>
             {_('nav.ELU')}
           </Link>
         </li>
@@ -48,7 +66,6 @@ function Nav() {
         >
           <div className={classNames(s.navLink, 'strategies')}>
             <i className="fa-solid fa-globe"></i>
-
           </div>
           {langDropdown && <LangDropdown/>}
         </li>        

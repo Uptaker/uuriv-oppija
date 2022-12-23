@@ -46,7 +46,13 @@
   }
 
   @include layout.large {
-    display: none;
+    position: unset;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    border-left: none;
+    padding: initial;
+    gap: initial;
   }
 }
 
@@ -77,16 +83,26 @@
 }
 
 .dropdownNav {
-  position: relative;
-  margin: 0 layout.space(small);
-  transition: all 0.3s ease-in-out;  
-
-  &:hover {
-    background: colours.colour(yellow);
-  }
+  text-align: center;
 
   & > :global(.strategies) {
-    margin: 0;
+    cursor: initial;
+  }
+
+  @include layout.large {
+    position: relative;
+    margin: 0 layout.space(small);
+    text-align: initial;
+    transition: all 0.3s ease-in-out;  
+
+    &:hover {
+      background: colours.colour(yellow);
+    }
+
+    & > :global(.strategies) {
+        margin: 0;
+        cursor: pointer;
+    }
   }
 }
 

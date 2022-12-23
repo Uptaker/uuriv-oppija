@@ -4,18 +4,18 @@
 @use '../stylesheets/borders.scss';
 
 .dropdownMenu {
-  position: absolute;
-  border: borders.$default-border;
-
   list-style: none;
 
   background-color: colours.colour(white);
   animation: in 0.3s ;
-  
-  
-  
-  &:global(.clicked) {
-    display: none;
+
+  @include layout.large {
+    position: absolute;
+    border: borders.$default-border;
+
+    &:global(.clicked) {
+      display: none;
+    }
   }
 }
 
@@ -24,28 +24,49 @@
   100% {opacity: 1; }
 }
 
-
-
 .drowdownItem {
   position: relative;
   cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
 
-  &:hover {
-    &.yellow {
-      background-color: colours.colour(yellow)
+  &.yellow {
+    border-bottom: 2px solid colours.colour(yellow);
+  }
+
+  &.peach {
+    border-bottom: 2px solid colours.colour(peach);
+  }
+
+  &.blue {
+    border-bottom: 2px solid colours.colour(blue);
+  }
+
+  &.green {
+    border-bottom: 2px solid colours.colour(green);
+  }
+
+  @include layout.large {
+    transition: background-color 0.3s ease-in-out;
+
+    &.yellow, &.peach, &.blue, &.green {
+      border-bottom: none;
     }
 
-    &.peach {
-      background-color: colours.colour(peach)
-    }
+    &:hover {
+      &.yellow {
+        background-color: colours.colour(yellow);
+      }
 
-    &.blue {
-      background-color: colours.colour(blue)
-    }
+      &.peach {
+        background-color: colours.colour(peach);
+      }
 
-    &.green {
-      background-color: colours.colour(green)
+      &.blue {
+        background-color: colours.colour(blue);
+      }
+
+      &.green {
+        background-color: colours.colour(green);
+      }
     }
   }
 }
