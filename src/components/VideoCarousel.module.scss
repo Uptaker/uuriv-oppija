@@ -8,9 +8,10 @@
   gap: layout.space(large);
   justify-items: center;
   align-items: center;
+  padding: 0 layout.space(tiny) 0 layout.space(tiny);
 
-  @media only screen and (max-width: 850px) {
-    padding: 0 layout.space(tiny) 0 layout.space(tiny);
+  @include layout.tablet {
+    padding: 0;
   }
 
 }
@@ -19,11 +20,14 @@
   width: 100%;
   gap: layout.space(large);
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
 
-  @media only screen and (max-width: 950px) {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+  @include layout.tablet {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include layout.large {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
