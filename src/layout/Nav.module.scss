@@ -10,9 +10,21 @@
   align-items: center;
   flex-shrink: 0;
 
-  margin: layout.space(extra-large) layout.space(small-medium) layout.space(massive);
+  margin: layout.space(small-medium);
+
+  @include layout.phone {
+    @include typography.font(sub-heading, typography.$header-font, sub-heading, semi-bold);
+    margin-top: layout.space(extra-large);
+  }
 
   @include layout.large {
+    @include typography.font(small, typography.$header-font, small, semi-bold);
+    width: 90%;
+    margin: layout.space(extra-large) auto layout.space(massive);
+  }
+
+  @include layout.desktop {
+    max-width: 100%;
     margin: layout.space(extra-large) layout.space(massive) layout.space(massive);
   }
 }
@@ -37,8 +49,14 @@
   z-index: 1001;
   display: flex;
   flex-direction: column;
-  padding: layout.space(36) layout.space(small) layout.space(small);
-  gap: layout.space(massive);
+  padding: layout.space(massive) layout.space(small) layout.space(small);
+  gap: layout.space(large);
+  overflow-x: scroll;
+
+  @include layout.phone {
+    padding-top: layout.space(36);
+    gap: layout.space(massive);
+  }
 
   @include layout.tablet {
     width: 60%;
@@ -53,6 +71,7 @@
     border-left: none;
     padding: initial;
     gap: initial;
+    overflow-x: initial;
   }
 }
 
@@ -65,6 +84,12 @@
   @include layout.large {
     display: none;
   }
+}
+
+.fixed {
+  position: fixed;
+  top: layout.space(small-medium);
+  right: layout.space(small-medium);
 }
 
 .navLink {

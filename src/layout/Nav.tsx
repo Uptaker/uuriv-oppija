@@ -70,7 +70,7 @@ function Nav() {
           {langDropdown && <LangDropdown/>}
         </li>        
       </ul>
-      <div className={s.burgerMenu} onClick={() => setIsMenuOpen(!isMenuOpen)}>
+      <div className={classNames({[s.burgerMenu]: true, [s.fixed]: isMenuOpen})} onClick={() => setIsMenuOpen(!isMenuOpen)}>
         {isMenuOpen ? <i className="fa fa-close"></i> : <i className="fa fa-bars"></i>}
       </div>
     </nav>
