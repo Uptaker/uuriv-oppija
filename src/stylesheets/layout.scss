@@ -1,8 +1,10 @@
 @use 'sass:map';
 
 $base-grid-unit-value: 4px;
-$max-width: 1300px;
+$max-width: 1280px;
 
+$small-screen: 350px;
+$phone: 500px;
 $tablet: 768px;
 $large: 1024px;
 $desktop: 1280px;
@@ -18,6 +20,18 @@ $space: (
   huge: 16,
   massive: 18,
 );
+
+@mixin smallScreen {
+  @media only screen and (min-width: $small-screen) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media only screen and (min-width: $phone) {
+    @content;
+  }
+}
 
 @mixin tablet {
   @media only screen and (min-width: $tablet) {

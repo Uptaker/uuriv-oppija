@@ -29,7 +29,15 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-    @include typography.font(title);
+    @include typography.font(regular);
+
+    @include layout.smallScreen {
+        @include typography.font(sub-heading);
+    }
+
+    @include layout.phone {
+        @include typography.font(title);
+    }
 }
 
 .bold {

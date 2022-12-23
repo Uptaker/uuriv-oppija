@@ -9,6 +9,7 @@ $header-font: 'Alexandria';
 $header: $header-font, sans-serif;
 
 $font-sizes: (
+  minuscule: 12px,
   tiny: 16px,
   small: 20px,
   regular: 28px,
@@ -17,6 +18,7 @@ $font-sizes: (
 );
 
 $line-heights: (
+  minuscule: 16px,
   tiny: 20px,
   small: 24px,
   regular: 32px,
