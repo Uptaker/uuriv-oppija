@@ -10,13 +10,21 @@
   
   max-width: layout.space(100);
 
-  margin: layout.space(large) 0;
   padding: layout.space(medium) layout.space(large);
+
+  @include layout.tablet {
+    margin: layout.space(large) 0;
+  }
 }
 
 .icon {
-  width: layout.space(22);
-  height: layout.space(22);
+  width: layout.space(18);
+  height: layout.space(18);
+
+  @include layout.tablet {
+    width: layout.space(22);
+    height: layout.space(22);
+  }
 }
 
 .title {
