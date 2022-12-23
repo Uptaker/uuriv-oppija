@@ -4,14 +4,14 @@
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: layout.space(medium);
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
   justify-items: center;
 
-
-  @media only screen and (max-width: 850px) {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
+  @include layout.tablet {
+    gap: layout.space(medium);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
   }
 }
 
@@ -20,11 +20,34 @@
   flex-direction: column;
   gap: layout.space(large);
   justify-content: center;
+  text-align: center;
 
-  padding: layout.space(large) layout.space(large) layout.space(large) layout.space(massive);
+  padding: layout.space(large);
 
-  @media only screen and (max-width: 850px) {
+  & a {
+    margin: 0 auto;
+  }
+
+  @include layout.phone {
+    text-align: left;
+
+    & a {
+      margin: initial;
+    }
+  }
+
+  @include layout.tablet {
     padding: layout.space(large);
+  }
+
+  @include layout.large {
+    padding: layout.space(large) layout.space(large) layout.space(large) layout.space(massive);
+  }
+}
+
+.description {
+  @include layout.tablet {
+    margin-bottom: layout.space(massive);
   }
 }
 
@@ -42,8 +65,13 @@
   display: flex;
   justify-content: center;
   padding: layout.space(medium);
-  margin-bottom: layout.space(massive);
+  margin-bottom: layout.space(medium);
   background: colours.colour(yellow);
+  text-align: center;
+
+  @include layout.tablet {
+    margin-bottom: layout.space(massive);
+  }
 }
 
 .banner {

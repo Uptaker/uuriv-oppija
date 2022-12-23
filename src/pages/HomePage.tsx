@@ -19,7 +19,7 @@ function HomePage() {
       <div className={s.grid}>
         <div className={s.hero}>
           <h1>{_('title')}</h1>
-          <div>{_('home.description')}</div>
+          <div className={s.description}>{_('home.description')}</div>
           <Link to='/elu' className={s.button}>{_('general.readMore')}</Link>
         </div>
         <img src={banner} alt="banner" className={s.banner}/>
