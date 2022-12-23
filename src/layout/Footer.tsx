@@ -18,7 +18,7 @@ function Footer() {
           </Link>
         </p>
         <p><a href="mailto:merike.saar@tlu.ee"><i className="fa-regular fa-envelope"/>  merike.saar@tlu.ee</a></p>
-        <p>{_('nav.copyright')} {(new Date().getFullYear())} © {_('title')}</p>
+        <p className={s.copyright}>{_('nav.copyright')} {(new Date().getFullYear())} © {_('title')}</p>
       </div>
       <div className="logo-container">
         <img src={lang === 'en' ? logoEN : logo} alt={_('general.logo')}/>

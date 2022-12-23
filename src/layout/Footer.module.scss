@@ -10,15 +10,35 @@
   justify-content: space-between;
   flex-shrink: 0;
 
-  padding: layout.space(medium-large) layout.space(massive);
+  padding: layout.space(medium);
 
   background: colours.colour(blue);
 
   & p:last-child {
     margin-bottom: 0;
   }
+
+  @include layout.tablet {
+    padding: layout.space(medium-large);
+  }
+
+  @include layout.large {
+    padding: layout.space(medium-large) 5%;
+  }
+
+  @include layout.desktop {
+    padding: layout.space(medium-large) layout.space(massive);
+  }
 }
 
 .title {
   @include typography.font(small, typography.$header-font, small, semi-bold);
+}
+
+.copyright {
+  @include typography.font(minuscule);
+
+  @include layout.phone {
+    @include typography.font(tiny);
+  }
 }
