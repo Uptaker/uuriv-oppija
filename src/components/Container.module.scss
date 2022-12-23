@@ -32,6 +32,7 @@
 .label {
   position: relative;
   width: max-content;
+  max-width: 90%;
   top: layout.space(-10);
   left: calc(-1 * borders.$default-border-width);
   padding: layout.space(medium-large);

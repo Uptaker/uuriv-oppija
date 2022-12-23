@@ -5,11 +5,19 @@
 
 
 .wrapper {
-  margin-top: layout.space(large);
+  margin-top: layout.space(medium);
+
+  @include layout.phone {
+    margin-top: layout.space(large);
+  }
 }
 
 .container {
-  margin-bottom: layout.space(large);
+  margin-bottom: layout.space(medium);
+
+  @include layout.phone {
+    margin-bottom: layout.space(large);
+  }
 
   &.yellow {
     border: borders.$default-border;
@@ -29,8 +37,13 @@
 }
 
 .title {
-  @include typography.font(sub-heading, typography.$header-font, sub-heading, semi-bold);
-  padding: layout.space(medium-large);
+  @include typography.font(regular, typography.$header-font, regular, semi-bold);
+  padding: layout.space(medium);
+
+  @include layout.phone {
+    @include typography.font(sub-heading, typography.$header-font, sub-heading, semi-bold);
+    padding: layout.space(medium-large);
+  }
 
   &.yellow {
     background: colours.colour(yellow);

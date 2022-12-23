@@ -39,10 +39,14 @@ function StrategyPage() {
       </ContentDiv>
 
       <ContentDiv wide center color={strategy.color}>
-        <iframe width="812" height="424" src={strategy.videoUrl ? strategy.videoUrl : "https://www.youtube.com/embed/dQw4w9WgXcQ"} title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen/>
+        <div className={s.videoPlayer}>
+          <iframe src={strategy.videoUrl ? strategy.videoUrl : "https://www.youtube.com/embed/dQw4w9WgXcQ"}
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
       </ContentDiv>
 
       <Divider colour={strategy.color} />
@@ -51,7 +55,7 @@ function StrategyPage() {
         <img src={icon} alt="idea" className={s.icon} />
         <p className={s.title}>{_('strategy.studies')}</p>
         <p className={s.center}>{_(strategy.studies.description)}</p>
-        <p className={classNames(s.center, s.source)} style={{margin: "1rem 5rem", textAlign: "center"}}><span className="bold">{_('strategy.source')}:</span> {strategy.studies.source}</p>
+        <p className={classNames(s.center, s.source)}><span className="bold">{_('strategy.source')}:</span> {strategy.studies.source}</p>
       </ContentDiv>
 
       <Divider colour={strategy.color} />

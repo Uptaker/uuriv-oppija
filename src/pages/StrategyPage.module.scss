@@ -8,11 +8,39 @@
 }
 
 .title {
-  @include typography.font(regular, typography.$header-font, regular, semi-bold);
+  @include typography.font(small, typography.$header-font, small, semi-bold);
+
+  @include layout.phone {
+    @include typography.font(regular, typography.$header-font, regular, semi-bold);
+  }
 }
 
-.video {
-  max-width: 812px;
+// Making YouTube player width / height responsive: https://stackoverflow.com/a/54924505
+.videoPlayer {
+  position: relative;
+  width: layout.space(203);
+  padding-bottom: 56.25%;
+  height: 0;
+  max-width: 100%;
+
+  @include layout.large {
+    width: 90%;
+    padding-bottom: calc(56.25% * 0.9);
+  }
+
+  @include layout.desktop {
+    width: layout.space(203);
+    padding-bottom: layout.space(114);
+  }
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
 }
 
 .center {
@@ -38,21 +66,40 @@
 }
 
 .source, .tiny {
-  @include typography.font(tiny);
-  line-height: layout.space(medium);
+  @include typography.font(minuscule);
+
+  @include layout.phone {
+    @include typography.font(tiny);
+    line-height: layout.space(medium);
+  }
+}
+
+.source {
+  margin-top: layout.space(large);
 }
 
 .accordionTitle {
-  @include typography.font(regular, typography.$main-font, regular, semi-bold);
+  @include typography.font(small, typography.$main-font, small, semi-bold);
   margin: layout.space(extra-large) 0 layout.space(medium-large);
+
+  @include layout.phone {
+    @include typography.font(regular, typography.$main-font, regular, semi-bold);
+  }
 }
 
 .accordionParagraph {
-  @include typography.font(small);
-  line-height: 1.5em;
+  @include typography.font(tiny, typography.$main-font, small, normal);
   margin-bottom: layout.space(large);
+
+  @include layout.phone {
+    @include typography.font(small, typography.$main-font, regular, normal);
+  }
 }
 
 .accordionSource {
-  @include typography.font(tiny);
+  @include typography.font(minuscule);
+
+  @include layout.phone {
+    @include typography.font(tiny);
+  }
 }

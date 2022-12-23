@@ -6,8 +6,8 @@
 .container {
   display: flex;
   flex-direction: column;
-  max-width: layout.$max-width;
-  margin: layout.space(massive) auto;
+  max-width: calc(100% - (2 * layout.space(small-medium)));
+  margin: layout.space(large) layout.space(small-medium);
 
   &.yellow {
     background-color: colours.colour(yellow)
@@ -24,11 +24,37 @@
   &.green {
     background-color: colours.colour(green)
   }
+
+  @include layout.phone {
+    margin: layout.space(massive) layout.space(small-medium);
+  }
+
+  @include layout.large {
+    max-width: 90%;
+    margin: layout.space(massive) auto;
+  }
+
+  @include layout.desktop {
+    width: 90%;
+    max-width: layout.$max-width;
+  }
 }
 
 .wide {
+  width: 100%;
   max-width: 100%;
-  padding: layout.space(massive);
+  padding: layout.space(medium-large);
+  margin: layout.space(large) auto;
+
+  @include layout.phone {
+    padding: layout.space(large);
+    margin: layout.space(extra-large) auto;
+  }
+
+  @include layout.tablet {
+    padding: layout.space(massive);
+    margin: layout.space(massive) auto;
+  }
 }
 
 .carousel {
@@ -41,14 +67,11 @@
 }
 
 .row {
-  flex-direction: row;
-  gap: layout.space(massive);
+  flex-direction: column;
+  gap: layout.space(small);
 
-  @media only screen and (max-width: 1000px) {
-    gap: layout.space(small);
-  }
-
-  @media only screen and (max-width: 1000px) {
-    flex-direction: column;
+  @include layout.large {
+    flex-direction: row;
+    gap: layout.space(massive);
   }
 }

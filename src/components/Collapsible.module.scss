@@ -5,11 +5,15 @@
 
 
 .container {
-  @include typography.font(small);
+  @include typography.font(tiny);
   overflow: hidden;
 
   &.accordion {
     margin: layout.space(medium) 0;
+  }
+
+  @include layout.phone {
+    @include typography.font(small);
   }
 }
 
@@ -79,8 +83,12 @@
 }
 
 .label {
-  @include typography.font(regular);
+  @include typography.font(small);
   font-weight: typography.font-weight(bold);
+
+  @include layout.phone {
+    @include typography.font(regular);
+  }
 
   &.accordion {
     font-weight: typography.font-weight(semi-bold);
