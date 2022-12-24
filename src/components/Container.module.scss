@@ -60,6 +60,10 @@
 .content {
   display: flex;
   flex-direction: column;
-  padding: 0 layout.space(large) layout.space(extra-large);
+  padding: 0 layout.space(small-medium) layout.space(medium);
   gap: layout.space(extra-large);
+
+  @include layout.phone {
+    padding: 0 layout.space(large) layout.space(extra-large);
+  }
 }

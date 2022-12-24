@@ -44,9 +44,9 @@ function LearnMorePage() {
   return (
     <ContentDiv>
       <Container color="peach" label={_('learnMore.readingTitle')}>
-        <ul>
+        <ul className={s.list}>
           {Object.values(_('learnMore.articles') as unknown as Page[]).map(strategy => (
-            <li key={strategy.title} style={{margin: "1.5rem 0"}}>
+            <li key={strategy.title} className={s.listItem}>
               <a href={strategy.url} target="_blank">{strategy.title} <i className={classNames("fa-solid fa-arrow-up-right-from-square", s.tiny)}></i></a>
               <div className={s.tiny}>{strategy.lang}</div>
             </li>
@@ -65,9 +65,9 @@ function LearnMorePage() {
 
       <div>
         <Collapsible type="accordion" color="peach" label={_('general.source')}>
-          <ul>
+          <ul className={s.list}>
             {sources.map(source => (
-              <li key={source} style={{margin: "1.5rem 0"}}>{source}</li>
+              <li key={source} className={s.listItem}>{source}</li>
             ))}
           </ul>
         </Collapsible>

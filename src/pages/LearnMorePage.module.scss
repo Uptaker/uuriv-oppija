@@ -2,6 +2,32 @@
 @use '../stylesheets/typography.scss';
 @use '../stylesheets/layout.scss';
 
+.list {
+  padding-left: layout.space(medium-large);
+  list-style: none;
+
+  & li::before {
+    content: "\2022";
+    color: colours.colour(peach);
+    display: inline-block;
+    width: layout.space(medium);
+    margin-left: calc(-1 * layout.space(medium));
+  }
+
+  @include layout.phone {
+    padding-left: layout.space(large);
+
+    & li::before {
+      width: layout.space(medium-large);
+      margin-left: calc(-1 * layout.space(medium-large));
+    }
+  }
+}
+
+.listItem {
+  margin: layout.space(medium-large) 0;
+}
+
 .tiny {
   @include typography.font(tiny);
   line-height: layout.space(medium);
