@@ -83,8 +83,8 @@
   z-index: 1002;
   display: block;
 
-  width: 18px;
-  height: 18px;
+  width: layout.space(4.5);
+  height: layout.space(4.5);
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -95,14 +95,14 @@
   transition: .5s ease-in-out;
 
   @include layout.phone {
-    width: 25px;
-    height: 25px;
+    width: layout.space(6.25);
+    height: layout.space(6.25);
   }
 
   & span {
     display: block;
     position: absolute;
-    height: 3px;
+    height: layout.space(.75);
     width: 100%;
     background: colours.colour(black);
     border-radius: layout.space(tiny);
@@ -118,26 +118,26 @@
     transition: .25s ease-in-out;
 
     @include layout.phone {
-      height: 4px;
+      height: layout.space(1);
     }
 
     &:nth-child(1) {
-      top: 0px;
+      top: 0;
     }
 
     &:nth-child(2), &:nth-child(3) {
-      top: 6px;
+      top: layout.space(1.5);
 
       @include layout.phone {
-        top: 8px;
+        top: layout.space(2);
       }
     }
 
     &:nth-child(4) {
-      top: 12px;
+      top: layout.space(3);
 
       @include layout.phone {
-        top: 16px;
+        top: layout.space(4);
       }
     }
   }
@@ -145,12 +145,12 @@
   &.open {
     & span {
       &:nth-child(1) {
-        top: 6px;
+        top: layout.space(1.5);
         width: 0%;
         left: 50%;
 
         @include layout.phone {
-          top: 8px;
+          top: layout.space(2);
         }
       }
   
@@ -169,12 +169,12 @@
       }
   
       &:nth-child(4) {
-        top: 6px;
+        top: layout.space(1.5);
         width: 0%;
         left: 50%;
 
         @include layout.phone {
-          top: 8px;
+          top: layout.space(2);
         }
       }
     }
