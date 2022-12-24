@@ -7,8 +7,12 @@ import s from './VideoCarousel.module.scss'
 function VideoCarousel() {
   const videos = strategies.map(s => s.videoUrl) as string[]
   const [queue, setQueue] = useState(videos)
-  const [isDesktop, setIsDektop] = useState(false)
-  const [isTablet, setIsTablet] = useState(false)
+  const [isDesktop, setIsDektop] = useState<any>({
+    matches: window.innerWidth > 1024 ? true : false
+  })
+  const [isTablet, setIsTablet] = useState<any>({
+    matches: window.innerWidth > 768 ? true : false
+  })
 
   // Using media queries within React: https://stackoverflow.com/a/66590903
   useEffect(() => {
