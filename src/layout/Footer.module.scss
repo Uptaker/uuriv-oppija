@@ -3,7 +3,7 @@
 @use '../stylesheets/layout.scss';
 
 .footer {
-  @include typography.font(tiny);
+  @include typography.font(tiny, typography.$header-font);
 
   display: flex;
   align-items: center;
@@ -36,9 +36,9 @@
 }
 
 .copyright {
-  @include typography.font(minuscule);
+  @include typography.font(minuscule, typography.$header-font);
 
   @include layout.phone {
-    @include typography.font(tiny);
+    @include typography.font(tiny, typography.$header-font);
   }
 }
