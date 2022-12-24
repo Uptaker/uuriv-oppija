@@ -92,6 +92,11 @@
     border-left: 1px solid colours.colour(black);
     box-shadow: 0 0 layout.space(small) colours.colour(black);
   }
+
+  @include layout.large {
+    border-left: none;
+    box-shadow: none;
+  }
 }
 
 // Burger animation from: https://codepen.io/designcouch/pen/ExvwPY

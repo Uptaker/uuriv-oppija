@@ -11,7 +11,9 @@ function Nav() {
   const [dropdown, setDropdown] = useState(false)
   const [langDropdown, setLangDropdown] = useState(false)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [isDesktop, setIsDektop] = useState(false)
+  const [isDesktop, setIsDektop] = useState<any>({
+    matches: window.innerWidth > 1024 ? true : false
+  })
 
   // Using media queries within React: https://stackoverflow.com/a/66590903
   useEffect(() => {
