@@ -30,9 +30,9 @@ function EluPage() {
         </div>
 
       <Container color="peach" label={_('elu.teamTitle')}>
-        <ul>
+        <ul className={s.list}>
         {participants.map(person => (
-          <li key={person.name} style={{margin: "1.5rem 0"}}>
+          <li key={person.name} className={s.listItem}>
             <b>{person.name}</b> - {person.role}
           </li>
         ))}

@@ -1,13 +1,29 @@
 @use '../stylesheets/layout.scss';
 @use '../stylesheets/typography.scss';
 
+@import './LearnMorePage.module.scss';
+
 .grid {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: layout.space(79);
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  gap: layout.space(large);
   justify-items: center;
   align-items: center;
   margin-bottom: layout.space(30);
+
+  @include layout.tablet {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  @include layout.large {
+    gap: layout.space(massive);
+  }
+
+  @include layout.desktop {
+    gap: layout.space(79);
+  }
 }
 
 .container {
@@ -15,7 +31,15 @@
   flex-direction: column;
   justify-items: center;
   gap: layout.space(medium);
-  margin-bottom: layout.space(30);
+  margin-bottom: layout.space(large);
+
+  @include layout.phone {
+    margin-bottom: layout.space(massive);
+  }
+
+  @include layout.tablet {
+    margin-bottom: layout.space(30);
+  }
 }
 
 .title {
@@ -23,6 +47,14 @@
   flex-direction: column;
   justify-content: center;
   gap: layout.space(medium);
+}
+
+.list {
+  composes: list;
+}
+
+.listItem {
+  composes: listItem;
 }
 
 .source {
@@ -35,4 +67,9 @@
 
 .img {
   width: layout.space(87.5);
+  max-width: 100%;
+
+  @include layout.large {
+    max-width: initial;
+  }
 }
