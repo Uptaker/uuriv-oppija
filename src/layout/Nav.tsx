@@ -46,7 +46,7 @@ function Nav() {
           <div className={classNames(s.navLink, 'strategies')}>
             {_('nav.strategies')} {isDesktop && <i className="fas fa-caret-down"/>}
           </div>
-          {(dropdown || isMenuOpen  && !isDesktop) && <Dropdown/>}
+          {(dropdown || !isDesktop) && <Dropdown/>}
         </li>
         <li>
           <Link to="/learn-more" className={s.navLink} onClick={() => setIsMenuOpen(!isMenuOpen)}>
@@ -71,7 +71,6 @@ function Nav() {
         </li>        
       </ul>
       <div className={classNames({[s.burgerMenu]: true, [s.open]: isMenuOpen})} onClick={() => setIsMenuOpen(!isMenuOpen)}>
-        {/* {isMenuOpen ? <i className="fa fa-close"></i> : <i className="fa fa-bars"></i>} */}
         <span />
         <span />
         <span />

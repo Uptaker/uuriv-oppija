@@ -29,29 +29,33 @@
   }
 }
 
+// Open-Close animation from: https://codepen.io/shieldsma91/pen/zLpbLX
+
 .navMenu {
-  display: none;
-  align-items: center;
-  list-style: none;
-
-  @include layout.large {
-    display: flex;
-  }
-}
-
-.navOpen {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background-color: colours.colour(white);
-  z-index: 1001;
   display: flex;
   flex-direction: column;
-  padding: layout.space(massive) layout.space(small) layout.space(small);
   gap: layout.space(large);
+
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 100%;
+  height: 100%;
   overflow-x: scroll;
+
+  padding: layout.space(massive) layout.space(small) layout.space(small);
+
+  background-color: colours.colour(white);
+
+  list-style: none;
+  text-align: center;
+
+  z-index: 1001;
+
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 
   @include layout.phone {
     padding-top: layout.space(36);
@@ -60,10 +64,11 @@
 
   @include layout.tablet {
     width: 60%;
-    border-left: 1px solid colours.colour(black);
   }
 
   @include layout.large {
+    display: flex;
+    align-items: center;
     position: unset;
     flex-direction: row;
     width: auto;
@@ -72,10 +77,24 @@
     padding: initial;
     gap: initial;
     overflow-x: initial;
+    background-color: initial;
+    text-align: initial;
+    z-index: initial;
+
+    transform: none;
   }
 }
 
-// Animation from: https://codepen.io/designcouch/pen/ExvwPY
+.navOpen {
+  transform: none;
+
+  @include layout.tablet {
+    border-left: 1px solid colours.colour(black);
+    box-shadow: 0 0 layout.space(small) colours.colour(black);
+  }
+}
+
+// Burger animation from: https://codepen.io/designcouch/pen/ExvwPY
 
 .burgerMenu {
   position: relative;
