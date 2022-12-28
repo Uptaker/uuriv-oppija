@@ -5,12 +5,201 @@
     "what": "What?",
     "why": "Why?",
     "readMore": "Read more",
-    "logo": "Learning in Interdisciplinary Focused Environment"
+    "logo": "Learning in Interdisciplinary Focused Environment",
+    "source": "Sources"
   },
   "nav": {
     "strategies": "Strategies",
     "more": "Read More",
     "ELU": "LIFE",
     "copyright": "Copyright"
+  },
+  "home": {
+    "description": "The Inquisitive Learner actively seeks ways which help make their studies more efficient, retain information in long-term memory and improve results.",
+    "whyForMe": "Why do I need learning strategies?",
+    "attitude": "Attitudes",
+    "attitudeText": "The use of learning strategies helps learners to view academic challenges as something positive.",
+    "improvement": "Improved results",
+    "improvementText": "Learning strategies can help with the motivation to study which will improve productivity and results.",
+    "stress": "Stress",
+    "stressText": "Learning strategies can help change one's attitudes towards stress from avoiding stressful situations to making use of them to one's own benefit.",
+    "confidence": "Confidence",
+    "confidenceText": "Planning and repeating studies during a longer period of time can even double the amount of information retained, which in turn will increase the learner's belief in themselves.",
+    "timeSavings": "Saving time",
+    "timeSavingsText": "Learning strategies can teach you how to study, minimising procrastination activities and thus also the total time needed to study in the future."
+  },
+  "learnMore": {
+    "readingTitle": "For Reading",
+    "viewingTitle": "For Watching",
+    "articles": {
+      "0": {
+        "title": "Learn How to Study Using... Elaboration",
+        "url": "https://www.learningscientists.org/blog/2016/7/7-1",
+        "lang": "in English"
+      },
+      "1": {
+        "title": "eDidaktikum - Learning and Psychology",
+        "url": "https://edidaktikum.ee/et/content/%C3%B5ppimine-ja-ps%C3%BChholoogia/blog/2016/7/7-1",
+        "lang": "in Estonian"
+      },
+      "2": {
+        "title": "Tallinn University - The ABC of Studying",
+        "url": "https://www.tlu.ee/hti/oppimise-abc",
+        "lang": "in Estonian"
+      },
+      "3": {
+        "title": "Ruti Einpalu: Effective and Ineffective Learning Strategies",
+        "url": "https://edasi.org/75824/ruti-einpalu-tohusad-ja-ebatohusad-opistrateegiad/",
+        "lang": "in Estonian"
+      },
+      "4": {
+        "title": "Grete Arro - Learning shouldn't be a Secret Science (slides)",
+        "url": "https://www.tugiteenused.tartu.ee/wp-content/uploads/2018/10/Grete-Arro1.pdf",
+        "lang": "in Estonian"
+      },
+      "5": {
+        "title": "Experiential Learning",
+        "url": "https://www.bu.edu/ctl/guides/experiential-learning/",
+        "lang": "in English"
+      }
+    }
+  },
+  "elu": {
+    "eluTitle": "What is LIFE?",
+    "eluDescription": "Learning in Interdisciplinary Focused Environment (LIFE) is a study course which is focused on project- and problem-based learning, where students from different study areas collaborate with academics and partners from outside the university to carry out projects focusing on interdisciplinary problems.",
+    "eluSource": "Tallinn University",
+    "projectTitle": "What is the Inquisitive Learner Project?",
+    "projectDescription1": "The Inquisitive Learner Project delves into and studies various scientific learning strategies based on brain studies and discusses how to make use of these studies in everyday learning as well as measures the differences in results that the use of these strategies brings.",
+    "projectDescription2": "In order to achieve this, the students who are part of the project will collect data about their learning habits and the effect that using learning strategies has on them as well as analyse it together with the members of the team. As a result, a set of materials will be created to aid the inquisitive learner in their study processes. These materials will outline best practices and how to make use of learning strategies in everyday life.",
+    "teamTitle": "The Team"
+  },
+  "apps": {
+    "timecamp": {
+      "name": "TimeCamp",
+      "description": "A website that helps to monitor the time taken to study. Saves the entered time and automatically creates a report based on given data.",
+      "url": "https://www.timecamp.com"
+    },
+    "cbtthoughtdiart": {
+      "name": "CBT Thought Diary",
+      "description": "A mobile app that enables thought analysis and reframing",
+      "url": "https://cbtthoughtdiary.com/"
+    },
+    "socrative": {
+      "name": "Socrative",
+      "description": "While the website is originally intended to help teachers run multiple choice tests in class, nothing is there to stop learners from using it as a self-testing environment. Create a teacher account for yourself and then create, save and launch multiple choice quizzes. In order to take a quiz, join it as a student. Socrative also enables you to share the tests you have made with classmates via an import link. This way, not every learner need to make their own test but one quiz can be shared with the entire class.",
+      "url": "https://www.socrative.com/"
+    },
+    "readlang": {
+      "name": "Readlang",
+      "description": "For learning a foreign language. When entering a text in a foreign language, the environment enables you to mark unknown words. These words will then be auto-translated and a list of vocabulary to be learned will be created. When learning the vocabulary, the application provides you with word cards, allowing you to use them to study as well as check your results. After revision, some statistics are provided in a table. The application is partially free.",
+      "url": "https://readlang.com/"
+    }
+  },
+  "strategy": {
+    "studies": "Studies",
+    "source": "Source",
+    "usefulApps": "Useful Apps",
+    "eluTeamStudies": "The Studies of the LIFE Team",
+    "website": "Website",
+    "teacher": "For Teachers"
+  },
+  "strategies": {
+    "retrieval": {
+      "title": "Retrieval Practice",
+      "what": "Retrieval Practice is a practice during which information is recalled without the use of study materials.",
+      "why": "Every time we need to use learned information (we remember it), the brain creates stronger connections which means that what we have learned will be retained for a longer period of time and it will be easier to access in the future.",
+      "how": "Try to recall the material after studying it (e.g. write down as much as you can remember, answer revision questions, take a self-test, explain the material to someone else etc). After that, look at the material again and repeat the retrieval process.",
+      "studyDescription": "Scientific studies that compared singular study sessions, repeated study sessions, concept mapping and retrieval practice, found that the learners who used retrieval practice retained the most information 1 week after studying. Although the students themselves were of the opinion that concept mapping would yield the best results, of the 120 students that took part in the study, 84% performed better in tests one week after the study session if they had used retrieval practices.",
+      "teacher": {
+        "1p": "Have your students test their knowledge and reconstruct what they’ve learned from memory to boost long-term retention. Retrieval practice can lead to a 49% increase in test scores when compared to restudying (i.e. reviewing one’s notes or rereading articles). (Karpicke & Blunt, 2011). This benefit is called the “Testing Effect”. Students spend plenty of time putting information into their memory systems but <b>often need more opportunities to practice taking information out of their memory system.</b>",
+        "2t": "What happens during a lesson?",
+        "2p": "For example, when students listen to a teacher, read articles, watch videos, or create concept maps or write essays while looking at their notes, they perform encoding activities. In other words, these student actions are completed as part of putting information in memory accurately and elaborating on it – these are ways for students to acquire information and construct their learning.",
+        "3p": "Empirical studies have found that <b>students need to reconstruct memories to strengthen their ability to retrieve their learning.</b> A mix of encoding and retrieval activities are beneficial. But when comparing the efficacy of encoding versus retrieval types of activities, especially when reviewing material for tests, we see that retrieval activities are much more effective in supporting durable learning.",
+        "4t": "How to do it?",
+        "4p": "One of the easiest ways to <b>practice retrieval is to ask the students to give a summary of what they heard/read in class at the end of the lesson.</b> In order to do that, they can answer a few questions, list the main points covered in the lesson, explain the new material to a friend, etc. (Self-)tests and revision quizzes (without the use of materials) are also among highly effective retrieval tools.",
+        "5p": "<b>Students ought to be steered towards time conservation:</b> instead of reading the information again, they could attempt to recall it (in different situations, for example on their way home from school). Explaining the information to other people also yields great results (fellow students, grandparents, pets, teddy bears are all excellent as a choice of audience).",
+        "6t": "How does it work?",
+        "6p": "Academic learning is defined as a constructive cognitive activity (Castaneda & Ortega, 2004). From this cognitive perspective, we can place learning activities into two broad categories: encoding activities and retrieval activities. <b>Encoding activities</b> focus more on<b> “putting information into” long-term memory. Retrieval activities</b> focus more on <b>“taking information out” of memory</b> – i.e. practising the extraction of information from our long-term memory."
+      }
+    },
+    "spaced": {
+      "title": "Spaced Learning",
+      "what": "Spaced learning uses intensive learning sessions that are repeated over a short amount of time and interspersed with pauses of physical activity.",
+      "why": "The pauses enable the brain to delete the information from short-term memory and if it is then repeated, it will be retained in long-term memory.",
+      "how": "This method uses short, up to 20-minute-long, intensive study sessions that are interspersed with activities where the stimulus is missing. The break activity needs to be long enough to support the brain in long-term memory formation.",
+      "studyDescription": "Scientific studies show that spaced learning enables students to retain information in long-term memory much quicker than traditional study methods.",
+      "teacher": {
+        "1p": "Structure your classes to <b>include repetition and active breaks of 10 minutes</b> to support long-term memory formation. Spaced learning is an intense learning technique derived from neuroscientific studies on long-term memory formation. The Spaced learning recipe consists of three memory activations separated by two 10-minute breaks. The same content (with slight variations) is repeated three times in the same session. Between each repetition is a 10-minute ‘distractor’ break in which students do an activity unrelated to the target content.",
+        "2t": "How to use this strategy?",
+        "2p": "For the approach to work, it is believed that during the 10-minute breaks, the brain networks previously activated have to be inactive. Thus, rather than having a ‘free’ break, students complete a type of distractor activity. <b>Something completely different that occupies their mind so they cannot go back to the previous learning</b> (Kelley & Whatson, 2013). Possible activities could be drawing/pictionary, making models out of plaster, doing calisthenic exercises, going for a walk in nature, etc.",
+        "3t": "How does Spaced Learning work?",
+        "3p": "Encoding information in long-term memory frequently happens when our brains are repeatedly stimulated with content and separated by time blocks without that content (stimuli). Repeated stimuli separated by time spaces without stimuli can lead to activation of genes which initiate protein production. These proteins then can strengthen sensitized synapses, triggering Long-Term Potentiation (LTP) and long-term memory (LTM) formation (Frey & Morris, 1997).",
+        "4t": "Example",
+        "4p": "One study found that <b>the effect of a one-hour spaced learning lesson is equivalent to 4 months of traditional classroom learning</b> (Kelley & Whatson, 2013). 13-15-year-old students taking a biology course in the UK were randomly divided into two groups (440 in the experiment group and 1730 in the control group).",
+        "5p": "<b>Group A:</b> studied for 4 months, for a total of 23 hours + 1 hour of intensive revision.",
+        "6p": "<b>Group B:</b> studied the entire material in one hour (spaced with physical activity).",
+        "7p": "The groups took a test five days after the final revision session. Both groups got the same result!! (55.24%). Next time, another group was added:",
+        "8p": "<b>Group C:</b> studied for 4 months (23 hours) + 1 hour of spaced learning. The results of Group C were the best: 62.84%.",
+        "9p": "Naturally, it would be impossible to study this intensively in every lesson, however, studies clearly show that <b>spaced learning helps in retaining information in the long-term and getting better results.</b>",
+        "10t": "Alternative",
+        "10p": "It could be said that it is impossible to have two 10-minute breaks during a 45-minute lesson. In this case, we take advantage of <b>spaced learning within the subject</b>. Let's look at another example (Rohrer et al., 2015).",
+        "11p": "Seventh grade students must learn mathematics for 3 months. The students are given 10 sets. Each set contains 12 problems.  Of the 120 problems, 12 have to do with graphs and 12 with straight lines/planes. The rest cover a variety of topics such as fractions, proportions, percentages, statistics and probability.",
+        "12p": "<b>The sets follow either a block or a spaced structure.</b>For example, in the case of a block structure, all 12 graph problems are solved on the same day. When using a spaced structure, 4 problems are solved on the same day and the other 8 are distributed among other problems (e.g. 1-2 problems at a time).",
+        "13p": "Group 1 covered the graph problems using spaced learning and the straight line/plane problems in one block.",
+        "14p": "Group 2 covered the straight line/plane problems using spaced learning and the graph problems in one block. 30 days after they had stopped practicing these types of problems, the students had to unexpectedly take a test covering the material.",
+        "15p": "Therefore, all students covered the same problems during the 3-month study period, however, learning was done either following spaced learning practices or in one block as is traditional. Results: test on the following day: 86% vs 64% and after a months 74% and 42% in favour of spaced learning.",
+        "16t": "In conclusion",
+        "16p": "So, <b>rather than using more time to explain something to students, try to organise your class in 3 sections</b> with 2 active breaks. To prepare the first block, think of the content you want to present, select it and imagine how you will present it. In the following section you should repeat pre-presented content but reflect on how to emphasize recalling (retrieving from the long term memory). Finally in your last section, focus on how to repeat content with the focus on application. <b>Distractive breaks need to be structured, so you need to find an activity (or two different ones) that will work for your students.</b>",
+        "17t": "What could a Spaced Learning lesson look like?",
+        "17p": "1) The teacher presents key facts or information for 20-30 minutes. ",
+        "18p": "2) Students are given a 10-minute active break.",
+        "19p": "3) Students review and recall the previously presented key facts/information.",
+        "20p": "4) Students are given a second 10-minute active break.",
+        "21p": "5) Students recall and apply the key facts/information."
+      }
+    },
+    "mindset": {
+      "title": "Reframing",
+      "what": "Mindsets are beliefs about ourselves and our surroundings that shape the way we behave. Reframing these mindsets can then be viewed as the reshaping of our (subconscious) beliefs so that they are more useful to us.",
+      "why": "Reframing helps us to use (academically) stressful situations to our advantage and to view them as valuable.",
+      "how": "Reframe the situation in a positive light. For example, learn about the positive effects of stress and remind yourself of these prior to a stressful situation. Another useful tactic is to change the language you use - for example, the 'anxiety' you feel before an exam, can be seen as 'excitement'. Public speaking can be viewed as, instead of opening yourself up to criticism, helping others by sharing some interesting information with them .",
+      "studyDescription": "Studies compared how people with a 'stress in limiting' mindset performed in stressful situations compared to people with a 'stress in empowering' mindset and found that the latter mindset was useful to have. Although the mindset does not make the stressful situation any less complicated or exhausting, a positive view of stress can help you focus on other, more useful things.",
+      "teacher": {
+        "1p": "Work with your students to <b>see the positives of academic challenges</b> to help them learn to better embrace learning and manage stress. Reframing means to change the way something is expressed or viewed. It involves purposefully changing our point of view (and our mindset). Reframing can be helpful in changing student views of academic challenges from being negative to positive. This can help them self-regulate, manage stressful situations, and embrace learning.",
+        "2t": "Changing our attitude",
+        "2p": "Shifting our mindset can help us take advantage of stressful experiences. This doesn't mean that we should go out looking for more stress in our lives, nor does it mean that we should avoid unnecessary stress. What it does mean is that, <b>when we are facing stressful situations, especially stressful academic situations, we should find ways to embrace them.</b>",
+        "3t": "How to do it?",
+        "3p": "Reframing (also called cognitive reappraisal) is a method of managing stress that works by <b>helping us modify our beliefs about stress from avoiding it to taking advantage of it.</b> These modifications can occur even through short interventions. For example, one research study showed that watching three 3-minute video clips about the enhancing nature of stress over the course of 1-week improves employees work performance, psychological symptoms, and general health, compared to those who watched videos about the debilitating effects of stress or did not watch any videos (Crum, Salovey, & Achor, 2013).",
+        "4t": "Examples from teachers",
+        "4p": "Our Illumine teachers conducted a similar experiment with their students. When students were shown a 1-minute video where the negative effects of stress were brought out, the students (both elementary and secondary) agreed that their ability to perform (either in a test or public speaking setting) was lower than their actual competencies. On the other hand, when students were shown a 1-minute video on the positive effects of stress, the students' attitudes also changed, particularly among younger girls - <b>they were of the opinion that moderate stress would be helpful in completing their task</b>. For example, when 10 students (of 15) agreed with the statement that 'stress is bad for me and I should avoid it' prior to watching the video, then after watching the negative stress video, 11 students agreed with the statement and, after watching the positive video, merely three students agreed. None of the students agreed with the statement that 'stress helps me study' before watching the video nor after watching the negative video, however, after watching the positive video, four students agreed with it. In conclusion, it can be said that the attitudes towards all of the eight stress-related statements became more positive. <b>Therefore, even a short exercise (watching videos and having a conversation), can help students to better cope with academic stress.</b>",
+        "5p": "Another Illumine teacher studied the effects of reframing on test results (14 fifth grade students took part in the experiment) and found that feeling the effects of stress does have a correlation to test results, albeit a weak one. Among boys, who watched the 'stress is bad' video, it transpired that the greater the stress, the worse their test results. For example, at the beginning of the lesson, two students had a positive attitude towards stress, the rest all thought that stress was bad. The viewing of the 'stress is bad' video did not seem to have an effect on the attitudes of the students in most cases. One student who originally thought that stress was positive, had changed their mind. None of the students who watched the 'stress is good' video had a positive attitude towards stress at the beginning of the lesson, however the attitude of 63% of the girls changed. One of the boys developed a better attitude towards stress and one developed a worse attitude towards stress.",
+        "6t": "Further suggestions",
+        "6p": "Prior to a public speaking engagement (e.g. giving a presentation in front of the class) think that you are helping others: you are sharing important information that they can benefit from. Before giving a presentation, ask yourself: Who is my audience? What are their expectations? Whilst speaking, try to meet those expectations. <b>On the day of the presentation, remind yourself that your presentation allows the listeners to learn something important.</b>",
+        "7p": "Remember, that at their core (chemical reactions in the brain) emotions are very similar. For example, instead of <b>worrying before a test, think of it as an exciting challenge where you can demonstrate your skills and knowledge.</b> As well as reframing the emotion pair of worried-excited, you can also reframe the following emotional pairs: irritated-happy, sad-content, tired-sleepy. Remember that moderate academic stress shows that your body is ready for the challenge and is helping you to perform better. Think of your body's efforts in a positive manner and you will be successful!",
+        "8t": "In conclusion",
+        "8p": "When students believe in the possibility of their development, they understand that putting in effort makes them stronger. <b>Therefore, they are prepared to go the extra mile to get better results.</b> Several studies have shown that, reframing helps students get better results (both raising their grade point average as well as getting a positive result in more subjects). (Paunesku et al., 2015)",
+        "9t": "Stress - good or bad?",
+        "9p": "Many people don't know that stress responses can be measured. In a Stanford university study (Crum et al., 2017) they used saliva samples to detect hormones (e.g. cortisol) and found that by embracing stress and viewing stress as being enhancing rather than weakening or debilitating, your body is better positioned to grow and thrive in response to stressful situations. If you have a negative stress mindset your body may not grow and benefit as much from the stressful experiences, and in life we are constantly facing stressful experiences."
+      }
+    },
+    "distributed": {
+      "title": "Distributed Practice",
+      "what": "The conscious spreading of study practice so that the same material is covered for a shorter period of time across multiple days. Using intervals to enable the brain to better retain the information.",
+      "why": "Using shorter periods of time to study and repeating the material will enable you to better retain the information. During periods of non-study, your brain gets a chance to rest.",
+      "how": "Studying is spread over several days/weeks. The intervals are long enough for the brain to have to put in some effort to retrieve the information. Revision questions and multiple choice quizzes that allow the learned information to be recalled, are more effective than reading the material again, in enabling the brain to save the information in long-term memory.",
+      "studyDescription": "Studies have shown that if study sessions are spread over several days, the information will be better retained.",
+      "teacher": {
+        "1p": "Spread student practice activities across multiple classes rather than completing them in a single class to reduce student forgetting. Distributing practice reduces forgetting. Its benefits are called the “Spacing Effect” and it demonstrates that long-term learning is enhanced when learning events are spaced out in time, rather than presented in immediate succession (Vlach & Sandhofer, 2012). The spacing effect has been found in hundreds of studies since 1885 including the learning of facts, concepts, language, science, pictures, prose, and skill and motor learning such as typing, complex video games, and surgical skills (Beardsley, 2020). <b>Distributed practice does not require more practice time. It requires us to spread out the practice time. This spreading out produces better long-term learning</b> (Weinstein et al., 2018).",
+        "2t": "How does it work?",
+        "2p": "Third grade students (8-9-year-olds) were studying mathematics. <b>To practice, they solved four 1-minute tasks every day for 19 days</b>, i.e. they solved as many problems as they could within a minute (e.g. addition, subtraction, etc). (Schutte, et al., 2015)",
+        "3p": "<b>Group 1:</b> Solved all four 1-minute tasks in a row (mass learning);",
+        "4p": "<b>Group 2:</b> Solved two 1-minute tasks in a row in the morning and two 1-minute tasks in the afternoon (half-distributed),",
+        "5p": "<b>Group 3:</b> Solved one 1-minute task four times a day (distributed)",
+        "6p": "All students were tested with a pre-test prior to the experiment and then two tests after the experiment. Of these, the first one took place on day 19, after the last practical activity. The second took place on day 29, i.e. 10 days after the first test.",
+        "7p": "<b>Group 1:</b> 25 correct answers per minute in the pre-test, 35 in the final test - a growth of 10 answers (40%), spread very unevenly;",
+        "8p": "<b>Group 2:</b> 24 correct answers per minute in the pre-test, 39 in the final test - a growth of 15 answers (62.5%),",
+        "9p": "<b>Group 3:</b> 27 correct answers per minute in the pre-test, 45 in the final test - a growth of 18 answers (67%), spread very evenly."
+      }
+    }
   }
 }
