@@ -33,7 +33,7 @@ function EluPage() {
         <ul className={s.list}>
         {participants.map(person => (
           <li key={person.name} className={s.listItem}>
-            <b>{person.name}</b> - {person.role}
+            <b>{person.name}</b> - {person.role[lang as 'et' | 'en']}
           </li>
         ))}
         </ul>
