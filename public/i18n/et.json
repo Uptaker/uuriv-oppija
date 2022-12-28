@@ -86,7 +86,7 @@
     },
     "socrative": {
       "name": "Socrative",
-      "description": "Leht on küll mõeldud õpetajatele tunnis valikvastustega testide läbi viimiseks, kuid miski ei keela seda ka õpilaste enesekontrolliks kasutada. Tee õpetajapoolses kasutajaliideses omale kasutaja, loo ja salvesta valikvastustega küsimustikud ja käivita neid. testi sooritamiseks liitu õpilase poolelt testiruumiga ja soorita test. Socrative võimaldab ka loodud teste näiteks oma klassi või kursusekaaslastega jagada import lingi abil. Nii ei pea iga õppija ise küsimustikku looma vaid üht küsimustiku saab näiteks terve klassiga jagada.",
+      "description": "Leht on küll mõeldud õpetajatele tunnis valikvastustega testide läbi viimiseks, kuid miski ei keela seda ka õpilaste enesekontrolliks kasutada. Tee õpetajapoolses kasutajaliideses omale kasutaja, loo ja salvesta valikvastustega küsimustikud ja käivita neid. Testi sooritamiseks liitu õpilase poolelt testiruumiga ja soorita test. Socrative võimaldab ka loodud teste näiteks oma klassi või kursusekaaslastega jagada import lingi abil. Nii ei pea iga õppija ise küsimustikku looma vaid üht küsimustiku saab näiteks terve klassiga jagada.",
       "url": "https://www.socrative.com/"
     },
     "readlang": {
@@ -127,7 +127,7 @@
       "what": "Vaheldatud õppimine koosneb lühikese aja vältel korduvatest intensiivsetest õpisessioonidest, kus õppimise pauside ajal sooritatakse füüsilisi tegevusi.",
       "why": "Pauside tegemine aitab ajul informatsiooni lühimälust kustutada ning kui õpitut seejärel korrata, siis salvestub see pikaajalisse mällu.",
       "how": "Meetodi puhul kasutatakse lühikesi, kuni 20-minutilisi intensiivseid õppimissööste, mis vahelduvad tegevustega, kus puudub stiimul. Vahelduv tegevus peab olema piisavalt pikk, et aju saaks informatsiooni pikaajaliselt talletada. Antud õppe meetodi puhul kasutatakse tunni formaati, kus õppimise sööstud vahelduvad füüsilise tegevusega.",
-      "studyDescription": "Uuringu tulemused kinnitavad, et vaheldatud õppe puhul salvestatakse õpitu paremini pikaajalisee mällu ning seda tava õppemeetodiga võrreldes lühema aja jooksul.",
+      "studyDescription": "Uuringu tulemused kinnitavad, et vaheldatud õppe puhul salvestatakse õpitu paremini pikaajalisse mällu ning seda tava õppemeetodiga võrreldes lühema aja jooksul.",
       "teacher": {
         "1p": "Selleks, et toetada materjali salvestumist püsimällu, planeerige oma tunnid nii, et <b>kordamistegevused vahelduksid erinevate 10- minutiliste aktiivsete tegevustega</b>. Vaheldatud õpe on intensiivne õppimistehnika, mis toetub neuroteaduse uuringutele pikaajalise mälu kujunemisprotsesside kohta. Vaheldatud õpe sisaldab kolme mälu aktiveerimise tegevust, mille vahel on kaks 10-minutilist pausi. Sama sisu (väikeste variatsioonidega) korratakse kolm korda sama tunni jooksul. Iga korduse vahel on 10-minutiline \"häiriv\" paus, mille jooksul õpilased teevad sihtmaterjaliga mitteseotud tegevust (unustamise soodustamiseks).",
         "2t": "Kuidas seda strateegiat kasutada?",
