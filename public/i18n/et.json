@@ -30,7 +30,7 @@
   },
   "learnMore": {
     "readingTitle": "Lugemiseks",
-    "viewingTitle": "Vaatamiseks",
+    "listeningTitle": "Kuulamiseks",
     "articles": {
       "0": {
         "title": "Õpi selgeks õppimist... Kasutades väljatöötamist",
@@ -62,6 +62,10 @@
         "url": "https://www.bu.edu/ctl/guides/experiential-learning/",
         "lang": "Inglise keeles"
       }
+    },
+    "lecture": {
+      "title": "Ühe minuti loeng: kuidas uskumus meie võimeid mõjutab?",
+      "lang": "Eesti keeles"
     }
   },
   "elu": {

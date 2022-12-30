@@ -30,7 +30,7 @@
   },
   "learnMore": {
     "readingTitle": "For Reading",
-    "viewingTitle": "For Watching",
+    "listeningTitle": "For Listening",
     "articles": {
       "0": {
         "title": "Learn How to Study Using... Elaboration",
@@ -62,6 +62,10 @@
         "url": "https://www.bu.edu/ctl/guides/experiential-learning/",
         "lang": "in English"
       }
+    },
+    "lecture": {
+      "title": "One minute lecture: How do beliefs affect us?",
+      "lang": "in Estonian"
     }
   },
   "elu": {

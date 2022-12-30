@@ -54,13 +54,15 @@ function LearnMorePage() {
         </ul>
       </Container>
 
-        <Container color="peach" label={_('learnMore.viewingTitle')}>
-          <Collapsible type="collapsible" label={"TODO"}>
-            <div>TODO</div>
-          </Collapsible>
-          <Collapsible type="collapsible" label={"TODO"}>
-            <div>TODO</div>
-          </Collapsible>
+        <Container color="peach" label={_('learnMore.listeningTitle')}>
+          <ul className={s.list}>
+            <li className={s.listItem}>
+              <a href="https://novaator.err.ee/260018/uhe-minuti-loeng-kuidas-uskumus-meie-voimeid-mojutab" target="_blank">
+                {_('learnMore.lecture.title')}
+              </a>
+              <div className={s.tiny}>{_('learnMore.lecture.lang')}</div>
+            </li>
+          </ul>
         </Container>
 
       <div>
