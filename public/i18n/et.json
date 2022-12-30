@@ -79,7 +79,7 @@
       "description": "Lehekülg, mis aitab enda õppimiseks kulunud aega jälgida. Salvestab sisestatud aja ja teeb automaatselt andmetest kokkuvõtte",
       "url": "https://www.timecamp.com"
     },
-    "cbtthoughtdiart": {
+    "cbtthoughtdiary": {
       "name": "CBT Thought Diary",
       "description": "Mobiilirakendus, mis võimaldab mõtteanalüüsi teostada ja mõttemalle muuta.",
       "url": "https://cbtthoughtdiary.com/"
@@ -93,6 +93,21 @@
       "name": "Readlang",
       "description": "Võõrkeele õppimiseks. Sisestades võõra teksti, saad märkida enda jaoks ära võõrad sõnad. Sõnad tõlgitakse automaatselt ära, koostades õpitavate sõnade listi. Sõnu õppides on keskkonnas koheselt olemas sõnakaardid, mille abil saad õppida ning oma õpitulemusi kontrollida. Pärast kordamist kuvatakse õpitust statistiline tabel. Keskkond on osaliselt tasuta.",
       "url": "https://readlang.com/"
+    },
+    "pomofocus": {
+      "name": "Pomofocus",
+      "description": "Taimer, mis toetab vahelduv õppe tsüklit ehk annab märku kui 25 minutit on täis ja on pausi aeg. Pomodoro nimega leiab ka erinevaid rakendusi telefonile, mida saab kasutada alternatiivina lihtsalt telefoni taimerile.",
+      "url": "https://pomofocus.io/"
+    },
+    "toggl": {
+      "name": "Toggl",
+      "description": "Rakendus, mis aitab jälgida õppimiseks kulunud aega ja salvestab automaatselt kokkuvõtte. Saab kasutada nii telefonis, arvutis kui brauseris ja ühildub eri seadmetega.",
+      "url": "https://toggl.com/"
+    },
+    "quizlet": {
+      "name": "Quizlet",
+      "description": "Lehel saab teha tasuta mõistekaarte, mida saab kasutada õppimiseks, kordamiseks, meenutamiseks. Sobilik erinevate ainete õppimiseks, kasutatav nii arvutis kui telefonis ning saab märkida mitut mõistet tead, nii et on võimalik teha hiljem kokkuvõte.",
+      "url": "https://quizlet.com/"
     }
   },
   "strategy": {

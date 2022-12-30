@@ -79,7 +79,7 @@
       "description": "A website that helps to monitor the time taken to study. Saves the entered time and automatically creates a report based on given data.",
       "url": "https://www.timecamp.com"
     },
-    "cbtthoughtdiart": {
+    "cbtthoughtdiary": {
       "name": "CBT Thought Diary",
       "description": "A mobile app that enables thought analysis and reframing",
       "url": "https://cbtthoughtdiary.com/"
@@ -93,6 +93,21 @@
       "name": "Readlang",
       "description": "For learning a foreign language. When entering a text in a foreign language, the environment enables you to mark unknown words. These words will then be auto-translated and a list of vocabulary to be learned will be created. When learning the vocabulary, the application provides you with word cards, allowing you to use them to study as well as check your results. After revision, some statistics are provided in a table. The application is partially free.",
       "url": "https://readlang.com/"
+    },
+    "pomofocus": {
+      "name": "Pomofocus",
+      "description": "A timer that supports the spaced learning cycle - it will notify you when 25 minutes have passed and it's time for a break. If you search for Pomodoro in your app store, you can also find several mobile apps that can be used as an alternative to your phone's timer.",
+      "url": "https://pomofocus.io/"
+    },
+    "toggl": {
+      "name": "Toggl",
+      "description": "An application that can help measure the time spent on studying as well as automatically save a summary. Can be used both on phones and desktops and is compatible with various devices.",
+      "url": "https://toggl.com/"
+    },
+    "quizlet": {
+      "name": "Quizlet",
+      "description": "This webpage allows you to use cards for studying, revision and recall. Suitable for studying different subjects. Can be used both on mobile and desktop and allows you to mark how many phrases/cards you already knew so you can compile a summary later.",
+      "url": "https://quizlet.com/"
     }
   },
   "strategy": {

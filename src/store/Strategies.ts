@@ -46,7 +46,7 @@ export const strategies: Strategy[] = [
         paragraph: 'strategies.retrieval.teacher.6p',
       },
     ],
-    apps: ['timecamp', 'socrative', 'readlang'],
+    apps: ['socrative', 'readlang', 'quizlet'],
   },
   {
     title: 'strategies.spaced.title',
@@ -133,7 +133,7 @@ export const strategies: Strategy[] = [
         paragraph: 'strategies.spaced.teacher.21p'
       },
     ],
-    apps: ['timecamp', 'socrative', 'readlang'],
+    apps: ['timecamp', 'pomofocus', 'toggl'],
   },
   {
     title: 'strategies.mindset.title',
@@ -182,7 +182,7 @@ export const strategies: Strategy[] = [
         paragraph: 'strategies.mindset.teacher.8p',
       },
     ],
-    apps: ['cbtthoughtdiart' ,'timecamp', 'socrative', 'readlang']
+    apps: ['cbtthoughtdiary']
   },
   {
     title: 'strategies.distributed.title',
@@ -229,6 +229,6 @@ export const strategies: Strategy[] = [
         paragraph: 'strategies.distributed.teacher.9p'
       },
     ],
-    apps: ['timecamp', 'socrative', 'readlang']
+    apps: ['socrative', 'readlang', 'quizlet']
   }
 ]
