@@ -9,6 +9,7 @@
     "source": "Kasutatud kirjandus"
   },
   "nav": {
+    "studying": "Õppimisest",
     "strategies": "Strateegiad",
     "more": "Lisaks",
     "ELU": "ELU",
@@ -27,6 +28,17 @@
     "confidenceText": "Õpingute planeerimine ja kordamine pikema aja jooksul võib lausa kahekordistada mäletamistulemusi, pannes õpilast endasse rohkem uskuma.",
     "timeSavings": "Ajakulu vähenemine",
     "timeSavingsText": "Õpistrateegia kasutamisel õpid õppima, vähendades sellega üleliigseid tegevusi ja ajakulu oma edaspidistes õpingutes."
+  },
+  "study": {
+    "title": "Õppimisest",
+    "p1": "Õppimine on seotud inimese aju ja erinevate tunnetusprotsessidega.",
+    "introTitle": "Mis on seotud õppimisega?",
+    "introBullets": {
+      "1": "tähelepanu",
+      "2": "töömälu",
+      "3": "pikaajaline mälu",
+      "4": "pidurdusprotsessid"
+    }
   },
   "learnMore": {
     "readingTitle": "Lugemiseks",

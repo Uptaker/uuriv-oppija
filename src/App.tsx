@@ -5,6 +5,7 @@ import LearnMorePage from './pages/LearnMorePage'
 import Nav from './layout/Nav'
 import Footer from './layout/Footer'
 import StrategyPage from './pages/StrategyPage'
+import StudyingPage from './pages/StudyingPage'
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path='/' element={<HomePage />} />
           <Route path='/elu' element={<EluPage />} />
           <Route path='/learn-more' element={<LearnMorePage />} />
+          <Route path='/studying' element={<StudyingPage />} />
           <Route path='strategy/:id' element={<StrategyPage />} />
         </Routes>
       </div>
