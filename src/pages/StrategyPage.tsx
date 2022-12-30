@@ -19,7 +19,6 @@ function StrategyPage() {
 
   const [modalContent , setModalContent] = useState<string|null>(null)
 
-// TODO remove rickroll fallback when videos are on youtube ;)
   return !strategy ? (<>TODO generic not found page</>) : (
     <>
       <ContentDiv>
@@ -40,7 +39,7 @@ function StrategyPage() {
 
       <ContentDiv wide center color={strategy.color}>
         <div className={s.videoPlayer}>
-          <iframe src={strategy.videoUrl ? strategy.videoUrl : "https://www.youtube.com/embed/dQw4w9WgXcQ"}
+          <iframe src={strategy.videoUrl}
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
