@@ -1,5 +1,6 @@
 import classNames from 'classnames'
 import React from 'react'
+import {Link} from 'react-router-dom'
 import {_} from '@codeborne/i18n-json'
 import ContentDiv from '../layout/ContentDiv'
 import Container from '../components/Container'
@@ -64,6 +65,9 @@ const StudyingPage = () => (
       <div>{_('study.further')} <a href="https://edidaktikum.ee/et/content/%C3%B5ppimine-ja-ps%C3%BChholoogia" target="_blank">
           {_('study.link')} <i className={classNames("fa-solid fa-arrow-up-right-from-square", s.tiny)}></i>
         </a>
+      </div>
+      <div className={classNames(s.intro, s.tiny)}>
+        <Link to='/learn-more' className={s.accordionSource}>{_('general.source')}</Link>
       </div>
   </ContentDiv>
 )
