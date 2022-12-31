@@ -14,6 +14,7 @@ function Nav() {
   const [isDesktop, setIsDektop] = useState<any>({
     matches: window.innerWidth > 1024 ? true : false
   })
+  const lang = document.cookie.split('; ')?.find(s => s?.startsWith('LANG='))?.split('=')?.[1]
 
   // Using media queries within React: https://stackoverflow.com/a/66590903
   useEffect(() => {
@@ -36,6 +37,13 @@ function Nav() {
       </Link>
 
       <ul className={classNames({[s.navMenu]: true, [s.navOpen]: isMenuOpen && !isDesktop})}>
+        {lang === 'et' && (
+          <li>
+            <Link to="/studying" className={s.navLink} onClick={() => setIsMenuOpen(!isMenuOpen)}>
+              {_('nav.studying')}
+            </Link>
+          </li>
+        )}
         <li
           className={s.dropdownNav}
           onMouseEnter={() => setDropdown(true)}
