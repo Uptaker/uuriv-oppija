@@ -41,6 +41,10 @@
   }
 }
 
+.image {
+  max-width: 100%;
+}
+
 .tiny {
   @include typography.font(tiny);
   line-height: layout.space(medium);

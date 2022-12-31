@@ -36,7 +36,7 @@ const StudyingPage = () => (
         <div className={s.tiny}>{_('general.sourceText')}: <a href="https://vara.e-koolikott.ee/h5p/embed/3904" target="_blank">{_('study.brain.source')} <i className={classNames("fa-solid fa-arrow-up-right-from-square", s.tiny)}></i></a></div>
         <div>
           <p dangerouslySetInnerHTML={{__html: _('study.brain.brain2')}} />
-          <img src={brain2} />
+          <img src={brain2} className={s.image} />
         </div>
 
         <div>
@@ -48,7 +48,7 @@ const StudyingPage = () => (
               </li>
             ))}
           </ul>
-          <img src={brain3} />
+          <img src={brain3} className={s.image} />
           <p className={s.tiny}>{_('general.sourceText')}: {_('study.brain.keyfactors.source')}</p>
         </div>
       </Container>
