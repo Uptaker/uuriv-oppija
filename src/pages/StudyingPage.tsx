@@ -3,7 +3,6 @@ import React from 'react'
 import {_} from '@codeborne/i18n-json'
 import ContentDiv from '../layout/ContentDiv'
 import Container from '../components/Container'
-import StrategyInfoCard from '../components/StrategyInfoCard'
 import brain from '../assets/study/brain.png'
 import brain2 from '../assets/study/brain2.png'
 import brain3 from '../assets/study/brain3.png'
@@ -14,7 +13,6 @@ const StudyingPage = () => (
   <ContentDiv>
     <h1>{_('study.title')}</h1>
     <p className={s.intro}>{_('study.p1')}</p>
-    {/* <StrategyInfoCard color="green" label={_('study.intro')} content={_('study.')}/> */}
 
       <Container color="green" label={_('study.introTitle')}>
         <ul className={s.list}>
@@ -59,10 +57,14 @@ const StudyingPage = () => (
         <p dangerouslySetInnerHTML={{__html: _('study.conclusion.p1')}} />
         <p dangerouslySetInnerHTML={{__html: _('study.conclusion.p2')}} /> 
         <p>{_('study.conclusion.listen')}: <a href="https://novaator.err.ee/260018/uhe-minuti-loeng-kuidas-uskumus-meie-voimeid-mojutab" target="_blank">
-                {_('learnMore.lecture.title')} <i className={classNames("fa-solid fa-arrow-up-right-from-square", s.tiny)}></i>
+          {_('learnMore.lecture.title')} <i className={classNames("fa-solid fa-arrow-up-right-from-square", s.tiny)}></i>
         </a></p> 
         <p dangerouslySetInnerHTML={{__html: _('study.conclusion.end')}} /> 
       </Container>
+      <div>{_('study.further')} <a href="https://edidaktikum.ee/et/content/%C3%B5ppimine-ja-ps%C3%BChholoogia" target="_blank">
+          {_('study.link')} <i className={classNames("fa-solid fa-arrow-up-right-from-square", s.tiny)}></i>
+        </a>
+      </div>
   </ContentDiv>
 )
 
