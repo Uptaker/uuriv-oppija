@@ -67,7 +67,7 @@ const StudyingPage = () => (
         </a>
       </div>
       <div className={classNames(s.intro, s.tiny)}>
-        <Link to='/learn-more' className={s.accordionSource}>{_('general.source')}</Link>
+        <Link to='/learn-more'>{_('general.source')}</Link>
       </div>
   </ContentDiv>
 )
