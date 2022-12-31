@@ -1,0 +1,52 @@
+@use '../stylesheets/colours.scss';
+@use '../stylesheets/typography.scss';
+@use '../stylesheets/layout.scss';
+@use '../stylesheets/borders.scss';
+
+@import './LearnMorePage.module.scss';
+
+.intro {
+  margin: layout.space(large) 0;
+}
+
+.list {
+  composes: list;
+
+  & li::before {
+    color: colours.colour(green);
+  }
+}
+
+.listItem {
+  composes: listItem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+
+  & img {
+    max-width: 100%;
+    margin-top: layout.space(medium);
+  }
+
+  @include layout.large {
+    flex-direction: row;
+
+    & img {
+      max-width: 50%;
+      margin-top: initial;
+      margin-left: layout.space(small);
+    }
+  }
+}
+
+.tiny {
+  @include typography.font(tiny);
+  line-height: layout.space(medium);
+}
+
+.title {
+  text-decoration: underline;
+  text-decoration-color: colours.colour(green);
+}

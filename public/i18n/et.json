@@ -6,7 +6,8 @@
     "why": "Miks?",
     "readMore": "Loe rohkem",
     "logo": "Erialasid lõimiv uuendus",
-    "source": "Kasutatud kirjandus"
+    "source": "Kasutatud kirjandus",
+    "sourceText": "Allikas"
   },
   "nav": {
     "studying": "Õppimisest",
@@ -38,6 +39,33 @@
       "2": "töömälu",
       "3": "pikaajaline mälu",
       "4": "pidurdusprotsessid"
+    },
+    "p2": "Nendest protsessidest teadlik olemine toetab tõhusat õppimist.",
+    "p3": "Siin toome välja lühidalt infot õppimise ja psühholoogia seostest ning peamiselt ajust ja mälust.",
+    "brain": {
+      "title": "Õppimine ja aju",
+      "text": "Närvirakk koosneb rakukehast ja <b>jätketest ehk närvikiududest.</b> Lühemad jätked - <b>dendriidid</b> võtavad ärrituse vastu ja juhivad selle rakukehasse. Pikema jätke – <b>aksoni</b> kaudu liigub erutus rakust välja. Akson hargneb otsast ja on närvilõpmete kaudu ühenduses teiste rakkudega. Enamus aksoneid on kaetud <b>müeliinkihiga</b>, mille tõttu liigub erutus kuni 100 m/s – see on 100 korda kiirem kui müeliinkihita dendriitides. Akson võib olla meetripikkune.",
+      "source": "Neuroni ehitus",
+      "brain2": "Meie elu jooksul <b>luuakse, muudetakse</b> ja <b>kustutatakse</b> ajurakkudevahelisi sidemeid pidevalt. Korduvaid mustreid (nt mõtlemine) on lihtsam korrata.",
+      "keyfactors": {
+        "title": "Võtmetegurid",
+        "factors": {
+          "1": "1. Sünaps (Synaptogenees) - sidemete moodustumine",
+          "2": "2. Pika-ajaline seose tugevnemine - muudab seosed püsivamaks",
+          "3": "3. Müeliini moodustumine - muudab seosed tõhusamaks"
+        },
+        "source": "Stahl et al. 2010"
+      }
+    },
+    "memory": {
+      "title": "Mälu ja mäletamine"
+    },
+    "conclusion": {
+      "title": "Kokkuvõte",
+      "p1": "Inimeste ajud on erinevad, aga aju on imeline elund: <b>kõik oleneb sellest, mida sa ise oma ajuga teed!</b>",
+      "p2": "Mõnel kulub õppimisele rohkem aega / kordusi, kuid lõpuks on võimalik materjal sama hästi omandada, s.t. <b>praktiliselt igaüks võib saada osavaks mistahes alal.</b> Muuda uskumusi ja usu endasse!",
+      "listen": "Kuula",
+      "end": "Õppima õppimine aitab Sul saada <b>tõhusamaks õppijaks!</b>"
     }
   },
   "learnMore": {
