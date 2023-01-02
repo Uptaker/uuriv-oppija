@@ -7,8 +7,13 @@ import Container from '../components/Container'
 import brain from '../assets/study/brain.png'
 import brain2 from '../assets/study/brain2.png'
 import brain3 from '../assets/study/brain3.png'
+import forgetting from '../assets/study/forgetting.png'
+import time from '../assets/study/time.png'
+import camera from '../assets/study/camera.jpg'
+import synapse from '../assets/study/synapse.jpg'
 
 import s from './StudyingPage.module.scss'
+import Divider from '../layout/Divider'
 
 const StudyingPage = () => (
   <ContentDiv>
@@ -52,7 +57,70 @@ const StudyingPage = () => (
         </div>
       </Container>
       <Container label={_('study.memory.title')} color="green">
-
+        <div className={s.trio}>
+          <div>
+            <div>{_('study.memory.question')}</div>
+            <div className={s.large}>{_('study.memory.no')}</div>
+          </div>
+          <div className={s.imgDiv}><img src={camera} className={s.image} /></div>
+          <div>{_('study.memory.connections')}</div>
+        </div>
+        <div className={classNames(s.row, s.memory)}>
+          <div>{_('study.memory.sensory')}</div>
+          <div><i className="fa-solid fa-right-long"></i></div>
+          <div>{_('study.memory.working')}</div>
+          <div><i className="fa-solid fa-right-left"></i></div>
+          <div>{_('study.memory.longterm')}</div>
+        </div>
+        <div className={s.coding}>
+          <div>
+            <div>{_('study.memory.1')} <i className="fa-solid fa-right-long"></i></div>
+            <div>{_('study.memory.2')} <i className="fa-solid fa-right-long"></i></div>
+          </div>
+          <div>
+            <div className={s.right}>{_('study.memory.3')} <i className="fa-solid fa-turn-down"></i></div>
+            <div><i className="fa-solid fa-left-long"></i> {_('study.memory.4')} <i className="fa-solid fa-left-long"></i></div>
+          </div>
+        </div>
+        <div className={s.green}>
+          <div>{_('study.memory.quote')}</div>
+          <div className={s.tiny}>- {_('study.memory.source')}</div>
+        </div>
+        <Divider colour='green'/>
+        <div className={classNames(s.grid, s.table)}>
+          <div className={s.tableRow}>
+            <div className={s.strong}>{_('study.memory.coding')}</div>
+            <div className={s.strong}>{_('study.memory.retrieval')}</div>
+          </div>
+          <div className={s.tableRow}>
+            <div>{_('study.memory.deposit')}</div>
+            <div>{_('study.memory.withdraw')}</div>
+          </div>
+        </div>
+        <div className={s.center}>{_('study.memory.practice')}</div>
+        <Divider colour='green'/>
+        <div className={s.forgettingContent}>
+          <img src={forgetting} className={s.image} />
+          <div className={s.container}>
+            <div><p>{_('study.memory.forget')}</p><p>{_('study.memory.correct')}</p></div>
+            <div className={s.tiny}>{_('study.memory.source2')}</div>
+          </div>
+        </div>
+        <div dangerouslySetInnerHTML={{__html: _('study.memory.brains')}}/>
+        <div className={classNames(s.forgettingContent, s.reactivate)}>
+          <div className={s.time}>
+            <div dangerouslySetInnerHTML={{__html: _('study.memory.reactivate')}}/>
+            <img src={time} className={s.image} />
+          </div>
+          <div>
+            <ul className={s.list}>
+              <li className={s.listItem}>{_('study.memory.synapse')}</li>
+              <li className={s.listItem}>{_('study.memory.strengthen')}</li>
+              <li className={s.listItem}>{_('study.memory.formation')}</li>
+            </ul>
+            <img src={synapse} className={s.synapse} />
+          </div>
+        </div>
       </Container>
       <Container label={_('study.conclusion.title')} color="green">
         <p dangerouslySetInnerHTML={{__html: _('study.conclusion.p1')}} />

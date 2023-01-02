@@ -54,3 +54,237 @@
   text-decoration: underline;
   text-decoration-color: colours.colour(green);
 }
+
+.trio {
+  display: flex;
+  flex-direction: column;
+  gap: layout.space(small);
+
+  & .imgDiv {
+    max-width: 60%;
+    margin: auto;
+  }
+
+  @include layout.tablet {
+    flex-direction: row;
+
+    & .imgDiv {
+      max-width: initial;
+      margin: initial;
+    }
+
+    & div {
+      flex: 1 0;
+    }
+  }
+}
+
+.large {
+  @include typography.font(sub-heading);
+  margin-top: layout.space(medium);
+  text-transform: uppercase;
+  color: colours.colour(peach);
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+
+  &.memory {
+    @include typography.font(minuscule);
+
+    & div {
+      display: flex;
+      width: layout.space(40);
+      height: layout.space(20);
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      &:nth-child(odd) {
+        background: colours.colour(peach);
+      }
+
+      @include layout.phone {
+        height: layout.space(30);
+      }
+
+      @include layout.large {
+        height: layout.space(20);
+      }
+    }
+
+    @include layout.smallScreen {
+      @include typography.font(tiny);
+    }
+
+    @include layout.phone {
+      @include typography.font(small);
+    }
+
+    @include layout.tablet {
+      @include typography.font(regular);
+    }
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  gap: layout.space(medium);
+
+  &.table {
+    display: table;
+    gap: initial;
+    border-collapse: collapse;
+
+    & .tableRow {
+      display: table-row;
+
+      & div {
+        display: table-cell;
+        border: borders.$green-border;
+        padding: layout.space(tiny);
+
+        @include layout.smallScreen {
+          padding: layout.space(small);
+        }
+
+        @include layout.phone {
+          padding: layout.space(medium);
+        }
+      }
+    }
+  }
+}
+
+.coding {
+  @include typography.font(minuscule);
+  display: flex;
+  justify-content: center;
+  gap: layout.space(tiny);
+
+  & div {
+    & div {
+      padding: layout.space(small);
+      background: colours.colour(yellow);
+
+      &:not(:last-child) {
+        margin-bottom: layout.space(tiny);
+      }
+
+      &.right {
+        text-align: right;
+      }
+    }
+  }
+
+  @include layout.smallScreen {
+    @include typography.font(tiny);
+  }
+
+  @include layout.phone {
+    @include typography.font(small);
+    gap: layout.space(small-medium);
+
+    & div {
+      & div {
+        padding: layout.space(small-medium);
+  
+        &:not(:last-child) {
+          margin-bottom: layout.space(small-medium);
+        }
+      }
+    }
+  }
+
+  @include layout.tablet {
+    @include typography.font(regular);
+    gap: layout.space(medium);
+
+    & div {
+      & div {
+        padding: layout.space(medium) layout.space(medium-large);
+  
+        &:not(:last-child) {
+          margin-bottom: layout.space(medium);
+        }
+      }
+    }
+  }
+}
+
+.green {
+  background: colours.colour(green);
+  padding: layout.space(medium);
+
+  & div:last-child {
+    text-align: right;
+  }
+}
+
+.strong {
+  font-weight: typography.font-weight(semi-bold);
+}
+
+.center {
+  margin: auto;
+}
+
+.forgettingContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  & .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 100%;
+    margin-top: layout.space(medium);
+
+    & div:last-of-type {
+      align-self: flex-end;
+    }
+  }
+
+  &.reactivate {
+    justify-content: space-evenly;
+    gap: layout.space(large);
+
+    & div {
+      flex: 1 0;
+    }
+
+    & .time {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      & div {
+        flex: initial;
+      }
+    }
+
+    & .synapse {
+      max-width: 75%;
+      padding-left: layout.space(medium-large);
+
+      @include layout.phone {
+        max-width: 50%;
+        padding-left: layout.space(large);
+      }
+    }
+  }
+
+  @include layout.large {
+    flex-direction: row;
+
+    & .container {
+      max-width: 50%;
+      margin-top: initial;
+      margin-left: layout.space(small);
+    }
+  }
+}

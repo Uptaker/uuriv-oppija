@@ -58,7 +58,32 @@
       }
     },
     "memory": {
-      "title": "Mälu ja mäletamine"
+      "title": "Mälu ja mäletamine",
+      "question": "Kas mälu salvestab kõike nagu kaamera?",
+      "no": "ei",
+      "connections": "Aju loob meie kogemustest füüsilised seosed - seosed ajurakkude vahel (nt närviringis).",
+      "sensory": "Sensoorne mälu",
+      "working": "Töömälu",
+      "longterm": "Pika-ajaline mälu",
+      "1": "Omandamine",
+      "2": "Kodeerimine",
+      "3": "Kinnistamine",
+      "4": "Meenutamine",
+      "quote": "Mällu talletamisel ja meenutamisel aktiveeruvad erinevd närviringid.",
+      "source": "Tonegawa, 2017",
+      "coding": "Kodeerimise fookus",
+      "retrieval": "Meenutamise fookus",
+      "deposit": "Info 'sisestamine'",
+      "withdraw": "Info 'väljaotsimine'",
+      "practice": "Info 'väljaotsimist' on vaja harjutada",
+      "forget": "Me unustame.",
+      "correct": "See peab nii olema.",
+      "source2": "Stahl et al. 2010",
+      "brains": "Meie ajud on programmeeritud unustama, et <b>vajalik</b> oleks kättesaadav.",
+      "reactivate": "Mälu <b>reaktiveerimine</b> tugevdab mälu.",
+      "synapse": "Sünaps",
+      "strengthen": "Pika-ajaline seose tugevnemine",
+      "formation": "Müeliini moodustumine"
     },
     "conclusion": {
       "title": "Kokkuvõte",
