@@ -16,6 +16,7 @@ export interface Page {
 const sources = [
   'Beardsley, M. 2020. Science of Learning Concepts for Teachers (Project Illuminated) (1st ed.).  Retrieved from https://illuminated.pressbooks.com/',
   'Bjork, R. A., Dunlosky, J., & Kornell, N. (2013). Self-regulated learning: Beliefs, techniques, and  illusions. Annual review of psychology, 64, 417-444.://illuminated.pressbooks.com/',
+  'Blausen.com staff (2014). "Medical gallery of Blausen Medical 2014". WikiJournal of Medicine 1 (2). DOI:10.15347/wjm/2014.010. ISSN 2002-4436.',
   'Bloom, K. C., & Shuell, T. J. (1981). Effects of massed and distributed practice on the learning and  retention of second-language vocabulary. The Journal of Educational Research, 74(4), 245-248',
   'Boettcher, J., Klippgen, L., Mietzsch, S., Grube, F., Krebs, T., & Bergholz, R. et al. (2019). Spaced  Education Improves the Retention of Laparoscopic Suturing Skills: A Randomized Controlled Study.  European Journal Of Pediatric Surgery, 30(02), 193-200. doi: 10.1055/s-0039-1681022',
   'Cepeda, N. J., Pashler, H., Vul, E., Wixted, J. T., & Rohrer, D. (2006). Distributed practice in verbal  recall tasks: A review and quantitative synthesis. Psychological bulletin, 132(3), 354',
