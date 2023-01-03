@@ -6,7 +6,9 @@
     "why": "Why?",
     "readMore": "Read more",
     "logo": "Learning in Interdisciplinary Focused Environment",
-    "source": "Sources"
+    "source": "Sources",
+    "sourceText": "Source",
+    "imageSource": "Image"
   },
   "nav": {
     "studying": "About Studying",
@@ -28,6 +30,60 @@
     "confidenceText": "Planning and repeating studies during a longer period of time can even double the amount of information retained, which in turn will increase the learner's belief in themselves.",
     "timeSavings": "Saving time",
     "timeSavingsText": "Learning strategies can teach you how to study, minimising procrastination activities and thus also the total time needed to study in the future."
+  },
+  "study": {
+    "title": "About Learning",
+    "p1": "Learning is closely linked with the human brain and various sensations (attention, working memory, long-term memory, etc). Being aware of these processes can help you learn more efficiently",
+    "p3": "We will briefly outline the connections between learning and psychology, paying closer attention to the brain and memory.",
+    "brain": {
+      "title": "Learning and the brain",
+      "text": "A neuron consists of the cell body (soma) and <b>nerve fibres.</b> The shorter nerve fibres - <b>dendrites</b> receive impulses and pass them to the soma. The longer fibre - <b>axon</b> is responsible for transmitting the information. The axon branches at the end and connects to other cells via telodendria. Most axons are surrounded by <b>myelin</b>, which means that information is transmitted at a speed of 100 m/s – that's 100 times faster than dendrites without myelin. An axon can be up to a metre in length.",
+      "source": "The structure of a neuron (in Estonian)",
+      "imageSource": "Blausen Medical Communications, Inc",
+      "brain2": "The connections between brain cells are repeatedly <b>made, changed</b> and <b>deleted</b> during our lifetimes. Recurring patterns (e.g. thinking) are easier to repeat.",
+      "keyfactors": {
+        "title": "Key factors",
+        "factors": {
+          "1": "Synapse (synaptogenesis) - the formation of connections (1)",
+          "2": "Long-term fortification of a connection - renders the connection more durable (2)",
+          "3": "Formation of myelin - renders the connections more efficient (3)"
+        },
+        "source": "Stahl et al. 2010"
+      }
+    },
+    "memory": {
+      "title": "Brain and Memory",
+      "camera": "The human memory does not work like a camera that retains all information. The brain forms physical connections between brain cells based on our experiences (e.g. in the neural circuit).",
+      "sensory": "Sensory memory",
+      "working": "Working memory",
+      "longterm": "Long-term memory",
+      "1": "Sensing",
+      "2": "Encoding",
+      "3": "Consolidation",
+      "4": "Retrieval",
+      "quote": "Consolidation and retrieval activate different neural circuits.",
+      "source": "Tonegawa, 2017",
+      "coding": "Encoding focus",
+      "retrieval": "Retrieval focus",
+      "deposit": "'Entering' information",
+      "withdraw": "'Retrieving' information",
+      "practice": "Information 'retrieval' requires practice",
+      "source2": "Stahl et al. 2010",
+      "brains": "Our brains are programmed to forget so that the <b>necessary</b> can be accessible.",
+      "reactivate": "The <b>reactivation</b> of memory strengthens it.",
+      "synapse": "Synapse",
+      "strengthen": "Long-term connection strengthening",
+      "formation": "Myelin formation"
+    },
+    "conclusion": {
+      "title": "Conclusion",
+      "p1": "People have different brains, however the brain is a marvellous organ: <b>everything depends on what you decide to do with your brain!</b>",
+      "p2": "Some people take longer / more repetitions to study but, in the end, it is possible to know the material as well as anyone else, meaning that <b>practically anyone can be good at anything.</b> Change your mindset and believe in yourself!",
+      "listen": "Listen",
+      "end": "Learning how to study will help you become a <b>more efficient learner!</b>"
+    },
+    "further": "If you are interested in the subject and would like to learn more, then we recommend eDidaktikum's",
+    "link": "\"Studying and Psychology\" (in Estonian)"
   },
   "learnMore": {
     "readingTitle": "For Reading",

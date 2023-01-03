@@ -108,7 +108,7 @@ const StudyingPage = () => {
         <p dangerouslySetInnerHTML={{__html: _('study.conclusion.p2')}} /> 
         <p>{_('study.conclusion.listen')}: <a href="https://novaator.err.ee/260018/uhe-minuti-loeng-kuidas-uskumus-meie-voimeid-mojutab" target="_blank">
           {_('learnMore.lecture.title')} <i className={classNames("fa-solid fa-arrow-up-right-from-square", s.tiny)}></i>
-        </a></p> 
+        </a> {lang === 'en' && '(' + _('learnMore.lecture.lang') + ')'}</p> 
         <p dangerouslySetInnerHTML={{__html: _('study.conclusion.end')}} /> 
       </Container>
       <div>{_('study.further')} <a href="https://edidaktikum.ee/et/content/%C3%B5ppimine-ja-ps%C3%BChholoogia" target="_blank">
