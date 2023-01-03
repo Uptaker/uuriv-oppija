@@ -55,57 +55,36 @@
   text-decoration-color: colours.colour(green);
 }
 
-.trio {
-  display: flex;
-  flex-direction: column;
-  gap: layout.space(small);
-
-  & .imgDiv {
-    max-width: 60%;
-    margin: auto;
-  }
-
-  @include layout.tablet {
-    flex-direction: row;
-
-    & .imgDiv {
-      max-width: initial;
-      margin: initial;
-    }
-
-    & div {
-      flex: 1 0;
-    }
-  }
-}
-
-.large {
-  @include typography.font(sub-heading);
-  margin-top: layout.space(medium);
-  text-transform: uppercase;
-  color: colours.colour(peach);
-}
-
 .row {
+  @include typography.font(minuscule);
   display: flex;
   justify-content: space-around;
+  width: 100%;
 
   &.memory {
-    @include typography.font(minuscule);
-
     & div {
       display: flex;
-      width: layout.space(40);
+      width: layout.space(medium);
       height: layout.space(20);
       justify-content: center;
       align-items: center;
       text-align: center;
 
       &:nth-child(odd) {
+        width: layout.space(21);
         background: colours.colour(peach);
+
+        @include layout.phone {
+          width: layout.space(30);
+        }
+
+        @include layout.tablet {
+          width: layout.space(40);
+        }
       }
 
       @include layout.phone {
+        width: layout.space(extra-large);
         height: layout.space(30);
       }
 
@@ -117,12 +96,41 @@
     @include layout.smallScreen {
       @include typography.font(tiny);
     }
-
+  
     @include layout.phone {
       @include typography.font(small);
     }
+  
+    @include layout.tablet {
+      @include typography.font(regular);
+    }
+  }
+  
+  &.formation {
+    & div {
+      &:nth-child(odd) {
+        background: colours.colour(green);
+
+        @include layout.large {
+          width: layout.space(50);
+          height: layout.space(30);
+        }
+      }
+    }
+
+    @include layout.smallScreen {
+      @include typography.font(minuscule);
+    }
+
+    @include layout.phone {
+      @include typography.font(tiny);
+    }
 
     @include layout.tablet {
+      @include typography.font(small);
+    }
+
+    @include layout.large {
       @include typography.font(regular);
     }
   }
@@ -235,56 +243,27 @@
 .forgettingContent {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
 
-  & .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    max-width: 100%;
-    margin-top: layout.space(medium);
+  & .image {
+    max-width: 90%;
+    margin-bottom: layout.space(small);
 
-    & div:last-of-type {
-      align-self: flex-end;
+    @include layout.large {
+      max-width: 75%;
     }
   }
 
   &.reactivate {
-    justify-content: space-evenly;
     gap: layout.space(large);
-
-    & div {
-      flex: 1 0;
-    }
-
-    & .time {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-
-      & div {
-        flex: initial;
-      }
-    }
 
     & .synapse {
       max-width: 75%;
-      padding-left: layout.space(medium-large);
 
       @include layout.phone {
         max-width: 50%;
-        padding-left: layout.space(large);
       }
-    }
-  }
-
-  @include layout.large {
-    flex-direction: row;
-
-    & .container {
-      max-width: 50%;
-      margin-top: initial;
-      margin-left: layout.space(small);
     }
   }
 }

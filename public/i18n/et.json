@@ -7,7 +7,8 @@
     "readMore": "Loe rohkem",
     "logo": "Erialasid lõimiv uuendus",
     "source": "Kasutatud kirjandus",
-    "sourceText": "Allikas"
+    "sourceText": "Allikas",
+    "imageSource": "Pilt"
   },
   "nav": {
     "studying": "Õppimisest",
@@ -32,36 +33,27 @@
   },
   "study": {
     "title": "Õppimisest",
-    "p1": "Õppimine on seotud inimese aju ja erinevate tunnetusprotsessidega.",
-    "introTitle": "Mis on seotud õppimisega?",
-    "introBullets": {
-      "1": "tähelepanu",
-      "2": "töömälu",
-      "3": "pikaajaline mälu",
-      "4": "pidurdusprotsessid"
-    },
-    "p2": "Nendest protsessidest teadlik olemine toetab tõhusat õppimist.",
+    "p1": "Õppimine on seotud inimese aju ja erinevate tunnetusprotsessidega (tähelepanu, töömälu, pikaajaline mälu, pidurdusprotsessid). Protsessidest teadlik olemine toetab tõhusat õppimist.",
     "p3": "Siin toome välja lühidalt infot õppimise ja psühholoogia seostest ning peamiselt ajust ja mälust.",
     "brain": {
       "title": "Õppimine ja aju",
       "text": "Närvirakk koosneb rakukehast ja <b>jätketest ehk närvikiududest.</b> Lühemad jätked - <b>dendriidid</b> võtavad ärrituse vastu ja juhivad selle rakukehasse. Pikema jätke – <b>aksoni</b> kaudu liigub erutus rakust välja. Akson hargneb otsast ja on närvilõpmete kaudu ühenduses teiste rakkudega. Enamus aksoneid on kaetud <b>müeliinkihiga</b>, mille tõttu liigub erutus kuni 100 m/s – see on 100 korda kiirem kui müeliinkihita dendriitides. Akson võib olla meetripikkune.",
       "source": "Neuroni ehitus",
+      "imageSource": "Blausen Medical Communications, Inc",
       "brain2": "Meie elu jooksul <b>luuakse, muudetakse</b> ja <b>kustutatakse</b> ajurakkudevahelisi sidemeid pidevalt. Korduvaid mustreid (nt mõtlemine) on lihtsam korrata.",
       "keyfactors": {
         "title": "Võtmetegurid",
         "factors": {
-          "1": "1. Sünaps (Synaptogenees) - sidemete moodustumine",
-          "2": "2. Pika-ajaline seose tugevnemine - muudab seosed püsivamaks",
-          "3": "3. Müeliini moodustumine - muudab seosed tõhusamaks"
+          "1": "Sünaps (Synaptogenees) - sidemete moodustumine (1)",
+          "2": "Pika-ajaline seose tugevnemine - muudab seosed püsivamaks (2)",
+          "3": "Müeliini moodustumine - muudab seosed tõhusamaks (3)"
         },
         "source": "Stahl et al. 2010"
       }
     },
     "memory": {
       "title": "Mälu ja mäletamine",
-      "question": "Kas mälu salvestab kõike nagu kaamera?",
-      "no": "ei",
-      "connections": "Aju loob meie kogemustest füüsilised seosed - seosed ajurakkude vahel (nt närviringis).",
+      "camera": "Mälu ei salvesta kõike ümbritsevat nagu kaamera. Aju loob meie kogemustest füüsilised seosed ajurakkude vahel (nt närviringis).",
       "sensory": "Sensoorne mälu",
       "working": "Töömälu",
       "longterm": "Pika-ajaline mälu",
@@ -76,8 +68,6 @@
       "deposit": "Info 'sisestamine'",
       "withdraw": "Info 'väljaotsimine'",
       "practice": "Info 'väljaotsimist' on vaja harjutada",
-      "forget": "Me unustame.",
-      "correct": "See peab nii olema.",
       "source2": "Stahl et al. 2010",
       "brains": "Meie ajud on programmeeritud unustama, et <b>vajalik</b> oleks kättesaadav.",
       "reactivate": "Mälu <b>reaktiveerimine</b> tugevdab mälu.",

@@ -5,39 +5,33 @@ import {_} from '@codeborne/i18n-json'
 import ContentDiv from '../layout/ContentDiv'
 import Container from '../components/Container'
 import brain from '../assets/study/brain.png'
+import brainEN from '../assets/study/brain.jpg'
 import brain2 from '../assets/study/brain2.png'
 import brain3 from '../assets/study/brain3.png'
 import forgetting from '../assets/study/forgetting.png'
-import time from '../assets/study/time.png'
-import camera from '../assets/study/camera.jpg'
 import synapse from '../assets/study/synapse.jpg'
 
 import s from './StudyingPage.module.scss'
 import Divider from '../layout/Divider'
 
-const StudyingPage = () => (
-  <ContentDiv>
-    <h1>{_('study.title')}</h1>
-    <p className={s.intro}>{_('study.p1')}</p>
-
-      <Container color="green" label={_('study.introTitle')}>
-        <ul className={s.list}>
-          {Object.values(_('study.introBullets')).map(bullet => (
-            <li key={bullet} className={s.listItem}>
-              {bullet}
-            </li>
-          ))}
-        </ul>
-        <p>{_('study.p2')}</p>
-      </Container>
+const StudyingPage = () => {
+  const lang = document.cookie.split('; ')?.find(s => s?.startsWith('LANG='))?.split('=')?.[1]
+  
+  return (
+    <ContentDiv>
+      <h1>{_('study.title')}</h1>
+      <p className={s.intro}>{_('study.p1')}</p>
       <div className={s.intro}>{_('study.p3')}</div>
 
       <Container label={_('study.brain.title')} color="green">
         <div className={s.content}>
           <div dangerouslySetInnerHTML={{__html: _('study.brain.text')}} />
-          <img src={brain} />
+          <img src={lang === 'et' ? brain : brainEN} />
         </div>
-        <div className={s.tiny}>{_('general.sourceText')}: <a href="https://vara.e-koolikott.ee/h5p/embed/3904" target="_blank">{_('study.brain.source')} <i className={classNames("fa-solid fa-arrow-up-right-from-square", s.tiny)}></i></a></div>
+        <div>
+          <div className={s.tiny}>{_('general.sourceText')}: <a href="https://vara.e-koolikott.ee/h5p/embed/3904" target="_blank">{_('study.brain.source')} <i className={classNames("fa-solid fa-arrow-up-right-from-square", s.tiny)}></i></a></div>
+          <div className={s.tiny}>{_('general.imageSource')}: <a href="https://commons.wikimedia.org/wiki/File:Blausen_0672_NeuralTissue.png" target="_blank">{_('study.brain.imageSource')} <i className={classNames("fa-solid fa-arrow-up-right-from-square", s.tiny)}></i></a></div>
+        </div>
         <div>
           <p dangerouslySetInnerHTML={{__html: _('study.brain.brain2')}} />
           <img src={brain2} className={s.image} />
@@ -57,14 +51,7 @@ const StudyingPage = () => (
         </div>
       </Container>
       <Container label={_('study.memory.title')} color="green">
-        <div className={s.trio}>
-          <div>
-            <div>{_('study.memory.question')}</div>
-            <div className={s.large}>{_('study.memory.no')}</div>
-          </div>
-          <div className={s.imgDiv}><img src={camera} className={s.image} /></div>
-          <div>{_('study.memory.connections')}</div>
-        </div>
+        <div>{_('study.memory.camera')}</div>
         <div className={classNames(s.row, s.memory)}>
           <div>{_('study.memory.sensory')}</div>
           <div><i className="fa-solid fa-right-long"></i></div>
@@ -101,25 +88,19 @@ const StudyingPage = () => (
         <Divider colour='green'/>
         <div className={s.forgettingContent}>
           <img src={forgetting} className={s.image} />
-          <div className={s.container}>
-            <div><p>{_('study.memory.forget')}</p><p>{_('study.memory.correct')}</p></div>
-            <div className={s.tiny}>{_('study.memory.source2')}</div>
-          </div>
+          <div className={s.tiny}>{_('study.memory.source2')}</div>
         </div>
         <div dangerouslySetInnerHTML={{__html: _('study.memory.brains')}}/>
+        <div dangerouslySetInnerHTML={{__html: _('study.memory.reactivate')}}/>
         <div className={classNames(s.forgettingContent, s.reactivate)}>
-          <div className={s.time}>
-            <div dangerouslySetInnerHTML={{__html: _('study.memory.reactivate')}}/>
-            <img src={time} className={s.image} />
+          <div className={classNames(s.row, s.memory, s.formation)}>
+            <div>{_('study.memory.synapse')}</div>
+            <div><i className="fa-solid fa-right-long"></i></div>
+            <div>{_('study.memory.strengthen')}</div>
+            <div><i className="fa-solid fa-right-long"></i></div>
+            <div>{_('study.memory.formation')}</div>
           </div>
-          <div>
-            <ul className={s.list}>
-              <li className={s.listItem}>{_('study.memory.synapse')}</li>
-              <li className={s.listItem}>{_('study.memory.strengthen')}</li>
-              <li className={s.listItem}>{_('study.memory.formation')}</li>
-            </ul>
-            <img src={synapse} className={s.synapse} />
-          </div>
+          <img src={synapse} className={s.synapse} />
         </div>
       </Container>
       <Container label={_('study.conclusion.title')} color="green">
@@ -137,7 +118,8 @@ const StudyingPage = () => (
       <div className={classNames(s.intro, s.tiny)}>
         <Link to='/learn-more'>{_('general.source')}</Link>
       </div>
-  </ContentDiv>
-)
+    </ContentDiv>
+  )
+}
 
 export default StudyingPage
