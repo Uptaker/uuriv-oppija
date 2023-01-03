@@ -35,7 +35,9 @@ const sources = [
   'Rohrer, D., Dedrick, R. F., & Stershic, S. (2015)Rawson, K. A., & Kintsch, W. (2005). Rereading effects  depend on time of test. Journal of Educational Psychology, 97(1), 70.',
   'Sapolsky, R. M. (2015). Stress and the brain: individual variability and the inverted-U. Nature  neuroscience, 18(10), 1344.',
   'Schutte, G. M., Duhon, G. J., Solomon, B. G., Poncy, B. C., Moore, K., & Story, B. (2015). A  comparative analysis of massed vs. distributed practice on basic math fact fluency growth rates.  Journal of School Psychology, 53(2), 149-159.',
+  'Stahl, S. M., Davis, R. L., Kim, D. H., Lowe, N. G., Carlson, R. E., Fountain, K., & Grady, M. M. (2010). Play it again: The master psychopharmacology program as an example of interval learning in bite-sized portions. CNS spectrums, 15(8), 491-504.',
   'The Science of Stress & Self-Regulation. Open online course (unit 5): Course | SP1 | TIDEX (upf.edu)',
+  'Tonegawa, S., Morrissey, M. D., & Kitamura, T. (2018). The role of engram cells in the systems consolidation of memory. Nature Reviews Neuroscience, 19(8), 485-498.',
   'Vlach, H. A., & Sandhofer, C. M. (2012). Distributing learning over time: The spacing effect in  children’s acquisition and generalization of science concepts. Child development, 83(4), 1137-1144.',
   'Weinstein, Y., Sumeracki, M., & Caviglioli, O. (2018). Understanding how we learn: A visual guide.  Routledge.'
 ]
