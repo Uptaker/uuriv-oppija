@@ -12,7 +12,12 @@ export interface Strategy {
 
 export interface Paragraph {
   paragraph: string,
-  title?: string
+  title?: string,
+  video?: {
+    title: string,
+    et?: string,
+    en?: string
+  }
 }
 
 export interface StrategyContent {

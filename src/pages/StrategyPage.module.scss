@@ -82,6 +82,10 @@
   @include typography.font(small, typography.$main-font, small, semi-bold);
   margin: layout.space(extra-large) 0 layout.space(medium-large);
 
+  &.videoTitle {
+    margin: 0 0 layout.space(medium-large);
+  }
+
   @include layout.phone {
     @include typography.font(regular, typography.$main-font, regular, semi-bold);
   }

@@ -16,6 +16,7 @@ import Posters from '../components/Posters'
 function StrategyPage() {
   const { id } = useParams()
   const strategy = strategies.find(s => s.id === id)
+  const lang = document.cookie.split('; ')?.find(s => s?.startsWith('LANG='))?.split('=')?.[1]
 
   const [modalContent , setModalContent] = useState<string|null>(null)
 
@@ -29,8 +30,21 @@ function StrategyPage() {
         <Collapsible type="accordion" color={strategy.color} label={_('strategy.teacher')} key={strategy.title}>
           {strategy.teacher.map(paragraph => (
             <React.Fragment key={paragraph.paragraph}>
-              { paragraph.title && <h2 className={s.accordionTitle}>{_(paragraph.title)}</h2>}
+              {paragraph.title && <h2 className={s.accordionTitle}>{_(paragraph.title)}</h2>}
               <p dangerouslySetInnerHTML={{__html: _(paragraph.paragraph)}} className={s.accordionParagraph}/>
+              {paragraph.video && paragraph.video[lang as 'et' | 'en'] && (
+                <ContentDiv wide center color={strategy.color}>
+                  <h3 className={classNames(s.accordionTitle, s.videoTitle)}>{_(paragraph.video.title)}</h3>
+                  <div className={s.videoPlayer}>
+                    <iframe src={paragraph.video[lang as 'et' | 'en']}
+                      title="YouTube video player"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
+                  </div>
+                </ContentDiv>
+              )}
             </React.Fragment>
           ))}
           <Link to='/learn-more' className={s.accordionSource}>{_('general.source')}</Link>
