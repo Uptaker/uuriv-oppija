@@ -33,9 +33,9 @@ Then build for production
 npm run build
 ```
 
-#### Deploying to server as subdirectory
+### Deploying to server as subdirectory
 
-For example if you want to serve the app in `https://web.htk.tlu.ee/opistrateegiad/`:
+For example, if you want to serve the app in `https://web.htk.tlu.ee/opistrateegiad/`:
 
 Change the `BASE_URL` value in `config.ts` to be like this:
 
