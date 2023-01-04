@@ -157,10 +157,18 @@ export const strategies: Strategy[] = [
       {
         title: 'strategies.mindset.teacher.2t',
         paragraph: 'strategies.mindset.teacher.2p',
+        video: {
+          title: 'strategies.mindset.teacher.2v',
+          et: "https://www.youtube.com/embed/7DG5gZbkIoM"
+        }
       },
       {
         title: 'strategies.mindset.teacher.3t',
         paragraph: 'strategies.mindset.teacher.3p',
+        video: {
+          title: 'strategies.mindset.teacher.3v',
+          et: "https://www.youtube.com/embed/6wVsT2QAiJ8"
+        }
       },
       {
         title: 'strategies.mindset.teacher.4t',
