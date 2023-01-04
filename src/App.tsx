@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import HomePage from './pages/HomePage'
 import EluPage from './pages/EluPage'
 import LearnMorePage from './pages/LearnMorePage'
@@ -6,11 +6,12 @@ import Nav from './layout/Nav'
 import Footer from './layout/Footer'
 import StrategyPage from './pages/StrategyPage'
 import StudyingPage from './pages/StudyingPage'
+import {BASE_URL} from '../config'
 
 
 function App() {
   return (
-    <Router>
+    <Router basename={BASE_URL}>
       <Nav />
       <div className="main">
         <Routes>

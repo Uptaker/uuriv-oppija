@@ -22,8 +22,25 @@ Start the application
 npm run dev
 ```
 
-Build for production
+
+
+## Deployment
+
+Install dependencies
+
+Then build for production
 ```bash
 npm run build
 ```
+
+#### Deploying to server as subdirectory
+
+For example if you want to serve the app in `https://web.htk.tlu.ee/opistrateegiad/`:
+
+Change the `BASE_URL` value in `config.ts` to be like this:
+
+```ts
+export const BASE_URL: string = '/opistrateegiad'
+```
+then build again.
 

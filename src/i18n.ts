@@ -1,5 +1,7 @@
 import langs from '../public/i18n/langs.json'
 import {init, rememberLang} from '@codeborne/i18n-json'
+import en from '../public/i18n/en.json'
+import et from '../public/i18n/et.json'
 
 export * from '@codeborne/i18n-json'
 
@@ -11,5 +13,5 @@ export async function initTranslations() {
     rememberLang(defaultLang)
     lang = defaultLang
   }
-  await init({langs, lang, defaultLang})
+  await init({langs, lang, defaultLang, dicts: {en, et}})
 }
