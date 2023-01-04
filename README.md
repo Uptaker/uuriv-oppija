@@ -3,7 +3,7 @@
 Made with React + TS + Vite
 
 ## Translations
-Translations are located in the `i18n` directory in JSON format.
+Translations are located in the `public/i18n` directory in JSON format.
 
 Estonian `et` is the default language.
 
@@ -21,8 +21,6 @@ Start the application
 ```bash
 npm run dev
 ```
-
-
 
 ## Deployment
 
