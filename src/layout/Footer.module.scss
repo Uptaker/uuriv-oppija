@@ -31,6 +31,14 @@
   }
 }
 
+.illumine {
+  & img {
+    max-height: layout.space(15);
+    max-width: 100%;
+    padding-bottom: layout.space(medium);
+  }
+}
+
 .title {
   @include typography.font(small, typography.$header-font, small, semi-bold);
 }
